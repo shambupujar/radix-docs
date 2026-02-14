@@ -64,148 +64,15 @@ The Radix Engine Toolkit and the Core/Gateway APIs are the two tools most non-Sc
 
 
 
-<colgroup>
-
-<col />
-
-<col />
-
-</colgroup>
-
-<tbody>
-
-<tr>
-
-<th colspan="1" rowspan="1">
-
-<p>
-
-Tool
-</p>
-
-</th>
-
-<th colspan="1" rowspan="1">
-
-<p>
-
-Example Use Case
-</p>
-
-</th>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="3">
-
-<p>
-
-<strong>Radix Engine Toolkit</strong>
-</p>
-
-</td>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Construction of manifests
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Construction of Transactions
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Signing of Transactions
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="4">
-
-<p>
-
-<strong>Core/Gateway API</strong>
-</p>
-
-</td>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Submission of Transactions
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Checking of Transaction Status
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Streaming Transactions
-</p>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="1" rowspan="1">
-
-<p>
-
-Getting the current Epoch for use in transaction construction
-</p>
-
-</td>
-
-</tr>
-
-</tbody>
+| Tool | Example Use Case |
+|------|------------------|
+| **Radix Engine Toolkit** | Construction of manifests |
+| **Radix Engine Toolkit** | Construction of Transactions |
+| **Radix Engine Toolkit** | Signing of Transactions |
+| **Core/Gateway API** | Submission of Transactions |
+| **Core/Gateway API** | Checking of Transaction Status |
+| **Core/Gateway API** | Streaming Transactions |
+| **Core/Gateway API** | Getting the current Epoch for use in transaction construction |
 
 
 

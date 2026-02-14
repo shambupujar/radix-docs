@@ -60,25 +60,31 @@ const sidebars = {
       "label": "Integrate",
       "items": [
         "integrate/overview",
-        "integrate/introduction-to-radix-at-babylon",
         {
           "type": "category",
-          "label": "Exchange Integration Guide",
+          "label": "Integrate with Radix",
           "items": [
-            "integrate/exchange-integration-guide/development-setup",
-            "integrate/exchange-integration-guide/infrastructure-setup",
-            "integrate/exchange-integration-guide/lts-core-api",
-            "integrate/exchange-integration-guide/lts-toolkit",
-            "integrate/exchange-integration-guide/detecting-deposits",
-            "integrate/exchange-integration-guide/worked-example-1-transfer-transaction",
-            "integrate/exchange-integration-guide/worked-example-2-tracking-deposits-any-account",
-            "integrate/exchange-integration-guide/worked-example-3-tracking-deposits-specific-account",
-            "integrate/exchange-integration-guide/worked-example-4-node-status-monitoring"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "integrate/exchange-integration-guide/index"
-          }
+            "integrate/introduction-to-radix-at-babylon",
+            {
+              "type": "category",
+              "label": "Exchange Integration Guide",
+              "items": [
+                "integrate/exchange-integration-guide/infrastructure-setup",
+                "integrate/exchange-integration-guide/development-setup",
+                "integrate/exchange-integration-guide/lts-core-api",
+                "integrate/exchange-integration-guide/lts-toolkit",
+                "integrate/exchange-integration-guide/detecting-deposits",
+                "integrate/exchange-integration-guide/worked-example-1-transfer-transaction",
+                "integrate/exchange-integration-guide/worked-example-2-tracking-deposits-any-account",
+                "integrate/exchange-integration-guide/worked-example-3-tracking-deposits-specific-account",
+                "integrate/exchange-integration-guide/worked-example-4-node-status-monitoring"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "integrate/exchange-integration-guide/index"
+              }
+            }
+          ]
         },
         {
           "type": "category",
