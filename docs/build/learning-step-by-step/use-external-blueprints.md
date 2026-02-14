@@ -55,6 +55,8 @@ The new Gumball Machine component is now owned by our Candy Store giving it acce
 
 
 
+![image(15).png](/img/image-15-.png)
+
 ## Multiple instantiation functions
 
 So as to allow for both an owned and global gumball machine, we have two instantiation functions. `instantiate_owned`:

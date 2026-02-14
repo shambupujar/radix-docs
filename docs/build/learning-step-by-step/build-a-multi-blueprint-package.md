@@ -48,6 +48,8 @@ Our package has two blueprints, `CandyStore` and `GumballMachine`.
 
 
 
+![image(12).png](/img/image-12-.png)
+
 ### The `GumBallMachine` blueprint
 
 The global `GumballMachine` remains the same as in previous sections.

@@ -10,10 +10,9 @@ A Pure Frontend dApp is the simplest kind of dApp. It has no server backend port
 
 For an overview of dApp types on Radix, see [What is a dApp on Radix](application-stack.md)?
 
-It’s useful to start with the big picture of the various tools available to you, and how they connect together. The **green blocks** below are built by you and the **blue blocks** are existing tools for you to make use of.
+It's useful to start with the big picture of the various tools available to you, and how they connect together. The **green blocks** below are built by you and the **blue blocks** are existing tools for you to make use of.
 
-
-
+![Pure Frontend dApp Detail View](/img/pure_frontend_detail_view.png)
 
 
 

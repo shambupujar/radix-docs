@@ -14,6 +14,8 @@ The <a href="https://github.com/radixdlt/radix-dapp-toolkit/tree/main" target="_
 
 
 
+![button-concept.png](/img/button-concept.png)
+
 The √ Connect Button appears as a consistent, Radix-branded UI element that helps users identify your dApp website as a Radix dApp and compatible with the Radix Wallet – and it automatically provides a consistent user experience for users to connect with their wallet and see the current status of the connection between dApp and Radix Wallet.
 
 ## Installation and Usage

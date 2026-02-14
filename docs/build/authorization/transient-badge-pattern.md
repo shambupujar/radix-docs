@@ -126,6 +126,8 @@ This pattern is very powerful and allows for a large degree of control over the 
 
 
 
+![transient-badges.png](/img/transient-badges.png)
+
 The above diagram showcases how this pattern can be used to ensure that n methods will be called in the same transaction and how the different transient badges involved will be handled. Each method takes in the transient badge produced by the method before it, burns it, and creates a new transient badge which may only be burned by the method that follows it. If the transaction does not get to the last method, it fails due to the characteristics of transient resources. If the transaction gets to the last method, then the last transient badge is burned, and the caller is allowed to proceed freely.
 
 ## Examples

@@ -23,10 +23,11 @@ Click on the extension icon on the left panel:
 
 
 
+![vscode-extension-icon.png](/img/vscode-extension-icon.png)
+
 Search for "rust-analyzer"
 
-
-
+![VSCode rust-analyzer](/img/vscode-install-rustanalyzer.png)
 
 
 
@@ -35,8 +36,7 @@ Click on install
 
 Search for "Radix Developer Tools"
 
-
-
+![Radix Developer Tools](/img/radix-dev-tools.png)
 
 
 

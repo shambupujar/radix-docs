@@ -52,6 +52,8 @@ This combination of importing the external blueprint and storing the component a
 
 
 
+![image(16).png](/img/image-16-.png)
+
 ## Authorizing Calls Between Components
 
 In previous sections, this logic is abstracted away in the `authorize_with_amount` method. Here we explain and see the process in more detail.

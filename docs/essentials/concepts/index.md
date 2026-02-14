@@ -8,7 +8,7 @@ title: "Concepts"
 
 Radix Engine addresses are [Bech32m](https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki) encoded, where they are made up of a Human Readable Part (HRP), separator, and a base32m encoded data part which includes a 6 character checksum of the HRP and data.
 
-![](/img/image-23-.png).png)
+![Address overview](/img/image-23-.png)
 
 The human readable part is made up of two specifiers that are separated by an underscore (“\_“). These are: - **Entity Specifier**: Specifies the type of entity that this address is for. As an example, in the case of the address being used to address an account component, the entity specifier would be”account”. This makes it clear at first glance what the address is meant to be used for. - **Network Specifier**: Specifies the network that the address is used for. This helps distinguish mainnet address from stokenet address, and so on; making it clear what network the address is use for.
 
@@ -20,7 +20,7 @@ The Radix Engine Toolkit can [generate virtual account addresses from a Ed25519 
 
 The data encoded in the Bech32m address is the byte representation of the address, which is an array of 30 bytes that is made up of two main parts: 1. Entity Byte: This is the first byte in the address and it defines the type of entity being addressed. 2. Address Bytes: These are the remaining 29 bytes in the array and they are the address of the entity.
 
-![](/img/image-24-.png).png)
+![Address format](/img/image-24-.png)
 
 The supported entity types and their entity byte representation are given in [entity_type.rs](https://github.com/radixdlt/radixdlt-scrypto/blob/main/radix-common/src/types/entity_type.rs).
 

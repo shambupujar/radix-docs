@@ -34,6 +34,8 @@ The diagram below shows a complete list of the account methods and the roles tha
 
 
 
+![account-tree.png](/img/account-tree.png)
+
 ## How the Account Component Works
 
 Use of Radix accounts is done through calls to component methods using the transaction manifest (as with any component).
@@ -153,6 +155,8 @@ The following is a complete flow chart showing the logic to determine if a depos
 
 
 
+
+![account-deposit-flow-chart.png](/img/account-deposit-flow-chart.png)
 
 ## Account Securification
 

@@ -36,6 +36,8 @@ On Radix, this type of dApp is structured like so:
 
 
 
+![pure_frontend_dapp.png](/img/pure_frontend_dapp.png)
+
 **The portions in blue are existing things from Radix that you can make use of. The portions in green are your responsibility as a dApp developer.**
 
 There are three major parts to this type of dApp:
@@ -59,6 +61,8 @@ This type of dApp on Radix is structured like so:
 
 
 
+
+![full_stack_dapp.png](/img/full_stack_dapp.png)
 
 The new **dApp backend** part of the system has two new functions that interact with the Radix Network:
 

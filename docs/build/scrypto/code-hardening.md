@@ -552,6 +552,8 @@ There are many different architectures and ways of implementing application-leve
 
 
 
+![app-level-upgrade.png](/img/app-level-upgrade.png)
+
 This architecture separates component state completely from component logic. The entirety of the state and vaults is stored in one component while another logic component operates over the state. Only one logic component can read or write state at any point in time which is established by requiring a badge for each state read or write. This is the mechanism by which old versions of the code are deprecated and decommissioned; they lose access to the badge and thus lose access to their ability to read and write state and service method calls. Similarly, new versions of the logic are given authority to read and write state by having the badge.
 
 A proxy component can be used to ensure that the component address of the application remains the same throughout versions. When the logic of the application is updated the proxy component's state is updated with the component address of the new logic component. Thus, all method calls to the proxy component now forward the method invocations to the new version of the code.

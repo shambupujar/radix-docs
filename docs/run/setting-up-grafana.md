@@ -12,6 +12,8 @@ Radix uses <a href="https://prometheus.io/" target="_blank">Prometheus</a> and <
 
 
 
+![radix-grafana.svg](/img/radix-grafana.svg)
+
 The Prometheus/Grafana installation has been packaged as part of the `babylonnode` script. This will allow node runners to get a monitoring dashboard up and running by simply running the script and answering a few questions.
 
 :::note

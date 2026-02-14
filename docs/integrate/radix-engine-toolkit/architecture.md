@@ -13,7 +13,7 @@ The Radix Engine Toolkit is written in Rust and is split between three main crat
 
 The following diagram visualizes the different layers that exist in the Radix Engine toolkit stack:
 
-
+![Radix Engine Toolkit Architecture](/img/RET.drawio-3-.png)
 
 The
 

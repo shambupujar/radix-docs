@@ -18,6 +18,8 @@ A common approach which is typically seen in many blueprints is this concept of 
 
 
 
+![complex-authorization.png](/img/complex-authorization.png)
+
 Consider an organization with the above structure which wishes to utilize your blueprint to instantiate a new component. While the single admin badge worked well under the assumption of a single admin, it does not lend itself well at all to such a complex organization structure. Very quickly, many questions begin popping up: who should be given the admin badge? should the admin badge be mintable to allow for the additional people to be included? How to handle the complex auth required here with the "and" and "or" logical operations?
 
 It is clear that there is a need for both: simple ways of instantiating components which creates the badges and all of the required resources, as well as ways which allow users with complex authorization needs to be able to fullfil their needs.
@@ -41,6 +43,8 @@ This best practice is not unique to Scrypto, it is a universal best practice whi
 
 
 
+
+![large-blueprints.png](/img/large-blueprints.png)
 
 When developing a system, it might be tempting to put everything into a single blueprint which would manage the system and would essentially be the system. This is approach is typically faster when you are first developing a system prototype, however, in no time, bugs will find their way into such a system and the process of maintaining it would be very difficult as it would very quickly become harder to reason about and harder to debug due to the sheer amount of moving pieces.
 

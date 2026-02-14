@@ -30,6 +30,8 @@ The dApp definition account forms the “hub” in a hub-and-spoke model. It act
 
 
 
+![image(76).png](/img/image-76-.png)
+
 ## Metadata Standards for Verification
 
 The following details the various fields of metadata that should be configured on your on-ledger entities that make up your dApp – including the dApp Definition “hub”, and the various resource, component, and package “spokes”.

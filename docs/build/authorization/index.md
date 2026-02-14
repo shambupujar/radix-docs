@@ -24,6 +24,8 @@ Here is an example flow of how this process may look:
 
 
 
+![auth-flow.drawio (1).png](/img/auth-flow.drawio-1-.png)
+
 In this example, the **Badge Holding Component** holds a resource used for auth (called a “badge”) and produces proofs of the held resource. The caller calls a method on this component to retrieve a proof of this resource. They can then push it onto their AuthZone, after which they may call a protected method.
 
 ## Manage Access to Functions and Methods with AccessRules

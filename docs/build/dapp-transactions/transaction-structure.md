@@ -22,6 +22,8 @@ Transaction hashes discussed below are built up in merklized layers, such that a
 
 
 
+![image(39).png](/img/image-39-.png)
+
 ### Notarized Transaction
 
 The notarized transaction is the fully signed transaction, and is represented by its `NotarizedTransactionHash` (`notarizedtransaction_...`).

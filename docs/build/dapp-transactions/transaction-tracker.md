@@ -73,11 +73,7 @@ As mentioned earlier, the Transaction Tracker uses multiple consecutive Partitio
 
 Let’s have a look at a specific situation, based on an example `current_epoch = 45168` and actual production constants:
 
-
-
-
-
-
+![Transaction Status Ring-buffer](/img/image-19-.png)
 
 Each of these 191 Partitions (within the inclusive range `[65; 255]`) represents a range of `100` future Epochs. The starting Epoch (i.e. `start_epoch` field) [grows in steps](transaction-tracker.md#buffer-rotation) of `100` (constantly catching up to the current Epoch, when possible) and thus the starting point of the Ring-buffer cycles over the available Partitions (as is usual for all <a href="https://en.wikipedia.org/wiki/Circular_buffer">circular buffers</a>).
 

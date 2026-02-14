@@ -115,4 +115,5 @@ If you wish to maintain a string key in the data, you could choose to use a `Map
 
 The grammar for the canonical binary encoding of SBOR is defined below. This is [covered in Rust here](https://github.com/radixdlt/radixdlt-scrypto/tree/main/sbor/src).
 
+![SBOR Grammar](/img/image-78-.png)
 

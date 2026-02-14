@@ -24,6 +24,8 @@ The following diagram shows how all of the various builders and compilers eventu
 
 
 
+![instruction2.png](/img/instruction2.png)
+
 The Radix Engine Toolkit manifest builder supports the following instructions:
 
 - All of the instructions are understood by the instructions interpreter (the transaction processor).

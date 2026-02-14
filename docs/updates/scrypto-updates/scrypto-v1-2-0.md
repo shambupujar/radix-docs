@@ -36,6 +36,8 @@ Radix CLI `rtmc` now prints pretty error message and highlights the problematic 
 
 
 
+![image(22).png](/img/image-22-.png)
+
 ### New Scrypto Compiler Library
 
 A new library `scrypto-compiler` is introduced to standardize everything around Scrypto compilation. This crate is used by Radix CLIs, `scrypto-builder` and `scrypto-test`, to provide consistent behavior. It is now available for public use.

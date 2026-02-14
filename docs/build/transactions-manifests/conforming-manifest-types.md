@@ -94,6 +94,8 @@ If the transaction is made of these elements, it can be succinctly and consisten
 
 
 
+![general-transaction.png](/img/general-transaction.png)
+
 Such a view encapsulates everything that matters to the user in such a transaction: They know what they lose, what they gain, what they’re interacting with, and what proofs of their own assets were required to accomplish it. Deposits that are of undefined quantity can be estimated (via transaction preview) and assert statements added to guardrail them.
 
 The transaction might also include movements of assets between non-account components, but these details are safely ignored in the summary view because only the user’s own assets and accounts ultimately matter to them when deciding whether or not to sign.
@@ -184,9 +186,9 @@ Bear in mind that:
 
 - At every dApp call and every YIELD, you may receive arbitrary resources from the parent intent
 
-If you’re not careful, users may see warnings like this, because they have approved a possible deposit of unspecified resources.
+If you're not careful, users may see warnings like this, because they have approved a possible deposit of unspecified resources.
 
-
+![Subintent warning](/img/Screenshot-2025-01-08-at-17.05.03.png)
 
 There are a lots of patterns that can be used to constrain the [account](../native-blueprints/account.md) deposits. The following are some examples of possible structures for this:
 
@@ -227,6 +229,8 @@ With this type, the wallet is able to show a summary in an understandable style 
 
 
 
+
+![transfer2.png](/img/transfer2.png)
 
 ### 1a) Simple Transfer
 
@@ -314,10 +318,9 @@ This type is when a user is updating the configuration settings of one or more o
 
 - One or more calls to `add_authorized_depositor` or `remove_authorized_depositor`
 
-With this type, the wallet is able to show a description of settings to be changed, on a per-account basis. For example…
+With this type, the wallet is able to show a description of settings to be changed, on a per-account basis. For example:
 
-
-
+![Account Deposit Settings](/img/account-deposit-settings.png)
 
 
 

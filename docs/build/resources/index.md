@@ -14,6 +14,8 @@ Resources must *always* be stored in *resource containers* – either a `Vault` 
 
 
 
+![Screenshot 2023-11-30 at 15.19.12(1).png](/img/Screenshot-2023-11-30-at-15.19.12-1-.png)
+
 ## Types of Resources
 
 Scrypto offers two types of resources that developers can easily build: Fungible and NonFungible resources.
@@ -23,6 +25,8 @@ Scrypto offers two types of resources that developers can easily build: Fungible
 
 
 
+
+![types-of-resources.png](/img/types-of-resources.png)
 
 ### Fungible Resources
 

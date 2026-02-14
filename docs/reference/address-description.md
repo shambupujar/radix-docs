@@ -24,6 +24,8 @@ Radix Engine addresses are <a href="https://github.com/bitcoin/bips/blob/master/
 
 
 
+![bech32-format.png](/img/bech32-format.png)
+
 The human readable part is made up of two specifiers that are separated by an underscore ("\_"). These are:
 
 - **Entity Specifier**: Specifies the type of entity that this address is for. As an example, in the case of the address being used to address an account component, the entity specifier would be "account". This makes it clear at first glance what the address is meant to be used for.
@@ -49,6 +51,8 @@ The data encoded in the Bech32m address is the byte representation of the addres
 
 
 
+
+![address-byte-format.png](/img/address-byte-format.png)
 
 The supported entity types and their entity byte representation are given in <a href="https://github.com/radixdlt/radixdlt-scrypto/blob/main/radix-common/src/types/entity_type.rs" target="_blank">entity_type.rs</a>.
 

@@ -90,8 +90,7 @@ The access controller component allows each of the proposer roles to have an ong
 
 The following is a Hierarchical State Machine (HSM) that describes the entire logic of access controller components
 
-
-
+![Hierarchical State Machine](/img/HSM1.png)
 
 
 

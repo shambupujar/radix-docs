@@ -65,13 +65,13 @@ Package with Global GumballMachine
 
 <td>
 
-
+![Owned GumballMachine](/img/image-13-.png)
 
 </td>
 
 <td>
 
-
+![Global GumballMachine](/img/image-14-.png)
 
 </td>
 

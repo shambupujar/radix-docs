@@ -18,6 +18,8 @@ Each intent has zero or more child subintents, and each subintent has a single u
 
 
 
+![image(38).png](/img/image-38-.png)
+
 ## Interaction between intents
 
 Each intent declares its children as pseudo-instructions as the start of its manifest:

@@ -66,6 +66,8 @@ This is designed to help prioritise transaction when there is a traffic jam.</td
 
 ## How does costing work?
 
+![Untitled.drawio.png](/img/Untitled.drawio.png)
+
 Transaction costing is done through the costing module within the System.
 
 This module is responsible for tracking the fee balance, counting execution and finalisation cost units and applying the costs listed above, with the help of a <a href="https://github.com/radixdlt/radixdlt-scrypto/blob/6d35fe85de69d82b85700aaa9a68310a6163b72e/radix-engine/src/system/system_modules/costing/fee_reserve.rs#L98-L143">fee reserve</a>.
