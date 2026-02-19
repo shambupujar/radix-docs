@@ -12,7 +12,7 @@ const config = {
   },
 
   url: 'https://shambupujar.github.io',
-  baseUrl: '/docs/',
+  baseUrl: '/radix-docs/',
 
   organizationName: 'radixdlt',
   projectName: 'radix-docs',
