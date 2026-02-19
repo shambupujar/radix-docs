@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://docs.radixdlt.com',
-  baseUrl: '/',
+  url: 'https://shambupujar.github.io',
+  baseUrl: '/docs/',
 
   organizationName: 'radixdlt',
   projectName: 'radix-docs',
