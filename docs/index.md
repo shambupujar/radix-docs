@@ -18,7 +18,7 @@ Try the **search bar** or browse the **documentation categories** below.
 <div className="doc-cards">
   <a className="doc-card" href="essentials/overview">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Essentials-icon-5-.png').default} alt="Essentials" />
+      <img src="/radix-docs/img/Essentials-icon-5-.png" alt="Essentials" />
     </div>
     <div className="doc-card-content">
       <h3>Essentials</h3>
@@ -27,7 +27,7 @@ Try the **search bar** or browse the **documentation categories** below.
   </a>
   <a className="doc-card" href="use/radix-dashboard">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Use-icon-2-.png').default} alt="Use" />
+      <img src="/radix-docs/img/Use-icon-2-.png" alt="Use" />
     </div>
     <div className="doc-card-content">
       <h3>Use</h3>
@@ -36,7 +36,7 @@ Try the **search bar** or browse the **documentation categories** below.
   </a>
   <a className="doc-card" href="build/developer-quick-start">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Build-icon-4-.png').default} alt="Build" />
+      <img src="/radix-docs/img/Build-icon-4-.png" alt="Build" />
     </div>
     <div className="doc-card-content">
       <h3>Build</h3>
@@ -45,7 +45,7 @@ Try the **search bar** or browse the **documentation categories** below.
   </a>
   <a className="doc-card" href="run/overview">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Run-icon-2-.png').default} alt="Run" />
+      <img src="/radix-docs/img/Run-icon-2-.png" alt="Run" />
     </div>
     <div className="doc-card-content">
       <h3>Run</h3>
@@ -54,7 +54,7 @@ Try the **search bar** or browse the **documentation categories** below.
   </a>
   <a className="doc-card" href="integrate/overview">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Integrate-icon-1-.png').default} alt="Integrate" />
+      <img src="/radix-docs/img/Integrate-icon-1-.png" alt="Integrate" />
     </div>
     <div className="doc-card-content">
       <h3>Integrate</h3>
@@ -63,7 +63,7 @@ Try the **search bar** or browse the **documentation categories** below.
   </a>
   <a className="doc-card" href="reference/well-known-addresses">
     <div className="doc-card-icon">
-      <img src={require('@site/static/img/Reference-icon-2-.png').default} alt="Reference" />
+      <img src="/radix-docs/img/Reference-icon-2-.png" alt="Reference" />
     </div>
     <div className="doc-card-content">
       <h3>Reference</h3>
