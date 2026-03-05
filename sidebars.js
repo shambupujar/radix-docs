@@ -167,9 +167,9 @@ const sidebars = {
               "label": "Setting Up"
             },
             {
-              "type": "link",
-              "label": "Getting Rust & Scrypto",
-              "href": "/docs/getting-rust-scrypto"
+              "type": "ref",
+              "id": "build/developer-quick-start",
+              "label": "Getting Rust & Scrypto"
             },
             {
               "type": "doc",
@@ -237,16 +237,16 @@ const sidebars = {
               "items": [
                 "build/dapp-development/dapp-toolkit",
                 {
-                  "type": "link",
-                  "label": "Gateway SDK",
-                  "href": "/docs/gateway-sdk"
+                  "type": "ref",
+                  "id": "integrate/network-apis/gateway-sdk",
+                  "label": "Gateway SDK"
                 }
               ]
             },
             {
-              "type": "link",
-              "label": "ROLA - Radix Off Ledger Auth",
-              "href": "/docs/rola-radix-off-ledger-auth"
+              "type": "doc",
+              "id": "reference/rola-radix-off-ledger-auth",
+              "label": "ROLA - Radix Off Ledger Auth"
             },
             "build/dapp-development/dapp-definition-setup",
             {
@@ -254,28 +254,28 @@ const sidebars = {
               "label": "dApp Transactions",
               "items": [
                 {
-                  "type": "link",
-                  "label": "Writing Manifests",
-                  "href": "/docs/writing-manifests"
+                  "type": "doc",
+                  "id": "build/transactions-manifests/writing-manifests",
+                  "label": "Writing Manifests"
                 },
                 {
-                  "type": "link",
-                  "label": "Pre-authorization / Subintent Flow",
-                  "href": "/docs/pre-authorizations-and-subintents"
+                  "type": "doc",
+                  "id": "build/dapp-transactions/pre-authorizations-subintents",
+                  "label": "Pre-authorization / Subintent Flow"
                 },
                 {
                   "type": "category",
                   "label": "Examples",
                   "items": [
                     {
-                      "type": "link",
-                      "label": "Simple Token Transfer",
-                      "href": "/docs/simple-token-transfer"
+                      "type": "doc",
+                      "id": "build/dapp-transactions/simple-token-transfer",
+                      "label": "Simple Token Transfer"
                     },
                     {
-                      "type": "link",
-                      "label": "Non-Fungible Resource Creation",
-                      "href": "/docs/transaction-non-fungible-resource-creation"
+                      "type": "doc",
+                      "id": "build/resources/transaction-non-fungible-resource-creation",
+                      "label": "Non-Fungible Resource Creation"
                     }
                   ]
                 }
@@ -290,21 +290,21 @@ const sidebars = {
               },
               "items": [
                 {
-                  "type": "link",
-                  "label": "Code Hardening",
-                  "href": "/docs/code-hardening"
+                  "type": "doc",
+                  "id": "build/scrypto/code-hardening",
+                  "label": "Code Hardening"
                 },
                 {
-                  "type": "link",
-                  "label": "Productionize Your Code",
-                  "href": "/docs/productionize-your-code"
+                  "type": "doc",
+                  "id": "build/scrypto/productionize-your-code",
+                  "label": "Productionize Your Code"
                 }
               ]
             },
             {
-              "type": "link",
-              "label": "Useful Links",
-              "href": "/docs/useful-links"
+              "type": "doc",
+              "id": "reference/useful-links",
+              "label": "Useful Links"
             }
           ]
         },
@@ -323,9 +323,9 @@ const sidebars = {
                 "build/scrypto/scrypto-cli-tool",
                 "build/scrypto/scrypto-builder",
                 {
-                  "type": "link",
-                  "label": "resim (Radix Engine Simulator)",
-                  "href": "/docs/resim-radix-engine-simulator"
+                  "type": "doc",
+                  "id": "reference/developer-tools/radix-engine-simulator-resim",
+                  "label": "resim (Radix Engine Simulator)"
                 }
               ]
             },
@@ -358,9 +358,9 @@ const sidebars = {
                 "build/authorization/using-proofs",
                 "build/authorization/assign-function-accessrules",
                 {
-                  "type": "link",
-                  "label": "Assign Roles To Methods",
-                  "href": "/docs/structure-roles-and-methods"
+                  "type": "doc",
+                  "id": "reference/core-system-features/structure-roles-methods",
+                  "label": "Assign Roles To Methods"
                 },
                 "build/authorization/assign-component-roles",
                 "build/authorization/assign-roles-to-resources",
@@ -375,14 +375,14 @@ const sidebars = {
             "build/scrypto/component-ownership",
             "build/scrypto/advanced-external-calls",
             {
-              "type": "link",
-              "label": "Runtime API",
-              "href": "/docs/runtime"
+              "type": "doc",
+              "id": "reference/core-system-features/runtime",
+              "label": "Runtime API"
             },
             {
-              "type": "link",
-              "label": "Bech32 Address Types Conversion",
-              "href": "/docs/bech32-address-types-conversion"
+              "type": "doc",
+              "id": "reference/bech32-address-types-conversion",
+              "label": "Bech32 Address Types Conversion"
             },
             {
               "type": "doc",
@@ -391,9 +391,9 @@ const sidebars = {
             },
             "build/scrypto/coverage-tool",
             {
-              "type": "link",
-              "label": "Entity Metadata",
-              "href": "/docs/entity-metadata"
+              "type": "ref",
+              "id": "build/metadata/entity-metadata",
+              "label": "Entity Metadata"
             },
             {
               "type": "category",
@@ -407,14 +407,14 @@ const sidebars = {
               "label": "Cryptography",
               "items": [
                 {
-                  "type": "link",
-                  "label": "Keccak256",
-                  "href": "/docs/keccak256"
+                  "type": "doc",
+                  "id": "reference/cryptography/keccak256",
+                  "label": "Keccak256"
                 },
                 {
-                  "type": "link",
-                  "label": "BLS12-381",
-                  "href": "/docs/bls12-381"
+                  "type": "doc",
+                  "id": "reference/cryptography/bls12-381",
+                  "label": "BLS12-381"
                 }
               ]
             },
@@ -621,15 +621,15 @@ const sidebars = {
       "label": "Reference",
       "items": [
         {
-          "type": "link",
-          "label": "Environments",
-          "href": "/docs/environments"
+          "type": "doc",
+          "id": "reference/developer-tools/environments",
+          "label": "Environments"
         },
         "reference/address-description",
         {
-          "type": "link",
-          "label": "Well-known Addresses",
-          "href": "/docs/well-known-addresses-1"
+          "type": "doc",
+          "id": "reference/well-known-addresses-full-list",
+          "label": "Well-known Addresses"
         },
         {
           "type": "category",
@@ -922,54 +922,12 @@ const sidebars = {
             }
           ]
         },
-        "reference/well-known-addresses-full-list",
-        "reference/bech32-address-types-conversion",
-        {
-          "type": "category",
-          "label": "Cryptography",
-          "items": [
-            "reference/cryptography/bls12-381",
-            "reference/cryptography/keccak256"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "reference/cryptography/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Core System Features",
-          "items": [
-            "reference/core-system-features/runtime",
-            "reference/core-system-features/structure-roles-methods"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "reference/core-system-features/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Developer Tools",
-          "items": [
-            "reference/developer-tools/developer-console",
-            "reference/developer-tools/radix-engine-simulator-resim",
-            "reference/developer-tools/environments"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "reference/developer-tools/developer-console"
-          }
-        },
-        "reference/rola-radix-off-ledger-auth",
-        "reference/useful-links"
       ]
     },
     {
       "type": "category",
       "label": "Updates",
       "items": [
-        "updates/roadmap",
         {
           "type": "category",
           "label": "Protocol Updates",
@@ -987,85 +945,96 @@ const sidebars = {
         },
         {
           "type": "category",
-          "label": "Scrypto Updates",
-          "items": [
-            "updates/scrypto-updates/scrypto-v1-1-0",
-            "updates/scrypto-updates/scrypto-v1-2-0",
-            "updates/scrypto-updates/scrypto-v1-3-0",
-            "updates/scrypto-updates/backlog",
-            "updates/scrypto-updates/underway",
-            "updates/scrypto-updates/milestones"
-          ],
+          "label": "Roadmap",
           "link": {
             "type": "doc",
-            "id": "updates/scrypto-updates/milestones"
-          }
+            "id": "updates/roadmap"
+          },
+          "items": [
+            {
+              "type": "category",
+              "label": "Wallets",
+              "items": [
+                "updates/wallets-updates/milestones",
+                "updates/wallets-updates/underway",
+                "updates/wallets-updates/backlog",
+                "updates/wallets-updates/complete"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "updates/wallets-updates/index"
+              }
+            },
+            {
+              "type": "category",
+              "label": "Scrypto",
+              "items": [
+                "updates/scrypto-updates/milestones",
+                "updates/scrypto-updates/underway",
+                "updates/scrypto-updates/backlog"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "updates/scrypto-updates/index"
+              }
+            },
+            {
+              "type": "category",
+              "label": "Node/Engine",
+              "items": [
+                "updates/node-engine-updates/milestones",
+                "updates/node-engine-updates/underway",
+                "updates/node-engine-updates/backlog",
+                "updates/node-engine-updates/complete"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "updates/node-engine-updates/index"
+              }
+            },
+            {
+              "type": "category",
+              "label": "Gateway",
+              "items": [
+                "updates/gateway-updates/milestones",
+                "updates/gateway-updates/underway",
+                "updates/gateway-updates/backlog",
+                "updates/gateway-updates/complete"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "updates/gateway-updates/index"
+              }
+            },
+            {
+              "type": "category",
+              "label": "Developer Tools",
+              "items": [
+                "updates/developer-tools-updates/underway",
+                "updates/developer-tools-updates/backlog"
+              ],
+              "link": {
+                "type": "doc",
+                "id": "updates/developer-tools-updates/index"
+              }
+            }
+          ]
         },
         {
           "type": "category",
-          "label": "Gateway Updates",
+          "label": "Release Notes",
           "items": [
-            "updates/gateway-updates/backlog",
-            "updates/gateway-updates/underway",
-            "updates/gateway-updates/complete",
-            "updates/gateway-updates/milestones"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "updates/gateway-updates/milestones"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Node/Engine Updates",
-          "items": [
-            "updates/node-engine-updates/backlog",
-            "updates/node-engine-updates/underway",
-            "updates/node-engine-updates/complete",
-            "updates/node-engine-updates/milestones"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "updates/node-engine-updates/milestones"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Developer Tools Updates",
-          "items": [
-            "updates/developer-tools-updates/backlog",
-            "updates/developer-tools-updates/underway"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "updates/developer-tools-updates/backlog"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Radix Applications",
-          "items": [
-            "updates/radix-applications/backlog",
-            "updates/radix-applications/underway",
-            "updates/radix-applications/complete"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "updates/radix-applications/backlog"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Wallets Updates",
-          "items": [
-            "updates/wallets-updates/backlog",
-            "updates/wallets-updates/underway",
-            "updates/wallets-updates/milestones"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "updates/wallets-updates/milestones"
-          }
+            {
+              "type": "category",
+              "label": "Scrypto",
+              "items": [
+                "updates/scrypto-updates/scrypto-v1-3-1",
+                "updates/scrypto-updates/scrypto-v1-3-0",
+                "updates/scrypto-updates/scrypto-v1-2-0",
+                "updates/scrypto-updates/scrypto-v1-1-0"
+              ]
+            }
+          ]
         }
       ]
     }

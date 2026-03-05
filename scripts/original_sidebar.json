@@ -2,10 +2,10 @@
   "_meta": {
     "source": "https://docs.radixdlt.com/",
     "extracted_date": "2026-03-05",
-    "note": "Welcome, Essentials, Use verified from live site HTML. Integrate verified from expanded HTML. Build verified from live site screenshots (Developer Quick Start, Setting up for Development, Learning Step-by-Step, dApp Development, Scrypto with Resources/Authorization nested inside). Run, Updates derived from SUMMARY.md. Reference partially verified.",
+    "note": "Welcome, Essentials, Use verified from live site HTML. Integrate verified from expanded HTML. Build verified from live site screenshots. Run derived from SUMMARY.md. Reference verified from live site screenshots (Environments, Address Description, Well-known Addresses, Standards, Integrator Concepts, Radix Engine with Transactions/SBOR). Updates verified from live site screenshot.",
     "sources": {
-      "live_html": ["Welcome", "Essentials", "Use", "Integrate", "Build", "Reference (partial)"],
-      "summary_md": ["Run", "Updates", "Reference > SBOR children"]
+      "live_html": ["Welcome", "Essentials", "Use", "Integrate", "Build", "Reference", "Updates"],
+      "summary_md": ["Run"]
     }
   },
   "sidebar": [
@@ -480,14 +480,6 @@
           ]
         },
         {
-          "label": "Well-Known Addresses",
-          "slug": "/docs/well-known-addresses",
-          "_source": "summary_md",
-          "_note": "Present in SUMMARY.md Reference but not as standalone item on live site (appears under Integrator Concepts)"
-        },
-        { "label": "Bech32 Address Types & Conversion", "slug": "/docs/bech32-address-types-conversion", "_source": "summary_md" },
-        { "label": "Resource Address Display", "slug": "/docs/resource-address-display", "_source": "summary_md" },
-        {
           "label": "Radix Engine",
           "type": "category",
           "_note": "Verified from live site screenshot. Children expanded.",
@@ -582,58 +574,14 @@
               ]
             }
           ]
-        },
-        {
-          "label": "Cryptography",
-          "type": "category",
-          "slug": "/docs/cryptography",
-          "_source": "summary_md",
-          "children": [
-            { "label": "BLS12-381", "slug": "/docs/bls12-381" },
-            { "label": "Keccak256", "slug": "/docs/keccak256" }
-          ]
-        },
-        {
-          "label": "Core System Features",
-          "type": "category",
-          "slug": "/docs/core-system-features",
-          "_source": "summary_md",
-          "children": [
-            { "label": "Runtime", "slug": "/docs/runtime" },
-            { "label": "Structure Roles & Methods", "slug": "/docs/structure-roles-and-methods" }
-          ]
-        },
-        {
-          "label": "Costing & Limits",
-          "type": "category",
-          "slug": "/docs/costing-and-limits",
-          "_source": "summary_md",
-          "children": [
-            { "label": "Transaction Costing", "slug": "/docs/transaction-costing" },
-            { "label": "Transaction Limits", "slug": "/docs/transaction-limits" }
-          ]
-        },
-        {
-          "label": "Developer Tools",
-          "type": "category",
-          "slug": "/docs/developer-console",
-          "_source": "summary_md",
-          "children": [
-            { "label": "Developer Console", "slug": "/docs/developer-console" },
-            { "label": "Radix Engine Simulator (Resim)", "slug": "/docs/resim-radix-engine-simulator" },
-            { "label": "Environments", "slug": "/docs/environments" }
-          ]
-        },
-        { "label": "ROLA (Radix Off-Ledger Auth)", "slug": "/docs/rola-radix-off-ledger-auth", "_source": "summary_md" },
-        { "label": "Useful Links", "slug": "/docs/useful-links", "_source": "summary_md" }
+        }
       ]
     },
     {
       "label": "Updates",
       "type": "category",
-      "_source": "summary_md",
+      "_note": "Verified from live site screenshot. Roadmap is a category containing Wallets, Scrypto, Node/Engine, Gateway, Developer Tools. No Radix Applications in original.",
       "children": [
-        { "label": "Roadmap", "slug": "/docs/roadmap" },
         {
           "label": "Protocol Updates",
           "type": "category",
@@ -647,67 +595,78 @@
           ]
         },
         {
-          "label": "Scrypto Updates",
+          "label": "Roadmap",
           "type": "category",
-          "slug": "/docs/scrypto-milestones",
+          "slug": "/docs/roadmap",
           "children": [
-            { "label": "Scrypto v1.1.0", "slug": "/docs/scrypto-v1-1-0" },
-            { "label": "Scrypto v1.2.0", "slug": "/docs/scrypto-v1-2-0" },
-            { "label": "Scrypto v1.3.0", "slug": "/docs/scrypto-v1-3-0" },
-            { "label": "Backlog", "slug": "/docs/scrypto-backlog" },
-            { "label": "Underway", "slug": "/docs/scrypto-underway" },
-            { "label": "Milestones", "slug": "/docs/scrypto-milestones" }
+            {
+              "label": "Wallets",
+              "type": "category",
+              "slug": "/docs/wallets-milestones",
+              "children": [
+                { "label": "Milestones", "slug": "/docs/wallets-milestones" },
+                { "label": "Underway", "slug": "/docs/wallets-underway" },
+                { "label": "Backlog", "slug": "/docs/wallets-backlog" },
+                { "label": "Complete", "slug": "/docs/wallets-complete" }
+              ]
+            },
+            {
+              "label": "Scrypto",
+              "type": "category",
+              "slug": "/docs/scrypto-milestones",
+              "children": [
+                { "label": "Milestones", "slug": "/docs/scrypto-milestones" },
+                { "label": "Underway", "slug": "/docs/scrypto-underway" },
+                { "label": "Backlog", "slug": "/docs/scrypto-backlog" }
+              ]
+            },
+            {
+              "label": "Node/Engine",
+              "type": "category",
+              "slug": "/docs/node-engine-milestones",
+              "children": [
+                { "label": "Milestones", "slug": "/docs/node-engine-milestones" },
+                { "label": "Underway", "slug": "/docs/node-engine-underway" },
+                { "label": "Backlog", "slug": "/docs/node-engine-backlog" },
+                { "label": "Complete", "slug": "/docs/node-engine-complete" }
+              ]
+            },
+            {
+              "label": "Gateway",
+              "type": "category",
+              "slug": "/docs/gateway-milestones",
+              "children": [
+                { "label": "Milestones", "slug": "/docs/gateway-milestones" },
+                { "label": "Underway", "slug": "/docs/gateway-underway" },
+                { "label": "Backlog", "slug": "/docs/gateway-backlog" },
+                { "label": "Complete", "slug": "/docs/gateway-complete" }
+              ]
+            },
+            {
+              "label": "Developer Tools",
+              "type": "category",
+              "slug": "/docs/developer-tools-backlog",
+              "children": [
+                { "label": "Underway", "slug": "/docs/developer-tools-underway" },
+                { "label": "Backlog", "slug": "/docs/developer-tools-backlog" }
+              ]
+            }
           ]
         },
         {
-          "label": "Gateway Updates",
+          "label": "Release Notes",
           "type": "category",
-          "slug": "/docs/gateway-milestones",
           "children": [
-            { "label": "Backlog", "slug": "/docs/gateway-backlog" },
-            { "label": "Underway", "slug": "/docs/gateway-underway" },
-            { "label": "Complete", "slug": "/docs/gateway-complete" },
-            { "label": "Milestones", "slug": "/docs/gateway-milestones" }
-          ]
-        },
-        {
-          "label": "Node/Engine Updates",
-          "type": "category",
-          "slug": "/docs/node-engine-milestones",
-          "children": [
-            { "label": "Backlog", "slug": "/docs/node-engine-backlog" },
-            { "label": "Underway", "slug": "/docs/node-engine-underway" },
-            { "label": "Complete", "slug": "/docs/node-engine-complete" },
-            { "label": "Milestones", "slug": "/docs/node-engine-milestones" }
-          ]
-        },
-        {
-          "label": "Developer Tools Updates",
-          "type": "category",
-          "slug": "/docs/developer-tools-backlog",
-          "children": [
-            { "label": "Backlog", "slug": "/docs/developer-tools-backlog" },
-            { "label": "Underway", "slug": "/docs/developer-tools-underway" }
-          ]
-        },
-        {
-          "label": "Radix Applications",
-          "type": "category",
-          "slug": "/docs/radix-applications-backlog",
-          "children": [
-            { "label": "Backlog", "slug": "/docs/radix-applications-backlog" },
-            { "label": "Underway", "slug": "/docs/radix-applications-underway" },
-            { "label": "Complete", "slug": "/docs/radix-applications-complete" }
-          ]
-        },
-        {
-          "label": "Wallets Updates",
-          "type": "category",
-          "slug": "/docs/wallets-milestones",
-          "children": [
-            { "label": "Backlog", "slug": "/docs/wallets-backlog" },
-            { "label": "Underway", "slug": "/docs/wallets-underway" },
-            { "label": "Milestones", "slug": "/docs/wallets-milestones" }
+            {
+              "label": "Scrypto",
+              "type": "category",
+              "children": [
+                { "label": "Scrypto v1.3.1", "slug": "/docs/scrypto-v1-3-1" },
+                { "label": "Scrypto v1.3.0", "slug": "/docs/scrypto-v1-3-0" },
+                { "label": "Scrypto v1.2.0", "slug": "/docs/scrypto-v1-2-0" },
+                { "label": "Scrypto v1.1.0", "slug": "/docs/scrypto-v1-1-0" }
+              ]
+            }
           ]
         }
       ]
