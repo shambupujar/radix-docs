@@ -97,11 +97,24 @@ const sidebars = {
           "label": "Radix Engine Toolkit",
           "items": [
             "integrate/radix-engine-toolkit/architecture",
-            "integrate/radix-engine-toolkit/installation",
-            "integrate/radix-engine-toolkit/derivation",
-            "integrate/radix-engine-toolkit/manifest-builder",
-            "integrate/radix-engine-toolkit/examples",
-            "integrate/radix-engine-toolkit/usage-guide"
+            {
+              "type": "doc",
+              "id": "integrate/radix-engine-toolkit/installation",
+              "label": "Getting Started"
+            },
+            {
+              "type": "category",
+              "label": "Usage Guide",
+              "link": {
+                "type": "doc",
+                "id": "integrate/radix-engine-toolkit/usage-guide"
+              },
+              "items": [
+                "integrate/radix-engine-toolkit/derivation",
+                "integrate/radix-engine-toolkit/manifest-builder",
+                "integrate/radix-engine-toolkit/examples"
+              ]
+            }
           ],
           "link": {
             "type": "doc",

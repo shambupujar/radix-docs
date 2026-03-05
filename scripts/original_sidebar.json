@@ -93,14 +93,15 @@
           "children": [
             { "label": "Architecture", "slug": "/docs/radix-engine-toolkit-architecture" },
             { "label": "Getting Started", "slug": "/docs/radix-engine-toolkit-installation", "_note": "Label is 'Getting Started' on live site, 'Installation' in SUMMARY.md" },
-            { "label": "Derivation", "slug": "/docs/radix-engine-toolkit-derivation" },
-            { "label": "Manifest Builder", "slug": "/docs/radix-engine-toolkit-manifest-builder" },
-            { "label": "Examples", "slug": "/docs/radix-engine-toolkit-examples" },
             {
               "label": "Usage Guide",
               "type": "category",
               "slug": "/docs/radix-engine-toolkit-usage-guide",
-              "_note": "Subcategory on live site, flat doc in SUMMARY.md/Docusaurus"
+              "children": [
+                { "label": "Derivation", "slug": "/docs/radix-engine-toolkit-derivation" },
+                { "label": "Manifest Builder", "slug": "/docs/radix-engine-toolkit-manifest-builder" },
+                { "label": "Examples", "slug": "/docs/radix-engine-toolkit-examples" }
+              ]
             }
           ]
         },
