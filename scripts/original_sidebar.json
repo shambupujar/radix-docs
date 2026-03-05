@@ -225,25 +225,6 @@
           ]
         },
         {
-          "label": "dApp Transactions",
-          "type": "category",
-          "slug": "/docs/dapp-transactions",
-          "_note": "Full dApp Transactions section (separate from the dApp Development > dApp Transactions subcategory)",
-          "children": [
-            { "label": "Transaction Overview", "slug": "/docs/transaction-overview" },
-            { "label": "Transaction Structure", "slug": "/docs/transaction-structure" },
-            { "label": "Transaction Intents", "slug": "/docs/transaction-intents" },
-            { "label": "Pre-authorizations & Subintents", "slug": "/docs/pre-authorizations-and-subintents" },
-            { "label": "Subintents", "slug": "/docs/subintents" },
-            { "label": "Intent Structure", "slug": "/docs/intent-structure" },
-            { "label": "Intent Processor", "slug": "/docs/intent-processor" },
-            { "label": "Transaction Notary", "slug": "/docs/transaction-notary" },
-            { "label": "Transaction Tracker", "slug": "/docs/transaction-tracker" },
-            { "label": "Simple Token Transfer", "slug": "/docs/simple-token-transfer" },
-            { "label": "Common Transactions", "slug": "/docs/common-transactions" }
-          ]
-        },
-        {
           "label": "Scrypto",
           "type": "category",
           "slug": "/docs/scrypto",
@@ -331,43 +312,6 @@
                 { "label": "Patterns for Application Deposit Use Cases", "slug": "/docs/account-deposit-patterns" }
               ]
             }
-          ]
-        },
-        {
-          "label": "Transactions & Manifests",
-          "type": "category",
-          "slug": "/docs/manifest",
-          "children": [
-            { "label": "Writing Manifests", "slug": "/docs/writing-manifests" },
-            { "label": "Manifest Instructions", "slug": "/docs/manifest-instructions" },
-            { "label": "Manifest Value Syntax", "slug": "/docs/manifest-value-syntax" },
-            { "label": "Manifest SBOR Specs", "slug": "/docs/manifest-sbor-specs" },
-            { "label": "Conforming Manifest Types", "slug": "/docs/conforming-manifest-types" }
-          ]
-        },
-        {
-          "label": "Metadata",
-          "type": "category",
-          "slug": "/docs/metadata",
-          "children": [
-            { "label": "Entity Metadata", "slug": "/docs/entity-metadata" },
-            { "label": "Metadata for Wallet Display", "slug": "/docs/metadata-for-wallet-display" },
-            { "label": "Metadata for Verification", "slug": "/docs/metadata-for-verification" },
-            { "label": "Scrypto Entity Metadata", "slug": "/docs/scrypto-entity-metadata" }
-          ]
-        },
-        {
-          "label": "Native Blueprints",
-          "type": "category",
-          "slug": "/docs/native-blueprints",
-          "children": [
-            { "label": "Account", "slug": "/docs/account" },
-            { "label": "Access Controller", "slug": "/docs/access-controller" },
-            { "label": "Validator", "slug": "/docs/validator" },
-            { "label": "Identity", "slug": "/docs/identity" },
-            { "label": "Consensus Manager", "slug": "/docs/consensus-manager" },
-            { "label": "Pool", "slug": "/docs/pool" },
-            { "label": "Locker", "slug": "/docs/locker" }
           ]
         }
       ]
@@ -488,9 +432,31 @@
           "label": "Standards",
           "type": "category",
           "slug": "/docs/standards",
-          "collapsed": true,
-          "children": [],
-          "_note": "Collapsed in live site capture. Children unknown."
+          "children": [
+            {
+              "label": "Metadata Standards",
+              "type": "category",
+              "children": [
+                { "label": "Metadata for Wallet Display", "slug": "/docs/metadata-for-wallet-display" },
+                { "label": "Metadata for Verification", "slug": "/docs/metadata-for-verification" }
+              ]
+            },
+            {
+              "label": "Non-fungible Standards",
+              "type": "category",
+              "children": [
+                { "label": "Displaying Non-fungibles", "slug": "/docs/non-fungible-display" },
+                { "label": "Displaying Non-fungible data", "slug": "/docs/non-fungible-data-for-wallet-display" }
+              ]
+            },
+            {
+              "label": "UI/UX Standards",
+              "type": "category",
+              "children": [
+                { "label": "Displaying Resource Addresses", "slug": "/docs/resource-address-display" }
+              ]
+            }
+          ]
         },
         {
           "label": "Integrator Concepts",
@@ -524,34 +490,97 @@
         {
           "label": "Radix Engine",
           "type": "category",
-          "collapsed": true,
-          "children": [],
-          "_note": "Collapsed in live site capture. Children unknown."
-        },
-        {
-          "label": "Transactions",
-          "type": "category",
-          "collapsed": true,
-          "children": [],
-          "_note": "Collapsed in live site capture. Children unknown."
-        },
-        {
-          "label": "SBOR Serialization",
-          "type": "category",
-          "slug": "/docs/what-is-sbor",
-          "_source_children": "summary_md",
+          "_note": "Verified from live site screenshot. Children expanded.",
           "children": [
-            { "label": "What is SBOR", "slug": "/docs/what-is-sbor" },
-            { "label": "SBOR Type Model", "slug": "/docs/sbor-type-model" },
-            { "label": "SBOR Value Model", "slug": "/docs/sbor-value-model" },
-            { "label": "SBOR String Formats", "slug": "/docs/sbor-string-formats" },
-            { "label": "SBOR Programmatic JSON", "slug": "/docs/sbor-programmatic-json" },
-            { "label": "SBOR in Rust/Scrypto", "slug": "/docs/sbor-in-rust-scrypto" },
-            { "label": "SBOR in Java", "slug": "/docs/sbor-in-java" },
-            { "label": "Scrypto SBOR Specs", "slug": "/docs/scrypto-sbor-specs" },
-            { "label": "Scrypto Type Model", "slug": "/docs/scrypto-type-model" },
-            { "label": "Scrypto Value Kinds", "slug": "/docs/scrypto-value-kinds" },
-            { "label": "Scrypto Ledger", "slug": "/docs/scrypto-ledger" }
+            { "label": "Engine Tech Docs", "slug": "/docs/engine-tech-docs" },
+            { "label": "Authorization Model", "slug": "/docs/authorization-model" },
+            {
+              "label": "Native Blueprints",
+              "type": "category",
+              "slug": "/docs/native-blueprints",
+              "children": [
+                { "label": "Fungible Resource Manager", "slug": "/docs/fungible-resource-manager" },
+                { "label": "Account", "slug": "/docs/account" },
+                { "label": "Access Controller", "slug": "/docs/access-controller" },
+                { "label": "Pool", "slug": "/docs/pool" },
+                { "label": "Validator", "slug": "/docs/validator" },
+                { "label": "Intent Processor", "slug": "/docs/intent-processor" },
+                { "label": "Consensus Manager", "slug": "/docs/consensus-manager" },
+                { "label": "Identity / Persona", "slug": "/docs/identity" },
+                { "label": "Transaction Tracker", "slug": "/docs/transaction-tracker" },
+                { "label": "Account Locker", "slug": "/docs/locker" }
+              ]
+            },
+            {
+              "label": "Costing and Limits",
+              "type": "category",
+              "children": [
+                { "label": "Transaction Costing", "slug": "/docs/transaction-costing" },
+                { "label": "Transaction Limits", "slug": "/docs/transaction-limits" }
+              ]
+            },
+            {
+              "label": "Metadata",
+              "type": "category",
+              "children": [
+                { "label": "Entity Metadata", "slug": "/docs/entity-metadata" }
+              ]
+            },
+            {
+              "label": "Transactions",
+              "type": "category",
+              "_note": "Verified from live site screenshot.",
+              "children": [
+                { "label": "Transaction Overview", "slug": "/docs/transaction-overview" },
+                {
+                  "label": "Manifest",
+                  "type": "category",
+                  "slug": "/docs/manifest",
+                  "children": [
+                    { "label": "Manifest Instructions", "slug": "/docs/manifest-instructions" },
+                    { "label": "Conforming Manifest Types", "slug": "/docs/conforming-manifest-types" }
+                  ]
+                },
+                { "label": "Intent Structure", "slug": "/docs/intent-structure" },
+                { "label": "Transaction Structure", "slug": "/docs/transaction-structure" },
+                { "label": "Transaction Intents", "slug": "/docs/transaction-intents" },
+                { "label": "Transaction Notary", "slug": "/docs/transaction-notary" },
+                { "label": "Subintents", "slug": "/docs/subintents" }
+              ]
+            },
+            {
+              "label": "SBOR Serialization",
+              "type": "category",
+              "slug": "/docs/what-is-sbor",
+              "_note": "Verified from live site screenshot. Only items visible in original shown.",
+              "children": [
+                { "label": "What is SBOR?", "slug": "/docs/what-is-sbor" },
+                { "label": "SBOR Value Model", "slug": "/docs/sbor-value-model" },
+                { "label": "SBOR Type Model", "slug": "/docs/sbor-type-model" },
+                {
+                  "label": "Textual Representations",
+                  "type": "category",
+                  "children": [
+                    { "label": "Programmatic JSON", "slug": "/docs/sbor-programmatic-json" }
+                  ]
+                },
+                {
+                  "label": "Manifest SBOR",
+                  "type": "category",
+                  "children": [
+                    { "label": "Manifest SBOR Specs", "slug": "/docs/manifest-sbor-specs" },
+                    { "label": "Manifest Value Syntax", "slug": "/docs/manifest-value-syntax" }
+                  ]
+                },
+                {
+                  "label": "Scrypto SBOR",
+                  "type": "category",
+                  "children": [
+                    { "label": "Scrypto SBOR Specs", "slug": "/docs/scrypto-sbor-specs" }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {

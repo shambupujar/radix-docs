@@ -1,5 +1,5 @@
 ---
-title: "Do something with the owner badge, ideally create an access controller and deposit"
+title: "Account"
 slug: /account
 ---
 

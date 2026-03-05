@@ -63,6 +63,7 @@ There are currently two type of storage costs:</p>
 This is designed to help prioritise transaction when there is a traffic jam.</td>
 </tr>
 </tbody>
+</table>
 
 
 ## How does costing work?
@@ -408,6 +409,7 @@ The table below further defines the cost of each costing entry.
 <td>Variable, per byte: <code>0.00009536743</code></td>
 </tr>
 </tbody>
+</table>
 
 
 IO access cost:

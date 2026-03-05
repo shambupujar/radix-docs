@@ -310,27 +310,6 @@ const sidebars = {
         },
         {
           "type": "category",
-          "label": "dApp Transactions",
-          "items": [
-            "build/dapp-transactions/transaction-overview",
-            "build/dapp-transactions/transaction-structure",
-            "build/dapp-transactions/transaction-intents",
-            "build/dapp-transactions/pre-authorizations-subintents",
-            "build/dapp-transactions/subintents",
-            "build/dapp-transactions/intent-structure",
-            "build/dapp-transactions/intent-processor",
-            "build/dapp-transactions/transaction-notary",
-            "build/dapp-transactions/transaction-tracker",
-            "build/dapp-transactions/simple-token-transfer",
-            "build/dapp-transactions/common-transactions"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/dapp-transactions/index"
-          }
-        },
-        {
-          "type": "category",
           "label": "Scrypto",
           "link": {
             "type": "doc",
@@ -463,52 +442,6 @@ const sidebars = {
               ]
             }
           ]
-        },
-        {
-          "type": "category",
-          "label": "Transactions & Manifests",
-          "items": [
-            "build/transactions-manifests/writing-manifests",
-            "build/transactions-manifests/manifest-instructions",
-            "build/transactions-manifests/manifest-value-syntax",
-            "build/transactions-manifests/manifest-sbor-specs",
-            "build/transactions-manifests/conforming-manifest-types"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/transactions-manifests/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Metadata",
-          "items": [
-            "build/metadata/entity-metadata",
-            "build/metadata/metadata-for-wallet-display",
-            "build/metadata/metadata-for-verification",
-            "build/metadata/scrypto-entity-metadata"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/metadata/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Native Blueprints",
-          "items": [
-            "build/native-blueprints/account",
-            "build/native-blueprints/access-controller",
-            "build/native-blueprints/validator",
-            "build/native-blueprints/identity",
-            "build/native-blueprints/consensus-manager",
-            "build/native-blueprints/pool",
-            "build/native-blueprints/locker"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/native-blueprints/index"
-          }
         }
       ]
     },
@@ -688,52 +621,309 @@ const sidebars = {
       "label": "Reference",
       "items": [
         {
+          "type": "link",
+          "label": "Environments",
+          "href": "/docs/environments"
+        },
+        "reference/address-description",
+        {
+          "type": "link",
+          "label": "Well-known Addresses",
+          "href": "/docs/well-known-addresses-1"
+        },
+        {
           "type": "category",
-          "label": "Concepts",
+          "label": "Standards",
+          "items": [
+            {
+              "type": "category",
+              "label": "Metadata Standards",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "build/metadata/metadata-for-wallet-display",
+                  "label": "Metadata for Wallet Display"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/metadata/metadata-for-verification",
+                  "label": "Metadata for Verification"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Non-fungible Standards",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "build/resources/non-fungible-display",
+                  "label": "Displaying Non-fungibles"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/resources/non-fungible-data-for-wallet-display",
+                  "label": "Displaying Non-fungible data"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "UI/UX Standards",
+              "items": [
+                "reference/resource-address-display"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Integrator Concepts",
           "link": { "type": "doc", "id": "reference/concepts/index" },
           "items": [
             "reference/concepts/addresses",
             "reference/concepts/environments",
             "reference/well-known-addresses",
             "reference/concepts/infrastructure-apis",
-            "reference/concepts/curves-keys-signatures",
-            "reference/concepts/consensus-ledger",
-            "reference/concepts/state-model-introduction",
-            "reference/concepts/state-model-advanced",
-            "reference/concepts/native-token-xrd",
-            "reference/concepts/transactions",
+            {
+              "type": "doc",
+              "id": "reference/concepts/consensus-ledger",
+              "label": "Consensus, Ledger Forks, Blocks, and Trust chains"
+            },
+            {
+              "type": "doc",
+              "id": "reference/concepts/curves-keys-signatures",
+              "label": "Curves, Keys, Signatures and Hashing"
+            },
+            {
+              "type": "doc",
+              "id": "reference/concepts/state-model-introduction",
+              "label": "State Model - Introduction"
+            },
+            {
+              "type": "doc",
+              "id": "reference/concepts/state-model-advanced",
+              "label": "State Model - Advanced"
+            },
+            {
+              "type": "doc",
+              "id": "reference/concepts/native-token-xrd",
+              "label": "Native Token - XRD"
+            },
+            {
+              "type": "doc",
+              "id": "reference/concepts/transactions",
+              "label": "Transactions for Integrators"
+            },
             "reference/concepts/getting-test-xrd",
             "reference/concepts/key-developer-links",
             "reference/concepts/network-upgrades",
             "reference/concepts/dapps-dashboards-wallets"
-
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Radix Engine",
+          "items": [
+            {
+              "type": "doc",
+              "id": "run/engine-tech-docs",
+              "label": "Engine Tech Docs"
+            },
+            {
+              "type": "doc",
+              "id": "build/authorization/authorization-model",
+              "label": "Authorization Model"
+            },
+            {
+              "type": "category",
+              "label": "Native Blueprints",
+              "link": {
+                "type": "doc",
+                "id": "build/native-blueprints/index"
+              },
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "build/resources/fungible-resource-manager",
+                  "label": "Fungible Resource Manager"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/account",
+                  "label": "Account"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/access-controller",
+                  "label": "Access Controller"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/pool",
+                  "label": "Pool"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/validator",
+                  "label": "Validator"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/intent-processor",
+                  "label": "Intent Processor"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/consensus-manager",
+                  "label": "Consensus Manager"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/identity",
+                  "label": "Identity / Persona"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/transaction-tracker",
+                  "label": "Transaction Tracker"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/native-blueprints/locker",
+                  "label": "Account Locker"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Costing and Limits",
+              "link": {
+                "type": "doc",
+                "id": "reference/costing-limits/index"
+              },
+              "items": [
+                "reference/costing-limits/transaction-costing",
+                "reference/costing-limits/transaction-limits"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Metadata",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "build/metadata/entity-metadata",
+                  "label": "Entity Metadata"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Transactions",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/transaction-overview",
+                  "label": "Transaction Overview"
+                },
+                {
+                  "type": "category",
+                  "label": "Manifest",
+                  "link": {
+                    "type": "doc",
+                    "id": "build/transactions-manifests/index"
+                  },
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "build/transactions-manifests/manifest-instructions",
+                      "label": "Manifest Instructions"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "build/transactions-manifests/conforming-manifest-types",
+                      "label": "Conforming Manifest Types"
+                    }
+                  ]
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/intent-structure",
+                  "label": "Intent Structure"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/transaction-structure",
+                  "label": "Transaction Structure"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/transaction-intents",
+                  "label": "Transaction Intents"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/transaction-notary",
+                  "label": "Transaction Notary"
+                },
+                {
+                  "type": "doc",
+                  "id": "build/dapp-transactions/subintents",
+                  "label": "Subintents"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "SBOR Serialization",
+              "link": {
+                "type": "doc",
+                "id": "reference/sbor/what-is-sbor"
+              },
+              "items": [
+                "reference/sbor/sbor-value-model",
+                "reference/sbor/sbor-type-model",
+                {
+                  "type": "category",
+                  "label": "Textual Representations",
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "reference/sbor/sbor-programmatic-json",
+                      "label": "Programmatic JSON"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Manifest SBOR",
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "build/transactions-manifests/manifest-sbor-specs",
+                      "label": "Manifest SBOR Specs"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "build/transactions-manifests/manifest-value-syntax",
+                      "label": "Manifest Value Syntax"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Scrypto SBOR",
+                  "items": [
+                    "reference/sbor/scrypto-sbor-specs"
+                  ]
+                }
+              ]
+            }
           ]
         },
         "reference/well-known-addresses-full-list",
-        "reference/address-description",
         "reference/bech32-address-types-conversion",
-        "reference/resource-address-display",
-        {
-          "type": "category",
-          "label": "SBOR",
-          "items": [
-            "reference/sbor/what-is-sbor",
-            "reference/sbor/sbor-type-model",
-            "reference/sbor/sbor-value-model",
-            "reference/sbor/sbor-string-formats",
-            "reference/sbor/sbor-programmatic-json",
-            "reference/sbor/sbor-in-rust-scrypto",
-            "reference/sbor/sbor-in-java",
-            "reference/sbor/scrypto-sbor-specs",
-            "reference/sbor/scrypto-type-model",
-            "reference/sbor/scrypto-value-kinds",
-            "reference/sbor/scrypto-ledger"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "reference/sbor/what-is-sbor"
-          }
-        },
         {
           "type": "category",
           "label": "Cryptography",
@@ -756,18 +946,6 @@ const sidebars = {
           "link": {
             "type": "doc",
             "id": "reference/core-system-features/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Costing & Limits",
-          "items": [
-            "reference/costing-limits/transaction-costing",
-            "reference/costing-limits/transaction-limits"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "reference/costing-limits/index"
           }
         },
         {

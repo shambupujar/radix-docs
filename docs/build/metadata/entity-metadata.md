@@ -19,9 +19,8 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 
 
 
-**Type:** `String`
-
-
+<details>
+<summary>Type: <code>String</code></summary>
 
 **Singleton Id:** `0u8`
 
@@ -41,15 +40,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Bool`
 
-
+<details>
+<summary>Type: <code>Bool</code></summary>
 
 **Singleton Id:** `1u8`
 
@@ -67,15 +67,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `U8`
 
-
+<details>
+<summary>Type: <code>U8</code></summary>
 
 **Singleton Id:** `2u8`
 
@@ -93,15 +94,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `U32`
 
-
+<details>
+<summary>Type: <code>U32</code></summary>
 
 **Singleton Id:** `3u8`
 
@@ -119,15 +121,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `U64`
 
-
+<details>
+<summary>Type: <code>U64</code></summary>
 
 **Singleton Id:** `4u8`
 
@@ -145,15 +148,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `I32`
 
-
+<details>
+<summary>Type: <code>I32</code></summary>
 
 **Singleton Id:** `5u8`
 
@@ -171,15 +175,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `I64`
 
-
+<details>
+<summary>Type: <code>I64</code></summary>
 
 **Singleton Id:** `6u8`
 
@@ -197,15 +202,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Decimal`
 
-
+<details>
+<summary>Type: <code>Decimal</code></summary>
 
 **Singleton Id:** `7u8`
 
@@ -223,15 +229,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Address`
 
-
+<details>
+<summary>Type: <code>Address</code></summary>
 
 **Singleton Id:** `8u8`
 
@@ -257,15 +264,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `PublicKey`
 
-
+<details>
+<summary>Type: <code>PublicKey</code></summary>
 
 **Singleton Id:** `9u8`
 
@@ -286,15 +294,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `NonFungibleGlobalId`
 
-
+<details>
+<summary>Type: <code>NonFungibleGlobalId</code></summary>
 
 **Singleton Id:** `10u8`
 
@@ -315,15 +324,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `NonFungibleLocalId`
 
-
+<details>
+<summary>Type: <code>NonFungibleLocalId</code></summary>
 
 **Singleton Id:** `11u8`
 
@@ -346,15 +356,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Instant`
 
-
+<details>
+<summary>Type: <code>Instant</code></summary>
 
 **Singleton Id:** `12u8`
 
@@ -374,15 +385,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Url`
 
-
+<details>
+<summary>Type: <code>Url</code></summary>
 
 **Singleton Id:** `13u8`
 
@@ -401,15 +413,16 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 })
 ```
 
+</details>
 
 
 
 
 
 
-**Type:** `Origin`
 
-
+<details>
+<summary>Type: <code>Origin</code></summary>
 
 **Singleton Id:** `14u8`
 
@@ -432,11 +445,10 @@ Each entry value can be either a singleton of a given type, or a list of the sam
 :::note
 **Origin metadata value**
 
-
-
 Note that`claimed_websites`array values should not end with`/`. A`/`at the end of the url will cause an invalid origin error.
 :::
 
+</details>
 
 
 
@@ -444,9 +456,9 @@ Note that`claimed_websites`array values should not end with`/`. A`/`at the end o
 
 
 
-**Type:** `PublicKeyHash`
 
-
+<details>
+<summary>Type: <code>PublicKeyHash</code></summary>
 
 **Singleton Id:** `15u8`
 
@@ -466,6 +478,8 @@ Note that`claimed_websites`array values should not end with`/`. A`/`at the end o
     }
 })
 ```
+
+</details>
 
 
 
