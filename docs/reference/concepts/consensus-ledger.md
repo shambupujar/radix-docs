@@ -1,8 +1,8 @@
 ---
-title: "Consensus & Ledger"
+title: "Consensus, Ledger Forks, Blocks, and Trust chains"
 ---
 
-# Consensus & Ledger
+# Consensus, Ledger Forks, Blocks, and Trust chains
 
 The Babylon Radix Network uses HotStuff BFT - with a decentralized validator set. This process has deterministic finality: commits are final and there are no probabilistic forks in the ledger.
 

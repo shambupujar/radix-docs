@@ -410,17 +410,18 @@ const sidebars = {
             "reference/concepts/addresses",
             "reference/concepts/environments",
             "reference/well-known-addresses",
-            "reference/concepts/consensus-ledger",
-            "reference/concepts/dapps-dashboards-wallets",
             "reference/concepts/infrastructure-apis",
-            "reference/concepts/native-token-xrd",
-            "reference/concepts/network-upgrades",
+            "reference/concepts/curves-keys-signatures",
+            "reference/concepts/consensus-ledger",
             "reference/concepts/state-model-introduction",
             "reference/concepts/state-model-advanced",
+            "reference/concepts/native-token-xrd",
             "reference/concepts/transactions",
             "reference/concepts/getting-test-xrd",
             "reference/concepts/key-developer-links",
-            "reference/concepts/curves-keys-signatures"
+            "reference/concepts/network-upgrades",
+            "reference/concepts/dapps-dashboards-wallets"
+
           ]
         },
         "reference/well-known-addresses-full-list",

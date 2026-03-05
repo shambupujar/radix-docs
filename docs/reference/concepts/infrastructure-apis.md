@@ -1,8 +1,8 @@
 ---
-title: "Infrastructure & APIs"
+title: "Infrastructure and APIs"
 ---
 
-# Infrastructure & APIs
+# Infrastructure and APIs
 
 ## Babylon Nodes
 
