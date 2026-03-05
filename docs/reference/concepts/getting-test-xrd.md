@@ -1,6 +1,9 @@
 ---
-title: "Pay fees from the faucet:"
+title: "Getting test XRD and paying fees from the Faucet"
+slug: /concepts-getting-test-xrd-and-paying-fees-from-the-faucet
 ---
+
+# Getting test XRD and paying fees from the Faucet
 
 The faucet is available on test networks to get XRD. There are a number of ways to use the faucet:
 

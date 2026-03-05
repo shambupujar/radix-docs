@@ -1,5 +1,6 @@
 ---
 title: "LTS Toolkit"
+slug: /exchange-integration-lts-toolkit
 ---
 
 # LTS Toolkit

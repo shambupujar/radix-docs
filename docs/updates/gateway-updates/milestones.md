@@ -1,5 +1,6 @@
 ---
 title: "Gateway Updates"
+slug: /gateway-milestones
 ---
 
 # Gateway Updates

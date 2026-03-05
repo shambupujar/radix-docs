@@ -1,5 +1,6 @@
 ---
 title: "Building a Full Stack dApp"
+slug: /building-a-full-stack-dapp
 ---
 
 # Building a Full Stack dApp

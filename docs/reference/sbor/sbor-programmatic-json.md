@@ -1,5 +1,6 @@
 ---
 title: "SBOR Programmatic JSON"
+slug: /sbor-programmatic-json
 ---
 
 # SBOR Programmatic JSON

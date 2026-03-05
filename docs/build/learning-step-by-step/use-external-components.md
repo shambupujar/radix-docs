@@ -1,5 +1,6 @@
 ---
 title: "Use External Components"
+slug: /learning-to-use-external-components
 ---
 
 # Use External Components

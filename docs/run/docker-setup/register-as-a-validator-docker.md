@@ -1,5 +1,6 @@
 ---
 title: "Register as a Validator (Docker)"
+slug: /docker-register-as-a-validator
 ---
 
 # Register as a Validator (Docker)

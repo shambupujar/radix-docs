@@ -1,5 +1,6 @@
 ---
 title: "Manifest Value Syntax"
+slug: /manifest-value-syntax
 ---
 
 # Manifest Value Syntax
@@ -52,8 +53,7 @@ Below are all the value kinds in the basic (common) SBOR model.
 <p>If writing in Javascript, <code>JSON.stringify(value)</code> can be used to encode a valid string literal.</p></td>
 </tr>
 </tbody>
-
-
+</table>
 
 
 ### Basic Composite Value Kinds
@@ -157,8 +157,7 @@ pub enum Event {
 );</code></pre></td>
 </tr>
 </tbody>
-
-
+</table>
 
 
 ### Manifest Value Kinds
@@ -266,8 +265,7 @@ pub enum Event {
 </ul></td>
 </tr>
 </tbody>
-
-
+</table>
 
 
 ### Manifest aliases
@@ -323,8 +321,7 @@ Ok(&quot;Success message.&quot;)
 Err(&quot;Failure message.&quot;)</code></pre></td>
 </tr>
 </tbody>
-
-
+</table>
 
 
 ## Expressions

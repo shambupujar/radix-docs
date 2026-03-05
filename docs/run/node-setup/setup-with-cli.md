@@ -1,5 +1,6 @@
 ---
 title: "Setup with CLI"
+slug: /setup-with-cli
 ---
 
 # Setup with CLI

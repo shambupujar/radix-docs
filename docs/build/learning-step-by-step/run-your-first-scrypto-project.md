@@ -1,5 +1,6 @@
 ---
 title: "Run Your First Scrypto Project"
+slug: /learning-to-run-your-first-scrypto-project
 ---
 
 # Run Your First Scrypto Project

@@ -1,5 +1,6 @@
 ---
 title: "Using Proofs"
+slug: /using-proofs
 ---
 
 Proofs give us a way to tell if a resource exists in a Vault or Bucket without having to remove it. A Proof can be created from a resource and used instead, which allows us to know if an actor possesses a resource without the resource being sent.

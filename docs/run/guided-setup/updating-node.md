@@ -1,5 +1,6 @@
 ---
 title: "Updating Node"
+slug: /node-setup-guided-updating-node
 ---
 
 # Updating Node

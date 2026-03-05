@@ -1,5 +1,6 @@
 ---
 title: "Sbor Type Model"
+slug: /sbor-type-model
 ---
 
 ## Overview

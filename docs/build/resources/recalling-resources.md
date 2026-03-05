@@ -1,5 +1,6 @@
 ---
 title: "Recalling Resources"
+slug: /recalling-resources
 ---
 
 # Recalling Resources

@@ -1,5 +1,6 @@
 ---
 title: "dApp Frontend Development"
+slug: /dapp-frontend-development
 ---
 
 # dApp Frontend Development

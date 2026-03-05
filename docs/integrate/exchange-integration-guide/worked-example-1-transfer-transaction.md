@@ -1,5 +1,6 @@
 ---
 title: "Worked Example 1: Transfer Transaction"
+slug: /exchange-integration-worked-example-1-transfer-transaction-submission-flow
 ---
 
 # Worked Example 1: Transfer Transaction

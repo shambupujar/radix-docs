@@ -1,5 +1,6 @@
 ---
 title: "Detecting Deposits"
+slug: /exchange-integration-detecting-deposits-from-different-users
 ---
 
 # Detecting Deposits

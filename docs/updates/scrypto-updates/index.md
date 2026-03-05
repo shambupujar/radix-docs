@@ -1,5 +1,6 @@
 ---
 title: "Scrypto Updates"
+slug: /scrypto-updates
 ---
 
 # Scrypto Updates

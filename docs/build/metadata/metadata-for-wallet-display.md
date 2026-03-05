@@ -1,5 +1,6 @@
 ---
 title: "Metadata for Wallet Display"
+slug: /metadata-for-wallet-display
 ---
 
 # Metadata for Wallet Display

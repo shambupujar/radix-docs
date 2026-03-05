@@ -1,5 +1,6 @@
 ---
 title: "Validator"
+slug: /validator
 ---
 
 # Validator

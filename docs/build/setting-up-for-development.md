@@ -1,5 +1,6 @@
 ---
 title: "Setting up for Development"
+slug: /setting-up-for-dapp-development
 ---
 
 # Setting up for Development

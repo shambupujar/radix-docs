@@ -1,8 +1,9 @@
 ---
-title: "Concepts"
+title: "Addresses"
+slug: /concepts-addresses
 ---
 
-# Concepts
+# Addresses
 
 ## High Level Overview
 

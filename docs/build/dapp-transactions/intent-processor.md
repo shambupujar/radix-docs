@@ -1,5 +1,6 @@
 ---
 title: "Intent Processor"
+slug: /intent-processor
 ---
 
 # Intent Processor

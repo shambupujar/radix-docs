@@ -1,5 +1,6 @@
 ---
 title: "Manifest Builder"
+slug: /rust-manifest-builder
 ---
 
 :::note

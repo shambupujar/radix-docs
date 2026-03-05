@@ -1,8 +1,9 @@
 ---
-title: "DApps, Dashboards & Wallets"
+title: "DApps, Dashboards and Wallets"
+slug: /concepts-dapps-dashboards-and-wallets
 ---
 
-# DApps, Dashboards & Wallets
+# DApps, Dashboards and Wallets
 
 Not so relevant to exchange integrations - but for completeness, it’s useful to briefly explain how users will interact with the Radix ecosystem.
 

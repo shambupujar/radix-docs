@@ -1,5 +1,6 @@
 ---
 title: "Transactions & Manifests"
+slug: /manifest
 ---
 
 # Transactions & Manifests

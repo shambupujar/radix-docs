@@ -1,5 +1,6 @@
 ---
 title: "Monitoring"
+slug: /monitoring
 ---
 
 # Monitoring

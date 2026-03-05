@@ -1,5 +1,6 @@
 ---
 title: "Installing CLI"
+slug: /node-setup-guided-installing-cli
 ---
 
 # Installing CLI

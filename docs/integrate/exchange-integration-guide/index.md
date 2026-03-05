@@ -1,5 +1,6 @@
 ---
 title: "Exchange Integration Guide"
+slug: /exchange-integration-guide
 ---
 
 # Exchange Integration Guide

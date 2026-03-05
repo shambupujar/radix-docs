@@ -1,5 +1,6 @@
 ---
 title: "Reusable Code"
+slug: /reusable-code
 ---
 
 # Reusable Code

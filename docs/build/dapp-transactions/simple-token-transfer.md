@@ -1,5 +1,6 @@
 ---
 title: "Lock fees to pay for the transaction"
+slug: /simple-token-transfer
 ---
 
 A very common example of a transaction manifest is transferring tokens from one account to another.

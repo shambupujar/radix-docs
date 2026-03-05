@@ -1,5 +1,6 @@
 ---
 title: "Updating Scrypto to the latest version"
+slug: /updating-scrypto
 ---
 
 # Updating Scrypto to the latest version

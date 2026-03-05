@@ -1,5 +1,6 @@
 ---
 title: "Freeze Withdraws from a vault"
+slug: /freezing-vaults
 ---
 
 Freezing vaults is only possible for resources where this feature has been enabled, by setting an explicit rule for `freezer` or `freezer_updater` roles. Such resources are clearly flagged in the Radix explorer and wallet, as per the [resource behaviors](resource-behaviors.md) guide.

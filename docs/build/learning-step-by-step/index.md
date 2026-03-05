@@ -1,5 +1,6 @@
 ---
 title: "Learning Step-by-Step"
+slug: /learning-step-by-step
 ---
 
 # Learning Step-by-Step

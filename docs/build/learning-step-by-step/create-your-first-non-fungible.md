@@ -1,5 +1,6 @@
 ---
 title: "Create Your First Non Fungible"
+slug: /learning-to-create-your-first-non-fungible
 ---
 
 So far this series has only focused on fungible resources. This will be our first look at non-fungibles.

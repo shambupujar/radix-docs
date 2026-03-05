@@ -1,5 +1,6 @@
 ---
 title: "Cuttlefish"
+slug: /cuttlefish
 ---
 
 # Cuttlefish

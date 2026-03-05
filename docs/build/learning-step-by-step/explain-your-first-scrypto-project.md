@@ -1,5 +1,6 @@
 ---
 title: "Explain Your First Scrypto Project"
+slug: /learning-to-explain-your-first-scrypto-project
 ---
 
 After using the Hello package in [Run Your First Scrypto Project](/learning-to-run-your-first-scrypto-project) I’m sure you’ll want to better understand what you just did. We give you a full explanation below, where you’ll get a more of a taste for of how asset-oriented programming with Scrypto for DeFi works.

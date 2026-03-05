@@ -1,5 +1,6 @@
 ---
 title: "Assign Roles to Resources"
+slug: /assign-roles-to-resources
 ---
 
 # Assign Roles to Resources

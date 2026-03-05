@@ -1,5 +1,6 @@
 ---
-title: "Do something with the owner badge, ideally create an access controller and deposit"
+title: "Account"
+slug: /account
 ---
 
 Unlike most blockchain platforms, an account on Radix are not simply associated with your public and private key. Instead, an account is a component, instantiated from a built-in account blueprint provided by the system which exist in the application layer. Even though accounts are implemented in the application layer, account components are unique in that they’re afforded some unique features that are not afforded to other normal components. As a result, accounts on Radix can contain resources and have special logic built into it.

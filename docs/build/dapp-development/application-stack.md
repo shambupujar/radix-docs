@@ -1,5 +1,6 @@
 ---
 title: "dApp Development"
+slug: /dapp-application-stack
 ---
 
 # dApp Development

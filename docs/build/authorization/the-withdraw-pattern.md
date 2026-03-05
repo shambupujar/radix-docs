@@ -1,5 +1,6 @@
 ---
 title: "The Withdraw Pattern"
+slug: /the-withdraw-pattern
 ---
 
 This pattern builds upon the [user badge pattern](user-badge-pattern.md) and could be considered as one of its use cases. The problem which this pattern solves is the problem of getting funds from component A to component B. Similar to the badge pattern, if you come from the Ethereum world, you might assume that "sending" funds to the address of the component is the way to go here. However, it is not. <a href="https://quantstamp.com/blog/what-is-a-re-entrancy-attack" target="_blank">Ethereum’s approach leads to reentrancy</a> attacks which are often triggered by the contract’s fallback function. In addition, Ethereum’s approach allows contracts to receive funds which they did not accept to receive. While this might seem like a non-issue when thinking about it in the context of accounts, the real issue becomes clearer when considering the fact that anybody can send funds to a liquidity pool to tip the balance of the pool without the pool having any say on whether it wishes to accept or reject such funds.

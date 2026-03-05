@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://docs.radixdlt.com',
-  baseUrl: '/',
+  url: 'https://shambupujar.github.io',
+  baseUrl: '/radix-docs/',
 
   organizationName: 'radixdlt',
   projectName: 'radix-docs',
@@ -38,7 +38,7 @@ const config = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        docsRouteBasePath: '/',
+        docsRouteBasePath: 'docs',
         indexBlog: false,
         highlightSearchTermsOnTargetPage: true,
       },
@@ -52,7 +52,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',  // Docs at root URL
+          routeBasePath: 'docs',  // Match original /docs/ path prefix
         },
         blog: false,  // Disable blog
         theme: {
@@ -101,11 +101,11 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/welcome/getting-started',
+                to: '/docs/getting-started',
               },
               {
                 label: 'Build',
-                to: '/build',
+                to: '/docs/getting-rust-scrypto',
               },
             ],
           },

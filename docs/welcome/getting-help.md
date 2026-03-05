@@ -1,5 +1,6 @@
 ---
 title: "Getting Help"
+slug: /getting-help
 ---
 
 # Getting Help

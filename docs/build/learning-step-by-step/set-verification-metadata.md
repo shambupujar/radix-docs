@@ -1,5 +1,6 @@
 ---
 title: "Set Verification Metadata"
+slug: /learning-to-set-verification-metadata
 ---
 
 # Set Verification Metadata

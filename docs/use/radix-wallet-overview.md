@@ -1,5 +1,6 @@
 ---
 title: "Radix Wallet Overview"
+slug: /radix-wallet-overview
 ---
 
 # Radix Wallet Overview

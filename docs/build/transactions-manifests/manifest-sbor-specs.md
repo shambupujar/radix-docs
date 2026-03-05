@@ -1,5 +1,6 @@
 ---
 title: "Manifest SBOR Specs"
+slug: /manifest-sbor-specs
 ---
 
 # Manifest SBOR Specs

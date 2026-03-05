@@ -1,5 +1,6 @@
 ---
 title: "dApp Transactions"
+slug: /dapp-transactions
 ---
 
 # dApp Transactions

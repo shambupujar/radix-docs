@@ -1,5 +1,6 @@
 ---
 title: "Requirements"
+slug: /requirements
 ---
 
 # Requirements

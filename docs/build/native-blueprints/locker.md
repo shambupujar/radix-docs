@@ -1,5 +1,6 @@
 ---
-title: "Calling the `instantiate_simpl` function on the locker package to create a"
+title: "Account Locker"
+slug: /locker
 ---
 
 ## Introduction

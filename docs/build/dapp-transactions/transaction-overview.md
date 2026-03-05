@@ -1,5 +1,6 @@
 ---
 title: "Transaction Overview"
+slug: /transaction-overview
 ---
 
 # Transaction Overview

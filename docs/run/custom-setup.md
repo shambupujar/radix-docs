@@ -1,5 +1,6 @@
 ---
 title: "Custom Setup"
+slug: /custom-setup
 ---
 
 # Custom Setup

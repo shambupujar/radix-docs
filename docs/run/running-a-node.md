@@ -1,5 +1,6 @@
 ---
 title: "Running a Node"
+slug: /running-a-node
 ---
 
 # Running a Node

@@ -1,5 +1,6 @@
 ---
 title: "Manifest Builder"
+slug: /radix-engine-toolkit-manifest-builder
 ---
 
 # Manifest Builder

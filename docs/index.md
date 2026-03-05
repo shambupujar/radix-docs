@@ -1,5 +1,6 @@
 ---
 title: "Radix Technical Documentation"
+slug: /
 ---
 
 # Radix Technical Documentation
@@ -16,54 +17,54 @@ Try the **search bar** or browse the **documentation categories** below.
 ## Documentation Categories
 
 <div className="doc-cards">
-  <a className="doc-card" href="/essentials/overview">
+  <a className="doc-card" href="essentials/overview">
     <div className="doc-card-icon">
-      <img src="/img/Essentials-icon-5-.png" alt="Essentials" />
+      <img src="/radix-docs/img/Essentials-icon-5-.png" alt="Essentials" />
     </div>
     <div className="doc-card-content">
       <h3>Essentials</h3>
       <p>New to Radix? This is where to start. An introduction to the most important Radix paradigms.</p>
     </div>
   </a>
-  <a className="doc-card" href="/use/radix-dashboard">
+  <a className="doc-card" href="use/radix-dashboard">
     <div className="doc-card-icon">
-      <img src="/img/Use-icon-2-.png" alt="Use" />
+      <img src="/radix-docs/img/Use-icon-2-.png" alt="Use" />
     </div>
     <div className="doc-card-content">
       <h3>Use</h3>
       <p>Information for users about the Radix Dashboard and Radix Wallet.</p>
     </div>
   </a>
-  <a className="doc-card" href="/build/developer-quick-start">
+  <a className="doc-card" href="build/developer-quick-start">
     <div className="doc-card-icon">
-      <img src="/img/Build-icon-4-.png" alt="Build" />
+      <img src="/radix-docs/img/Build-icon-4-.png" alt="Build" />
     </div>
     <div className="doc-card-content">
       <h3>Build</h3>
       <p>Guides to help you build front end, on ledger or full stack dApps on Radix start here.</p>
     </div>
   </a>
-  <a className="doc-card" href="/run/overview">
+  <a className="doc-card" href="run/overview">
     <div className="doc-card-icon">
-      <img src="/img/Run-icon-2-.png" alt="Run" />
+      <img src="/radix-docs/img/Run-icon-2-.png" alt="Run" />
     </div>
     <div className="doc-card-content">
       <h3>Run</h3>
       <p>Guides for running Radix infrastructure like Radix nodes and network gateways are here.</p>
     </div>
   </a>
-  <a className="doc-card" href="/integrate/overview">
+  <a className="doc-card" href="integrate/overview">
     <div className="doc-card-icon">
-      <img src="/img/Integrate-icon-1-.png" alt="Integrate" />
+      <img src="/radix-docs/img/Integrate-icon-1-.png" alt="Integrate" />
     </div>
     <div className="doc-card-content">
       <h3>Integrate</h3>
       <p>Guides for programmatic integration of existing services and exchanges are here.</p>
     </div>
   </a>
-  <a className="doc-card" href="/reference/well-known-addresses">
+  <a className="doc-card" href="reference/well-known-addresses">
     <div className="doc-card-icon">
-      <img src="/img/Reference-icon-2-.png" alt="Reference" />
+      <img src="/radix-docs/img/Reference-icon-2-.png" alt="Reference" />
     </div>
     <div className="doc-card-content">
       <h3>Reference</h3>

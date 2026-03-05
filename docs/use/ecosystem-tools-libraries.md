@@ -1,5 +1,6 @@
 ---
 title: "Ecosystem Tools & Libraries"
+slug: /ecosystem-tools-and-libraries
 ---
 
 # Ecosystem Tools & Libraries

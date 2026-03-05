@@ -1,5 +1,6 @@
 ---
 title: "Node Setup"
+slug: /node-setup
 ---
 
 # Node Setup

@@ -1,5 +1,6 @@
 ---
 title: "Protocol Updates"
+slug: /protocol-updates
 ---
 
 # Protocol Updates

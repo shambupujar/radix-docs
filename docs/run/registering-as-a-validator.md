@@ -1,5 +1,6 @@
 ---
 title: "Creation of a validator entity will cost a certain amount of XRD (equating to ~100USD)"
+slug: /node-registering-as-a-validator
 ---
 
 ## Introduction

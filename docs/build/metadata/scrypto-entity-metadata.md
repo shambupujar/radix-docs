@@ -1,5 +1,6 @@
 ---
 title: "Scrypto Entity Metadata"
+slug: /scrypto-entity-metadata
 ---
 
 # Scrypto Entity Metadata

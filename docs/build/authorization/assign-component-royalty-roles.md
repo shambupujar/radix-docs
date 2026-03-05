@@ -1,5 +1,6 @@
 ---
 title: "Assign Component Royalty Roles"
+slug: /assign-component-royalty-roles
 ---
 
 ### Assign AccessRules for Component Royalty Roles

@@ -1,5 +1,6 @@
 ---
 title: "Transaction Building"
+slug: /rust-transaction-building
 ---
 
 # Transaction Building

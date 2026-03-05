@@ -1,5 +1,6 @@
 ---
 title: "Consensus Manager"
+slug: /consensus-manager
 ---
 
 # Consensus Manager

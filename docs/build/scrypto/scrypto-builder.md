@@ -1,5 +1,6 @@
 ---
 title: "You can find all releases on https://github.com/radixdlt/radixdlt-scrypto/releases"
+slug: /scrypto-builder
 ---
 
 `scrypto-builder` is a tool for compiling Scrypto projects in a deterministic way. It allows third-parties to verify that package WASM and RPD files are indeed compiled from a specific source code.

@@ -1,5 +1,6 @@
 ---
 title: "Well-Known Addresses"
+slug: /well-known-addresses
 ---
 
 # Well-Known Addresses

@@ -1,5 +1,6 @@
 ---
 title: "Events"
+slug: /scrypto-events
 ---
 
 Events in Scrypto are a way to communicate to off chain clients. They are emitted by the component and can be listened for to begin secondary actions with the Gateway or Core APIs. There are many events that already exist in the native blueprints, e.g. the `WithdrawEvent` on accounts:

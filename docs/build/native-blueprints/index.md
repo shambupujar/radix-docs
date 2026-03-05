@@ -1,5 +1,6 @@
 ---
 title: "Native Blueprints"
+slug: /native-blueprints
 ---
 
 # Native Blueprints

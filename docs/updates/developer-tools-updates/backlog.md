@@ -1,5 +1,6 @@
 ---
 title: "Developer Tools Updates"
+slug: /developer-tools-backlog
 ---
 
 # Developer Tools Updates

@@ -1,5 +1,6 @@
 ---
 title: "Address Mapping & Reconciliation"
+slug: /olympia-to-babylon-migration-address-mapping-and-reconciliation
 ---
 
 # Address Mapping & Reconciliation

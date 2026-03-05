@@ -1,5 +1,6 @@
 ---
 title: "Cryptography"
+slug: /cryptography
 ---
 
 # Cryptography

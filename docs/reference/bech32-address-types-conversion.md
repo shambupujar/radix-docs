@@ -1,5 +1,6 @@
 ---
 title: "Bech32 Address Types & Conversion"
+slug: /bech32-address-types-conversion
 ---
 
 # Bech32 Address Types & Conversion

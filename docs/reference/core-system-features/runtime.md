@@ -1,5 +1,6 @@
 ---
 title: "Runtime"
+slug: /runtime
 ---
 
 # Runtime

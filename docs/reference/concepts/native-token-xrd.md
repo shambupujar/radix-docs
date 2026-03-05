@@ -1,5 +1,6 @@
 ---
 title: "Native Token XRD"
+slug: /concepts-native-token-xrd
 ---
 
 # Native Token XRD

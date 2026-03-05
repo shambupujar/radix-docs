@@ -1,8 +1,9 @@
 ---
-title: "Infrastructure & APIs"
+title: "Infrastructure and APIs"
+slug: /concepts-infrastructure-and-apis
 ---
 
-# Infrastructure & APIs
+# Infrastructure and APIs
 
 ## Babylon Nodes
 

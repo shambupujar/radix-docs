@@ -1,8 +1,9 @@
 ---
-title: "Curves, Keys & Signatures"
+title: "Curves, Keys, Signatures and Hashing"
+slug: /concepts-curves-keys-signatures-and-hashing
 ---
 
-# Curves, Keys & Signatures
+# Curves, Keys, Signatures and Hashing
 
 The Babylon Radix network supports **ECDSA Secp256k1** and **Ed25519** for accounts and transaction signing.
 

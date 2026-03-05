@@ -1,5 +1,6 @@
 ---
 title: "Transactions"
+slug: /concepts-transactions
 ---
 
 # Transactions

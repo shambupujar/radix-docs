@@ -1,8 +1,9 @@
 ---
-title: "Network Upgrades"
+title: "Network Upgrades once live"
+slug: /concepts-network-upgrades-once-live
 ---
 
-# Network Upgrades
+# Network Upgrades once live
 
 There will be occasional network upgrades, called “Protocol Updates” (sometimes called “forks” on other chains) which will require upgrading your Babylon node software.
 

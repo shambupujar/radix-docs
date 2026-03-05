@@ -1,5 +1,6 @@
 ---
 title: "Gateway Updates"
+slug: /gateway-updates
 ---
 
 # Gateway Updates

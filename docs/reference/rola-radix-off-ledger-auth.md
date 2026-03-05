@@ -1,5 +1,6 @@
 ---
 title: "ROLA (Radix Off-Ledger Auth)"
+slug: /rola-radix-off-ledger-auth
 ---
 
 # ROLA (Radix Off-Ledger Auth)

@@ -1,5 +1,6 @@
 ---
 title: "Node/Engine Updates"
+slug: /node-engine-milestones
 ---
 
 # Node/Engine Updates

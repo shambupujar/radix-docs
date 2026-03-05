@@ -1,5 +1,6 @@
 ---
 title: "Transactions on Radix"
+slug: /transactions-on-radix
 ---
 
 # Transactions on Radix
