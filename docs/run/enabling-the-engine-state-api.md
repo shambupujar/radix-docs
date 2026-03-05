@@ -1,5 +1,6 @@
 ---
 title: "Enabling the Engine State API"
+slug: /enabling-the-engine-state-api
 ---
 
 # Enabling the Engine State API

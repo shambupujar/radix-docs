@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Radix at Babylon"
+slug: /introduction-to-radix-at-babylon
 ---
 
 # Introduction to Radix at Babylon

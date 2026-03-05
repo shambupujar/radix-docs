@@ -1,5 +1,6 @@
 ---
 title: "Advanced AccessRules"
+slug: /advanced-accessrules
 ---
 
 # Advanced AccessRules

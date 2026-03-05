@@ -1,5 +1,6 @@
 ---
 title: "Docker Setup"
+slug: /node-setup-docker
 ---
 
 # Docker Setup

@@ -1,5 +1,6 @@
 ---
 title: "Underway"
+slug: /radix-applications-underway
 ---
 
 # Underway

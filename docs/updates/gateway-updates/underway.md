@@ -1,5 +1,6 @@
 ---
 title: "Underway"
+slug: /gateway-underway
 ---
 
 # Underway

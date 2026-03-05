@@ -1,5 +1,6 @@
 ---
 title: "Intent Structure"
+slug: /intent-structure
 ---
 
 # Intent Structure

@@ -1,5 +1,6 @@
 ---
 title: "Coverage Tool"
+slug: /coverage-tool
 ---
 
 # Coverage Tool

@@ -1,5 +1,6 @@
 ---
 title: "Installing Node"
+slug: /node-setup-guided-installing-node
 ---
 
 # Installing Node

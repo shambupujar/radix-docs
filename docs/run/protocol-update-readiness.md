@@ -1,5 +1,6 @@
 ---
 title: "Protocol Update Readiness"
+slug: /node-protocol-update-readiness
 ---
 
 # Protocol Update Readiness

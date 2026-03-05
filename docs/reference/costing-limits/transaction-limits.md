@@ -1,5 +1,6 @@
 ---
 title: "Transaction Limits"
+slug: /transaction-limits
 ---
 
 # Transaction Limits
@@ -127,6 +128,7 @@ Depth increases by 1 when a function or method is invoked and decreases by 1 aft
 <td>The maximum size of a panic message.</td>
 </tr>
 </tbody>
+</table>
 
 
 ## WASM Limits
@@ -188,6 +190,7 @@ Depth increases by 1 when a function or method is invoked and decreases by 1 aft
 Buffers are used for data exchange between system and Scrypto blueprints.</td>
 </tr>
 </tbody>
+</table>
 
 
 ## Metadata Limits
@@ -231,6 +234,7 @@ Buffers are used for data exchange between system and Scrypto blueprints.</td>
 This is roughly 10 USD.</td>
 </tr>
 </tbody>
+</table>
 
 
 ## Blueprint Package Limits
@@ -292,8 +296,5 @@ This is roughly 10 USD.</td>
 </td>
 </tr>
 </tbody>
+</table>
 
-
-  
-
-  

@@ -1,5 +1,6 @@
 ---
 title: "Network APIs"
+slug: /network-apis
 ---
 
 # Network APIs

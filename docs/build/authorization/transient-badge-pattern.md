@@ -1,5 +1,6 @@
 ---
 title: "Transient Badge Pattern"
+slug: /transient-badge-pattern
 ---
 
 The class of problems that this pattern solves is quite simple to describe but complex to think about and solve. However, this pattern solves this class of problems in such a simple, elegant, and unique asset-oriented approach. As always, this document begins by laying out the problem before describing the pattern and how it solves the problem.

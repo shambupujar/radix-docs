@@ -1,5 +1,6 @@
 ---
 title: "Structure Roles Methods"
+slug: /structure-roles-and-methods
 ---
 
 Methods, unlike functions, use roles to further structure how AccessRules are assigned.

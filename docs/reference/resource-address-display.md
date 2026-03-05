@@ -1,5 +1,6 @@
 ---
 title: "Resource Address Display"
+slug: /resource-address-display
 ---
 
 # Resource Address Display

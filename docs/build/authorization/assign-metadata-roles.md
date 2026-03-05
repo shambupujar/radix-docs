@@ -1,5 +1,6 @@
 ---
 title: "Assign Metadata Roles"
+slug: /assign-metadata-roles
 ---
 
 ### Assign AccessRules for Metadata Roles

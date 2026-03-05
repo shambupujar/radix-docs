@@ -1,5 +1,6 @@
 ---
 title: "Authorization"
+slug: /auth
 ---
 
 # Authorization

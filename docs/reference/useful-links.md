@@ -1,5 +1,6 @@
 ---
 title: "Useful Links"
+slug: /useful-links
 ---
 
 # Useful Links

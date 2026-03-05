@@ -1,5 +1,6 @@
 ---
 title: "Protocol Updates"
+slug: /node-protocol-updates
 ---
 
 # Protocol Updates

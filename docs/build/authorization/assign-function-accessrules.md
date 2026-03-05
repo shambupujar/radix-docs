@@ -1,5 +1,6 @@
 ---
 title: "Assign Function Accessrules"
+slug: /assign-function-accessrules
 ---
 
 To specify the access rules for each function use the `enable_function_auth!` macro at the top of your blueprint code.

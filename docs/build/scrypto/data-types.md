@@ -1,5 +1,6 @@
 ---
 title: "Data Types"
+slug: /data-types
 ---
 
 Scrypto is based on Rust which is a statically typed language. All variables are associated with a type, either explicitly specified or inferred by the compiler.

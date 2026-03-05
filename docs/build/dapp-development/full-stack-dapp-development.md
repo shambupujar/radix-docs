@@ -1,5 +1,6 @@
 ---
 title: "Full Stack dApp Development"
+slug: /fullstack-dapp-development
 ---
 
 # Full Stack dApp Development

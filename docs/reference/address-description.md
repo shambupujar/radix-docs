@@ -1,17 +1,9 @@
 ---
 title: "Address Description"
+slug: /address-description
 ---
 
 # Address Description
-
-:::note
-**>
-Redirect!
-
-**
-
-This page should redirect to <a href="/v1/docs/concepts-addresses">Addresses</a>. Please click <a href="/v1/docs/concepts-addresses">Addresses</a>to go to the correct page.
-:::
 
 
 ## High Level Overview

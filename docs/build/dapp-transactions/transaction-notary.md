@@ -1,5 +1,6 @@
 ---
 title: "Transaction Notary"
+slug: /transaction-notary
 ---
 
 # Transaction Notary

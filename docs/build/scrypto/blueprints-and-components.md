@@ -1,5 +1,6 @@
 ---
 title: "Blueprints And Components"
+slug: /blueprints-and-components
 ---
 
 Scrypto splits the concept of "smart contract" into two parts: blueprints and components.

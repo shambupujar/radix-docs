@@ -1,5 +1,6 @@
 ---
-title: "This non-fungible token has no data"
+title: "Manifest Instructions"
+slug: /manifest-instructions
 ---
 
 :::note[Notes]
@@ -31,9 +32,8 @@ Some instructions are marked as **Added in V2**. These transactions are only ava
 
 
 
-`TAKE_FROM_WORKTOP`
-
-
+<details>
+<summary><code>TAKE_FROM_WORKTOP</code></summary>
 
 Creates a named bucket with the specified amount of resource on the worktop. It errors if there is insufficient resource available.
 
@@ -49,15 +49,10 @@ TAKE_FROM_WORKTOP
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`TAKE_NON_FUNGIBLES_FROM_WORKTOP`
-
-
+<details>
+<summary><code>TAKE_NON_FUNGIBLES_FROM_WORKTOP</code></summary>
 
 Creates a named bucket with the specified non-fungibles on the worktop. It errors if these are not present on the worktop.
 
@@ -73,15 +68,10 @@ TAKE_NON_FUNGIBLES_FROM_WORKTOP
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`TAKE_ALL_FROM_WORKTOP`
-
-
+<details>
+<summary><code>TAKE_ALL_FROM_WORKTOP</code></summary>
 
 Creates a named bucket from all of the given resource currently on the worktop.
 
@@ -96,15 +86,10 @@ TAKE_ALL_FROM_WORKTOP
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`RETURN_TO_WORKTOP`
-
-
+<details>
+<summary><code>RETURN_TO_WORKTOP</code></summary>
 
 Consumes a named bucket, returning all of its contents to the worktop.
 
@@ -120,15 +105,10 @@ RETURN_TO_WORKTOP
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`BURN_RESOURCE`
-
-
+<details>
+<summary><code>BURN_RESOURCE</code></summary>
 
 Consumes a named bucket, burning all of its contents. This errors if the worktop’s auth zone does not provide authorization for the burn action.
 
@@ -144,17 +124,14 @@ BURN_RESOURCE
 ;
 ```
 
-
-
-
+</details>
 
 ### Resource Assertions
 
 
 
-`ASSERT_WORKTOP_CONTAINS_ANY`
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_CONTAINS_ANY</code></summary>
 
 Verifies that the worktop contains any non-zero amount of the given fungible or non-fungible resource.
 
@@ -166,15 +143,10 @@ ASSERT_WORKTOP_CONTAINS_ANY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_WORKTOP_CONTAINS`
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_CONTAINS</code></summary>
 
 Verifies that the worktop contains at least the given (non-zero) amount of the fungible or non-fungible resource, else aborts the transaction.
 
@@ -187,15 +159,10 @@ ASSERT_WORKTOP_CONTAINS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_WORKTOP_CONTAINS_NON_FUNGIBLES`
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_CONTAINS_NON_FUNGIBLES</code></summary>
 
 Verifies that the worktop contains the specified non-fungibles, else aborts the transaction.
 
@@ -208,15 +175,10 @@ ASSERT_WORKTOP_CONTAINS_NON_FUNGIBLES
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_WORKTOP_RESOURCES_ONLY` (Added in V2)
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_RESOURCES_ONLY</code> (Added in V2)</summary>
 
 Asserts that the worktop’s balance of the specified resources matches the given constraints, and also ensures that all unspecified resources have zero balance.
 
@@ -234,15 +196,10 @@ ASSERT_WORKTOP_RESOURCES_ONLY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_WORKTOP_IS_EMPTY` (Added in V2 \| alias)
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_IS_EMPTY</code> (Added in V2 | alias)</summary>
 
 Asserts that the worktop contains no balance of any resource.
 
@@ -254,15 +211,10 @@ This is an alias for `ASSERT_WORKTOP_RESOURCES_ONLY` with an empty map.
 ASSERT_WORKTOP_IS_EMPTY;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_WORKTOP_RESOURCES_INCLUDE` (Added in V2)
-
-
+<details>
+<summary><code>ASSERT_WORKTOP_RESOURCES_INCLUDE</code> (Added in V2)</summary>
 
 Asserts that the worktop’s balance of the specified resources matches the given constraints, but permits the worktop to contain non-zero balances of other unspecified resources.
 
@@ -285,15 +237,10 @@ ASSERT_WORKTOP_RESOURCES_INCLUDE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_NEXT_CALL_RETURNS_ONLY` (Added in V2)
-
-
+<details>
+<summary><code>ASSERT_NEXT_CALL_RETURNS_ONLY</code> (Added in V2)</summary>
 
 Asserts that the following invocation instruction must return buckets whose balance of the specified resources matches the given constraints, and also ensures that all unspecified resources have zero balance.
 
@@ -317,15 +264,10 @@ ASSERT_NEXT_CALL_RETURNS_ONLY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_NEXT_CALL_RETURNS_INCLUDE` (Added in V2)
-
-
+<details>
+<summary><code>ASSERT_NEXT_CALL_RETURNS_INCLUDE</code> (Added in V2)</summary>
 
 Asserts that the following invocation instruction must return buckets whose balance of the specified resources matches the given constraints, but permits non-zero balances of other unspecified resources.
 
@@ -349,15 +291,10 @@ ASSERT_NEXT_CALL_RETURNS_INCLUDE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ASSERT_BUCKET_CONTENTS` (Added in V2)
-
-
+<details>
+<summary><code>ASSERT_BUCKET_CONTENTS</code> (Added in V2)</summary>
 
 Asserts that the named bucket’s contents matches the given constraints.
 
@@ -381,17 +318,14 @@ ASSERT_BUCKET_CONTENTS
 ;
 ```
 
-
-
-
+</details>
 
 ### Proof Lifecycle
 
 
 
-`CREATE_PROOF_FROM_BUCKET_OF_AMOUNT`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_BUCKET_OF_AMOUNT</code></summary>
 
 Creates a proof of some amount from a bucket.
 
@@ -409,15 +343,10 @@ CREATE_PROOF_FROM_BUCKET_OF_AMOUNT
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_PROOF_FROM_BUCKET_OF_NON_FUNGIBLES`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_BUCKET_OF_NON_FUNGIBLES</code></summary>
 
 Creates a proof of some non-fungibles from a bucket.
 
@@ -435,15 +364,10 @@ CREATE_PROOF_FROM_BUCKET_OF_NON_FUNGIBLES
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_PROOF_FROM_BUCKET_OF_ALL`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_BUCKET_OF_ALL</code></summary>
 
 Create a proof with all the resource in a bucket.
 
@@ -460,15 +384,10 @@ CREATE_PROOF_FROM_BUCKET_OF_ALL
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_PROOF_FROM_AUTH_ZONE_OF_AMOUNT`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_AUTH_ZONE_OF_AMOUNT</code></summary>
 
 Creates a proof of some amount of resource from the auth zone.
 
@@ -482,15 +401,10 @@ CREATE_PROOF_FROM_AUTH_ZONE_OF_AMOUNT
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_PROOF_FROM_AUTH_ZONE_OF_NON_FUNGIBLES`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_AUTH_ZONE_OF_NON_FUNGIBLES</code></summary>
 
 Creates a proof of some non-fungibles from the auth zone.
 
@@ -504,15 +418,10 @@ CREATE_PROOF_FROM_AUTH_ZONE_OF_NON_FUNGIBLES
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_PROOF_FROM_AUTH_ZONE_OF_ALL`
-
-
+<details>
+<summary><code>CREATE_PROOF_FROM_AUTH_ZONE_OF_ALL</code></summary>
 
 Creates the max proof of some resource from the auth zone.
 
@@ -524,15 +433,10 @@ CREATE_PROOF_FROM_AUTH_ZONE_OF_ALL
     Proof("proof");
 ```
 
+</details>
 
-
-
-
-
-
-`CLONE_PROOF`
-
-
+<details>
+<summary><code>CLONE_PROOF</code></summary>
 
 Clones a proof.
 
@@ -548,15 +452,10 @@ CLONE_PROOF
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_PROOF`
-
-
+<details>
+<summary><code>DROP_PROOF</code></summary>
 
 Drops a proof. This allows resources locked by the proof to be removed if all proofs against those resources are dropped.
 
@@ -571,15 +470,10 @@ DROP_PROOF
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`PUSH_TO_AUTH_ZONE`
-
-
+<details>
+<summary><code>PUSH_TO_AUTH_ZONE</code></summary>
 
 Pushes a proof to the auth zone.
 
@@ -594,15 +488,10 @@ PUSH_TO_AUTH_ZONE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`POP_FROM_AUTH_ZONE`
-
-
+<details>
+<summary><code>POP_FROM_AUTH_ZONE</code></summary>
 
 Pops the most recent proof from the auth zone.
 
@@ -614,15 +503,10 @@ POP_FROM_AUTH_ZONE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_AUTH_ZONE_PROOFS`
-
-
+<details>
+<summary><code>DROP_AUTH_ZONE_PROOFS</code></summary>
 
 Removes all proofs in the auth zone.
 
@@ -633,15 +517,10 @@ DROP_AUTH_ZONE_PROOFS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_AUTH_ZONE_REGULAR_PROOFS`
-
-
+<details>
+<summary><code>DROP_AUTH_ZONE_REGULAR_PROOFS</code></summary>
 
 Removes all regular (non-signature) proofs in the auth zone.
 
@@ -652,15 +531,10 @@ DROP_AUTH_ZONE_REGULAR_PROOFS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_AUTH_ZONE_SIGNATURE_PROOFS`
-
-
+<details>
+<summary><code>DROP_AUTH_ZONE_SIGNATURE_PROOFS</code></summary>
 
 Removes all signature proofs in the auth zone.
 
@@ -671,15 +545,10 @@ DROP_AUTH_ZONE_SIGNATURE_PROOFS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_NAMED_PROOFS`
-
-
+<details>
+<summary><code>DROP_NAMED_PROOFS</code></summary>
 
 Drops all of the named proofs.
 
@@ -690,15 +559,10 @@ DROP_NAMED_PROOFS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`DROP_ALL_PROOFS`
-
-
+<details>
+<summary><code>DROP_ALL_PROOFS</code></summary>
 
 Drops all of the proofs in the auth zone and the named proofs.
 
@@ -709,17 +573,14 @@ DROP_ALL_PROOFS
 ;
 ```
 
-
-
-
+</details>
 
 ### Invocations
 
 
 
-`CALL_FUNCTION`
-
-
+<details>
+<summary><code>CALL_FUNCTION</code></summary>
 
 Invokes a function on a blueprint.
 
@@ -734,15 +595,10 @@ CALL_FUNCTION
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_ACCOUNT` (alias)
-
-
+<details>
+<summary><code>CREATE_ACCOUNT</code> (alias)</summary>
 
 Create a native account component.
 
@@ -755,15 +611,10 @@ CREATE_ACCOUNT
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_ACCOUNT_ADVANCED` (alias)
-
-
+<details>
+<summary><code>CREATE_ACCOUNT_ADVANCED</code> (alias)</summary>
 
 Create a native account component with an `OwnerRole` configuration.
 
@@ -780,15 +631,10 @@ CREATE_ACCOUNT_ADVANCED
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_ACCESS_CONTROLLER` (alias)
-
-
+<details>
+<summary><code>CREATE_ACCESS_CONTROLLER</code> (alias)</summary>
 
 Create an access controller native component.
 
@@ -813,15 +659,10 @@ CREATE_ACCESS_CONTROLLER
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_FUNGIBLE_RESOURCE` (alias)
-
-
+<details>
+<summary><code>CREATE_FUNGIBLE_RESOURCE</code> (alias)</summary>
 
 Create a fungible resource and deposit it on the worktop.
 
@@ -867,15 +708,10 @@ CREATE_FUNGIBLE_RESOURCE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY` (alias)
-
-
+<details>
+<summary><code>CREATE_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY</code> (alias)</summary>
 
 Create a resource with a specified badge for authorization.
 
@@ -922,15 +758,10 @@ CREATE_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_NON_FUNGIBLE_RESOURCE` (alias)
-
-
+<details>
+<summary><code>CREATE_NON_FUNGIBLE_RESOURCE</code> (alias)</summary>
 
 Create a non-fungible resource from the worktop.
 
@@ -977,15 +808,10 @@ CREATE_NON_FUNGIBLE_RESOURCE
     None;             # No Address Reservation
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_NON_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY` (alias)
-
-
+<details>
+<summary><code>CREATE_NON_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY</code> (alias)</summary>
 
 Create a non-fungible resource with a specified badge for authorization.
 
@@ -1036,15 +862,10 @@ CREATE_NON_FUNGIBLE_RESOURCE_WITH_INITIAL_SUPPLY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_IDENTITY` (alias)
-
-
+<details>
+<summary><code>CREATE_IDENTITY</code> (alias)</summary>
 
 Create a native Identity component.
 
@@ -1057,15 +878,10 @@ CREATE_IDENTITY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_IDENTITY_ADVANCED` (alias)
-
-
+<details>
+<summary><code>CREATE_IDENTITY_ADVANCED</code> (alias)</summary>
 
 Create a native Identity component with an `OwnerRole` configuration.
 
@@ -1079,15 +895,10 @@ CREATE_IDENTITY_ADVANCED
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CREATE_VALIDATOR` (alias)
-
-
+<details>
+<summary><code>CREATE_VALIDATOR</code> (alias)</summary>
 
 Create a native validator component.
 
@@ -1108,15 +919,10 @@ CREATE_VALIDATOR
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`PUBLISH_PACKAGE` (alias)
-
-
+<details>
+<summary><code>PUBLISH_PACKAGE</code> (alias)</summary>
 
 Publishes a package, giving a package owner badge defined in the owner role.
 
@@ -1284,15 +1090,10 @@ PUBLISH_PACKAGE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`PUBLISH_PACKAGE_ADVANCED` (alias)
-
-
+<details>
+<summary><code>PUBLISH_PACKAGE_ADVANCED</code> (alias)</summary>
 
 Publishes a package.
 
@@ -1470,15 +1271,10 @@ PUBLISH_PACKAGE_ADVANCED
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CALL_METHOD`
-
-
+<details>
+<summary><code>CALL_METHOD</code></summary>
 
 Invokes a method on the main module of a component. See <a href="#native-blueprints">native blueprints</a> below for more typical methods.
 
@@ -1513,15 +1309,10 @@ CALL_ROLE_ASSIGNMENT_METHOD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`MINT_FUNGIBLE` (alias)
-
-
+<details>
+<summary><code>MINT_FUNGIBLE</code> (alias)</summary>
 
 Mints a fungible resource and deposits it on the worktop.
 
@@ -1536,15 +1327,10 @@ MINT_FUNGIBLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`MINT_NON_FUNGIBLE` (alias)
-
-
+<details>
+<summary><code>MINT_NON_FUNGIBLE</code> (alias)</summary>
 
 Mint a non-fungible resource and deposit it on the worktop.
 
@@ -1578,15 +1364,10 @@ MINT_NON_FUNGIBLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`MINT_RUID_NON_FUNGIBLE` (alias)
-
-
+<details>
+<summary><code>MINT_RUID_NON_FUNGIBLE</code> (alias)</summary>
 
 Mint non-fungible resource with a random Radix Unique Identifier (RUID). Using this instruction, you only have to provide the data. A random UUID will be attached to each entry.
 
@@ -1604,15 +1385,10 @@ MINT_RUID_NON_FUNGIBLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CLAIM_PACKAGE_ROYALTIES` (alias)
-
-
+<details>
+<summary><code>CLAIM_PACKAGE_ROYALTIES</code> (alias)</summary>
 
 Claims royalty on an owned package
 
@@ -1628,15 +1404,10 @@ CLAIM_PACKAGE_ROYALTIES
 
 Learn more about [Royalties](../scrypto/using-royalties.md).
 
+</details>
 
-
-
-
-
-
-`CALL_ROYALTY_METHOD`
-
-
+<details>
+<summary><code>CALL_ROYALTY_METHOD</code></summary>
 
 Invokes a method on the royalty module of a component.
 
@@ -1653,15 +1424,10 @@ CALL_ROYALTY_METHOD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`SET_COMPONENT_ROYALTY` (alias)
-
-
+<details>
+<summary><code>SET_COMPONENT_ROYALTY</code> (alias)</summary>
 
 Sets the royalty configuration on a component.
 
@@ -1677,15 +1443,10 @@ SET_COMPONENT_ROYALTY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CLAIM_COMPONENT_ROYALTIES` (alias)
-
-
+<details>
+<summary><code>CLAIM_COMPONENT_ROYALTIES</code> (alias)</summary>
 
 Claims royalty on an owned component.
 
@@ -1701,15 +1462,10 @@ CLAIM_COMPONENT_ROYALTIES
 
 Learn more about [Royalties](../scrypto/using-royalties.md).
 
+</details>
 
-
-
-
-
-
-`LOCK_COMPONENT_ROYALTY` (alias)
-
-
+<details>
+<summary><code>LOCK_COMPONENT_ROYALTY</code> (alias)</summary>
 
 Locks the royalty configuration on a component.
 
@@ -1724,15 +1480,10 @@ LOCK_COMPONENT_ROYALTY
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CALL_METADATA_METHOD`
-
-
+<details>
+<summary><code>CALL_METADATA_METHOD</code></summary>
 
 Invokes a method on the metadata module of a component.
 
@@ -1748,15 +1499,10 @@ CALL_METADATA_METHOD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`SET_METADATA` (alias)
-
-
+<details>
+<summary><code>SET_METADATA</code> (alias)</summary>
 
 Sets a metadata entry of a global entity.
 
@@ -1975,15 +1721,10 @@ SET_METADATA
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`REMOVE_METADATA` (alias)
-
-
+<details>
+<summary><code>REMOVE_METADATA</code> (alias)</summary>
 
 Removes the metadata key and value of a global entity.
 
@@ -2005,15 +1746,10 @@ REMOVE_METADATA
     "field_name";
 ```
 
+</details>
 
-
-
-
-
-
-`LOCK_METADATA` (alias)
-
-
+<details>
+<summary><code>LOCK_METADATA</code> (alias)</summary>
 
 Locks a metadata entry of a global entity, preventing it from being updated.
 
@@ -2035,15 +1771,10 @@ LOCK_METADATA
     "field_name";
 ```
 
+</details>
 
-
-
-
-
-
-`CALL_ROLE_ASSIGNMENT_METHOD`
-
-
+<details>
+<summary><code>CALL_ROLE_ASSIGNMENT_METHOD</code></summary>
 
 Invokes a method on the role assignment module of a component.
 
@@ -2060,15 +1791,10 @@ CALL_ROLE_ASSIGNMENT_METHOD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`SET_ROLE` (alias)
-
-
+<details>
+<summary><code>SET_ROLE</code> (alias)</summary>
 
 Sets the access rule for a specified role of a global entity.
 
@@ -2093,15 +1819,10 @@ SET_ROLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`SET_OWNER_ROLE` (alias)
-
-
+<details>
+<summary><code>SET_OWNER_ROLE</code> (alias)</summary>
 
 Sets an `OwnerRole` configuration of a global entity.
 
@@ -2124,15 +1845,10 @@ SET_OWNER_ROLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`LOCK_OWNER_ROLE` (alias)
-
-
+<details>
+<summary><code>LOCK_OWNER_ROLE</code> (alias)</summary>
 
 Locks an `OwnerRole` configuration of a global entity.
 
@@ -2146,29 +1862,19 @@ LOCK_OWNER_ROLE
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`CALL_DIRECT_VAULT_METHOD`
-
-
+<details>
+<summary><code>CALL_DIRECT_VAULT_METHOD</code></summary>
 
 Invokes a direct access method on the given vault.
 
 Typically you use an alias instruction for this instead (see following instructions).
 
+</details>
 
-
-
-
-
-
-`RECALL_FROM_VAULT` (alias)
-
-
+<details>
+<summary><code>RECALL_FROM_VAULT</code> (alias)</summary>
 
 Recalls a fungible resource from a vault (if the resource has a recallable behavior).
 
@@ -2183,15 +1889,10 @@ RECALL_FROM_VAULT
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`RECALL_NON_FUNGIBLES_FROM_VAULT` (alias)
-
-
+<details>
+<summary><code>RECALL_NON_FUNGIBLES_FROM_VAULT</code> (alias)</summary>
 
 Recalls a non-fungible resource from a vault (if the resource has a recallable behavior).
 
@@ -2206,17 +1907,15 @@ RECALL_NON_FUNGIBLES_FROM_VAULT
 ;
 ```
 
+</details>
 
+<details>
+<summary><code>FREEZE_VAULT</code> (alias)</summary>
 
+</details>
 
-
-
-
-`FREEZE_VAULT` (alias)
-
-
-
-`FREEZE_VAULT` manifest instruction has several configurations:
+<details>
+<summary><code>FREEZE_VAULT</code> manifest instruction has several configurations:</summary>
 
 - Freeze withdraws of a `Vault`.
 
@@ -2256,17 +1955,15 @@ FREEZE_VAULT
 ;
 ```
 
+</details>
 
+<details>
+<summary><code>UNFREEZE_VAULT</code> (alias)</summary>
 
+</details>
 
-
-
-
-`UNFREEZE_VAULT` (alias)
-
-
-
-`UNFREEZE_VAULT` manifest instruction has several configurations:
+<details>
+<summary><code>UNFREEZE_VAULT</code> manifest instruction has several configurations:</summary>
 
 - Unfreeze withdraws of a `Vault`.
 
@@ -2306,17 +2003,14 @@ UNFREEZE_VAULT
 ;
 ```
 
-
-
-
+</details>
 
 ### Address Allocation
 
 
 
-`USE_PREALLOCATED_ADDRESS` (Pseudo-instruction \| System only)
-
-
+<details>
+<summary><code>USE_PREALLOCATED_ADDRESS</code> (Pseudo-instruction | System only)</summary>
 
 This instruction can only be used by System transactions, such as genesis and protocol updates. It must appear at the start of the manifest, before all other instructions.
 
@@ -2333,15 +2027,10 @@ USE_PREALLOCATED_ADDRESS
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`ALLOCATE_GLOBAL_ADDRESS`
-
-
+<details>
+<summary><code>ALLOCATE_GLOBAL_ADDRESS</code></summary>
 
 This command can be used to reserve an address, which is useful when creating new global entities (aka “object”) in the manifest and then wanting to interact with them later in the same transaction.
 
@@ -2391,17 +2080,14 @@ CALL_FUNCTION
 ;
 ```
 
-
-
-
+</details>
 
 ### Interaction with other intents
 
 
 
-`USE_CHILD` (Added in V2 \| Pseudo-instruction)
-
-
+<details>
+<summary><code>USE_CHILD</code> (Added in V2 | Pseudo-instruction)</summary>
 
 Must appear at the start of the manifest, before all other instructions.
 
@@ -2418,15 +2104,10 @@ USE_CHILD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`YIELD_TO_PARENT` (Added in V2 \| Subintent only)
-
-
+<details>
+<summary><code>YIELD_TO_PARENT</code> (Added in V2 | Subintent only)</summary>
 
 Pauses or finishes execution of the subintent, and yields to the parent intent. Can also be used to transfer buckets to the parent.
 
@@ -2440,15 +2121,10 @@ YIELD_TO_PARENT Bucket("my_bucket") Bucket("my_other_bucket");
 YIELD_TO_PARENT Expression("ENTIRE_WORKTOP");
 ```
 
+</details>
 
-
-
-
-
-
-`YIELD_TO_CHILD` (Added in V2)
-
-
+<details>
+<summary><code>YIELD_TO_CHILD</code> (Added in V2)</summary>
 
 Pauses execution of the manifest, and yields to the specified child intent. Execution of the manifest resumes when the child calls `YIELD_TO_PARENT`.
 
@@ -2476,15 +2152,10 @@ YIELD_TO_CHILD
 ;
 ```
 
+</details>
 
-
-
-
-
-
-`VERIFY_PARENT` (Added in V2 \| Subintent only)
-
-
+<details>
+<summary><code>VERIFY_PARENT</code> (Added in V2 | Subintent only)</summary>
 
 Sometimes, when constructing a subintent, you only want it to be used by a particular counterparty. For example, it could be used by dApps to give users or regulated integrators guarantees who will consume the subintent.
 
@@ -2516,9 +2187,7 @@ VERIFY_PARENT
 ;
 ```
 
-
-
-
+</details>
 
 ## Native Blueprints
 

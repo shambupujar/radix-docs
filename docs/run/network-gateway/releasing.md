@@ -1,5 +1,6 @@
 ---
 title: "Releasing"
+slug: /releasing
 ---
 
 # Releasing

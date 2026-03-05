@@ -1,5 +1,6 @@
 ---
 title: "Usage Guide"
+slug: /radix-engine-toolkit-usage-guide
 ---
 
 # Usage Guide

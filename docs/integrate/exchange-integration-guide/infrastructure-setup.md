@@ -1,5 +1,6 @@
 ---
 title: "Infrastructure Setup"
+slug: /exchange-integration-infrastructure-set-up
 ---
 
 # Infrastructure Setup

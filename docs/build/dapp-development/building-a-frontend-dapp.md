@@ -1,5 +1,6 @@
 ---
 title: "Building a Frontend dApp"
+slug: /building-a-frontend-dapp
 ---
 
 # Building a Frontend dApp

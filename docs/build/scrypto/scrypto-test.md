@@ -1,5 +1,6 @@
 ---
 title: "Set the package crate as its own empty workspace, to hide it from any potential ancestor workspace"
+slug: /scrypto-test
 ---
 
 This document provides a description and guidance on writing tests using the `scrypto-test` library.

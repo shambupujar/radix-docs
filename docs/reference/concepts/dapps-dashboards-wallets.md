@@ -1,5 +1,6 @@
 ---
 title: "DApps, Dashboards and Wallets"
+slug: /concepts-dapps-dashboards-and-wallets
 ---
 
 # DApps, Dashboards and Wallets

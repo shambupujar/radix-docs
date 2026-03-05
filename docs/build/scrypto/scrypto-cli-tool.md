@@ -1,5 +1,6 @@
 ---
 title: "Scrypto CLI Tool"
+slug: /scrypto-cli-tool
 ---
 
 # Scrypto CLI Tool

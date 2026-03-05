@@ -1,5 +1,6 @@
 ---
 title: "Concepts"
+slug: /concepts
 ---
 
 # Concepts

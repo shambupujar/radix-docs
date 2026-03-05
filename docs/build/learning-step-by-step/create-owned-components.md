@@ -1,5 +1,6 @@
 ---
 title: "Create Owned Components"
+slug: /learning-to-create-owned-components
 ---
 
 # Create Owned Components

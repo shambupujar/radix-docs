@@ -1,5 +1,6 @@
 ---
 title: "Identity"
+slug: /identity
 ---
 
 # Identity

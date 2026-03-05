@@ -1,5 +1,6 @@
 ---
 title: "Radix Applications"
+slug: /radix-applications
 ---
 
 # Radix Applications

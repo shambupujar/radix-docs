@@ -1,5 +1,6 @@
 ---
 title: "Give the Gumball Machine an Owner"
+slug: /learning-to-give-the-gumball-machine-an-owner
 ---
 
 # Give the Gumball Machine an Owner

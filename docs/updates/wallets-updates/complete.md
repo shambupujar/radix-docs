@@ -1,0 +1,86 @@
+---
+title: "Complete"
+slug: /wallets-complete
+---
+
+- **Account deletion**
+  - Removes assets from account (if desired), sets account to disallow any further deposits, and permanently eliminates possibility of using the account
+- **Support for pre-authorization requests**
+  - A new option for transaction construction with user signing and returning a portion of a complete transaction
+  - Enables "intent"-based swaps required by institutional applications, as well as other use cases like more flexible delegated fee payment and more
+- **Claim airdrops via trusted Lockers**
+  - Check for Lockers associated with dApps the user has logged into
+  - Notify users when they have a deposit waiting in a trusted Locker, on the relevant account(s)
+  - Let the user directly claim the deposit in the wallet UI
+  - Option to disable claim notifications for specific dApps abusing the feature
+- **Enable new ROLA proof options for dApps**
+  - One-time "re-login" style request to proof ownership of a specific Persona
+  - One-time request to proof ownership of specific accounts
+- **SVG image support on iOS (and as addition to metadata standard)**
+- **Option to require device auth (Biometrics/PIN) check upon wallet foregrounding**
+- **When transferring, let user know when recipient account's deposit rules will block deposit**
+- **Hide/show specific assets (perhaps "nuisance assets")**
+- **Show USD value of transaction fees on Transaction Review screen**
+- **Individually unhide Accounts/Personas**
+- **Info bubble pop-ups throughout the app**
+- **New address info screen**
+  - Tap on any address to bring up useful info panel
+  - View the address in full, copy it, see a QR code, or verify it on Ledger device (where relevant)
+- **New home screen onboarding "carousel"**
+  - Offer shortcuts for smoother onboard experience
+- **Resource metadata improvements**
+  - Show full set of metadata key/value fields assigned to a resource
+  - Show which resource metadata fields are locked
+- **Radix Connect for Mobile**
+  - Enable use of dApp websites running on any mobile browser
+  - Transparent for dApp developer - Radix dApp Toolkit automatically handles connecting to the Radix Wallet on either desktop or mobile
+  - Lays the groundwork for support of native mobile app connections, and dApp-specific Connector-style "linking"
+- **Completely rebuilt wallet backup system and UI for iOS and Android**
+  - Throw out OS-native "backup" systems, which are not reliable
+  - Use of more direct iCloud and Google Drive data upload mechanisms that we can control, and have clear visibility of failures
+  - Completely rebuilt UI for security setup and warning messages for better user understanding, including new Security Center that includes both security factors and backups in one place. Will further expand with MFA later.
+- **Support linking multiple wallets with one Radix Wallet Connector browser extension**
+  - Updated Connector extension logic for automatic routing
+- **Ability for Connector extension to display accounts list**
+  - Connector requests access to full account list from linked wallet
+  - Shows full list in Connector extension window for easy reference and copy-pasting on desktop
+- **In-wallet transaction history view**
+  - View transactions across time for a given account, shown by assets in/out of account and transaction type
+  - Filter transactions shown by type, resource, and more
+  - Tap a transaction to view more details about it on Dashboard
+- **Display USD value of holdings**
+  - Backed by pricing service using Radix Charts for data
+- **Additional transaction review summary types**
+  - Stake / request unstake / claim transaction types
+  - General transaction display style design updates
+- **Dedicated network staking asset tab**
+  - Separate LSU and claim NFT assets from pool units
+  - Per-account summaries of current staked/unstaking/claimable XRD in the staking tab
+- **Account hiding**
+  - Behaves like deletion but remains recoverable - deletion on-ledger is not possible
+- **Optimize "chattiness" of wallets**
+  - Better caching and bundling of requests to avoid excess communication with the Gateway
+- **Responsiveness improvements**
+  - Quicker load times for wallets with lots of accounts
+  - Quicker load times for wallets with "resource heavy" accounts
+  - Improve performance of fee calculation time
+  - Load transaction review summaries immediately while waiting for fee payment information
+  - Quicker load times for large collections of NFTs
+- **Failure screen for failed transaction**
+- **Improved transaction error messages**
+- **Support for animated GIFs in resource images**
+- **Temporary transaction "History" handling**
+  - Link from Account view out to new Account transaction history page on Dashboard with basic balance information
+  - Proper in-app History—including filtering and sorting and full transaction-type-based summary information—is still to come
+- **No-backup-available recovery option**
+  - Recover from bare seed phrases or Ledger hardware wallets
+  - Reconstruct derivation indices for each seed phrase or Ledger device
+  - Supports both Babylon- and Olympia-created accounts
+  - Also enables Olympia importing without usage of Olympia Desktop Wallet (for those who can accept not carrying over current account names or known list of account derivations)
+- **Allow recovery from backup for users without Babylon seed phrase**
+  - Particularly for users who only use Ledger accounts, or haven't created any Babylon software accounts yet that they care about
+- **Show full non-fungible data on NFT details view**
+- **Smarter transfer flow deposits (eliminate "extra" signatures when possible)**
+  - Check user-controlled deposit accounts for deposit rules, use `try_deposit` if the resource to be deposited would not actually be rejected - use `deposit` and surface "signature required" message when it would
+  - Check non-user-controlled deposit accounts for deposit rules, surface warning when deposit rules will prevent the deposit
+- **Improved verification that user has written down seed phrase**

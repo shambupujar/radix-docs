@@ -1,5 +1,6 @@
 ---
 title: "Common Transactions"
+slug: /common-transactions
 ---
 
 # Common Transactions

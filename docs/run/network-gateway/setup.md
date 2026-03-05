@@ -1,5 +1,6 @@
 ---
 title: "Setup"
+slug: /network-gateway-setup
 ---
 
 # Setup

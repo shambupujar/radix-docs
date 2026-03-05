@@ -1,5 +1,6 @@
 ---
 title: "Backlog"
+slug: /gateway-backlog
 ---
 
 # Backlog

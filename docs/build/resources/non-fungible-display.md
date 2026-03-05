@@ -1,5 +1,6 @@
 ---
 title: "Non-Fungible Display"
+slug: /non-fungible-display
 ---
 
 # Non-Fungible Display

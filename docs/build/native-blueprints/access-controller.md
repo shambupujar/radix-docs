@@ -1,5 +1,6 @@
 ---
 title: "Access Controller"
+slug: /access-controller
 ---
 
 # Access Controller

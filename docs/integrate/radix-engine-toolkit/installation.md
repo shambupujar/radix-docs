@@ -1,5 +1,6 @@
 ---
 title: "Installation"
+slug: /radix-engine-toolkit-installation
 ---
 
 # Installation

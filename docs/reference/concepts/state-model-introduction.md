@@ -1,5 +1,6 @@
 ---
 title: "State Model Introduction"
+slug: /concepts-state-model-introduction
 ---
 
 # State Model Introduction

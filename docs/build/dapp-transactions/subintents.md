@@ -1,5 +1,6 @@
 ---
 title: "Subintents"
+slug: /subintents
 ---
 
 # Subintents

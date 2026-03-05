@@ -1,5 +1,6 @@
 ---
 title: "Environments"
+slug: /concepts-environments
 ---
 
 # Environments

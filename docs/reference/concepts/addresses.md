@@ -1,5 +1,6 @@
 ---
 title: "Addresses"
+slug: /concepts-addresses
 ---
 
 # Addresses

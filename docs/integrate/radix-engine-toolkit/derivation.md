@@ -1,5 +1,6 @@
 ---
 title: "Derivation"
+slug: /radix-engine-toolkit-derivation
 ---
 
 # Derivation

@@ -1,5 +1,6 @@
 ---
 title: "Metadata"
+slug: /metadata
 ---
 
 # Metadata

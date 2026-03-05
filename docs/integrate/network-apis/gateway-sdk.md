@@ -1,5 +1,6 @@
 ---
 title: "Gateway SDK"
+slug: /gateway-sdk
 ---
 
 # Gateway SDK

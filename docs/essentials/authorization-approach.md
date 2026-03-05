@@ -1,5 +1,6 @@
 ---
 title: "Authorization Approach"
+slug: /authorization-approach
 ---
 
 # Authorization Approach

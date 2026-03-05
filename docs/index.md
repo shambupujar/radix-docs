@@ -1,5 +1,6 @@
 ---
 title: "Radix Technical Documentation"
+slug: /
 ---
 
 # Radix Technical Documentation

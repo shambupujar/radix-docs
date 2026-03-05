@@ -1,5 +1,6 @@
 ---
 title: "User Badge Pattern"
+slug: /user-badge-pattern
 ---
 
 The problem that this pattern solves is the problem of how to tell that somebody is an admin in your system, or more generically, how to tell that a user has the authority to perform a certain action in the context of your system. If you come from the Ethereum world, your first intuition might be to use the caller’s address to perform authorization checks. If the caller’s address is in the list of whitelisted addresses then their call is valid, otherwise they’re not authorized to perform the call. The address-based approach, however, is far from being optimal as it introduces issues with composability and the smallest of mistakes in implementation could have the biggest of consequences, to the extent of privileged users losing access. The address-based approach to authorization has the following problems:

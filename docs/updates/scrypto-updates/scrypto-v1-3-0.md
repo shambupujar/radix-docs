@@ -1,5 +1,6 @@
 ---
 title: "Scrypto v1.3.0"
+slug: /scrypto-v1-3-0
 ---
 
 # Scrypto v1.3.0

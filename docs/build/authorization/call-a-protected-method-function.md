@@ -1,5 +1,6 @@
 ---
 title: "Call a Protected Method/Function"
+slug: /call-a-protected-method-function
 ---
 
 # Call a Protected Method/Function

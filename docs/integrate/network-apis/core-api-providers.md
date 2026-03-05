@@ -1,5 +1,6 @@
 ---
 title: "Core API Providers"
+slug: /core-api-providers
 ---
 
 # Core API Providers

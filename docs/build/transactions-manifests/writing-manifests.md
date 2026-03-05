@@ -1,5 +1,6 @@
 ---
 title: "Tooling"
+slug: /writing-manifests
 ---
 
 Transaction manifests are human-readable list of instruction that are followed by the Radix engine to transfer resources or otherwise change state.

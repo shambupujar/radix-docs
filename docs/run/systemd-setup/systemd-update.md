@@ -1,5 +1,6 @@
 ---
 title: "Systemd Update"
+slug: /node-setup-systemd-update
 ---
 
 # Systemd Update

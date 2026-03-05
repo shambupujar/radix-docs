@@ -1,5 +1,6 @@
 ---
 title: "Getting test XRD and paying fees from the Faucet"
+slug: /concepts-getting-test-xrd-and-paying-fees-from-the-faucet
 ---
 
 # Getting test XRD and paying fees from the Faucet

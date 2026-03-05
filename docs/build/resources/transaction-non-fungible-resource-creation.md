@@ -1,5 +1,6 @@
 ---
 title: "Transaction Non Fungible Resource Creation"
+slug: /transaction-non-fungible-resource-creation
 ---
 
 It is possible to create non-fungible resources with transactions, but it is quite hard to create them manually - this is because a non-fungible resource includes a [Scrypto SBOR Schema](/v1/docs/sbor-schemas) for the non-fungible data.

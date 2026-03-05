@@ -1,5 +1,6 @@
 ---
 title: "Keccak256"
+slug: /keccak256
 ---
 
 **Keccak256** digest is being calculated over given vector of bytes.

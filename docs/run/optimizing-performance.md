@@ -1,5 +1,6 @@
 ---
 title: "Optimizing Performance"
+slug: /node-optimizing-performance
 ---
 
 # Optimizing Performance

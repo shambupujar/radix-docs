@@ -1,5 +1,6 @@
 ---
 title: "Build a Multi-Blueprint Package"
+slug: /learning-to-build-a-multi-blueprint-package
 ---
 
 # Build a Multi-Blueprint Package

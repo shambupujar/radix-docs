@@ -1,5 +1,6 @@
 ---
 title: "Sourcing Data from Olympia"
+slug: /sourcing-data-from-olympia
 ---
 
 # Sourcing Data from Olympia

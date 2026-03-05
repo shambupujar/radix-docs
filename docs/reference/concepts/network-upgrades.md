@@ -1,5 +1,6 @@
 ---
 title: "Network Upgrades once live"
+slug: /concepts-network-upgrades-once-live
 ---
 
 # Network Upgrades once live
