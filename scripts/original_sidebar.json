@@ -2,10 +2,10 @@
   "_meta": {
     "source": "https://docs.radixdlt.com/",
     "extracted_date": "2026-03-05",
-    "note": "Welcome, Essentials, Use verified from live site HTML. Integrate verified from expanded HTML. Build, Run, Updates derived from SUMMARY.md (labels/children may differ from live site). Reference partially verified: top items and Integrator Concepts from live HTML; Standards, Radix Engine, Transactions collapsed sections need live verification; SBOR expanded from SUMMARY.md.",
+    "note": "Welcome, Essentials, Use verified from live site HTML. Integrate verified from expanded HTML. Build verified from live site screenshots (Developer Quick Start, Setting up for Development, Learning Step-by-Step, dApp Development, Scrypto with Resources/Authorization nested inside). Run, Updates derived from SUMMARY.md. Reference partially verified.",
     "sources": {
-      "live_html": ["Welcome", "Essentials", "Use", "Integrate", "Reference (partial)"],
-      "summary_md": ["Build", "Run", "Updates", "Reference > SBOR children"]
+      "live_html": ["Welcome", "Essentials", "Use", "Integrate", "Build", "Reference (partial)"],
+      "summary_md": ["Run", "Updates", "Reference > SBOR children"]
     }
   },
   "sidebar": [
@@ -99,10 +99,10 @@
               "slug": "/docs/radix-engine-toolkit-usage-guide",
               "children": [
                 { "label": "Derivation", "slug": "/docs/radix-engine-toolkit-derivation" },
-                { "label": "Manifest Builder", "slug": "/docs/radix-engine-toolkit-manifest-builder" },
-                { "label": "Examples", "slug": "/docs/radix-engine-toolkit-examples" }
+                { "label": "Manifest Builder", "slug": "/docs/radix-engine-toolkit-manifest-builder" }
               ]
-            }
+            },
+            { "label": "Examples", "slug": "/docs/radix-engine-toolkit-examples" }
           ]
         },
         {
@@ -120,12 +120,29 @@
       "label": "Build",
       "type": "category",
       "slug": "/docs/build",
-      "_source": "summary_md",
+      "_source": "live_html",
       "children": [
-        { "label": "Developer Quick Start", "slug": "/docs/getting-rust-scrypto" },
-        { "label": "Setting up for Development", "slug": "/docs/setting-up-for-dapp-development" },
-        { "label": "Choosing an IDE", "slug": "/docs/choosing-an-ide" },
-        { "label": "Updating Scrypto", "slug": "/docs/updating-scrypto" },
+        {
+          "label": "Developer Quick Start",
+          "type": "category",
+          "slug": "/docs/developer-quick-start",
+          "children": [
+            { "label": "Frontend dApp (Client and Ledger)", "slug": "/docs/dapp-frontend-development" },
+            { "label": "Fullstack dApp (Client, Server and Ledger)", "slug": "/docs/fullstack-dapp-development" },
+            { "label": "Scrypto (Ledger)", "slug": "/docs/getting-rust-scrypto" }
+          ]
+        },
+        {
+          "label": "Setting up for Development",
+          "type": "category",
+          "slug": "/docs/setting-up-for-dapp-development",
+          "children": [
+            { "label": "Setting Up", "slug": "/docs/setting-up-for-dapp-development" },
+            { "label": "Getting Rust & Scrypto", "slug": "/docs/getting-rust-scrypto" },
+            { "label": "Updating Scrypto", "slug": "/docs/updating-scrypto" },
+            { "label": "Choosing a Code Editor/IDE", "slug": "/docs/choosing-an-ide" }
+          ]
+        },
         {
           "label": "Learning Step-by-Step",
           "type": "category",
@@ -133,24 +150,25 @@
           "children": [
             { "label": "Run Your First Scrypto Project", "slug": "/docs/learning-to-run-your-first-scrypto-project" },
             { "label": "Explain Your First Scrypto Project", "slug": "/docs/learning-to-explain-your-first-scrypto-project" },
-            { "label": "Explain Your First Test", "slug": "/docs/learning-to-explain-your-first-test" },
-            { "label": "Build a Gumball Machine", "slug": "/docs/learning-to-build-a-gumball-machine" },
             { "label": "Create Your First Custom Resource", "slug": "/docs/learning-to-create-your-first-custom-resource" },
-            { "label": "Create Your First Non-Fungible", "slug": "/docs/learning-to-create-your-first-non-fungible" },
-            { "label": "Create and Use Transaction Manifests", "slug": "/docs/learning-to-create-and-use-transaction-manifests" },
+            { "label": "Build a Gumball Machine", "slug": "/docs/learning-to-build-a-gumball-machine" },
             { "label": "Give the Gumball Machine an Owner", "slug": "/docs/learning-to-give-the-gumball-machine-an-owner" },
             { "label": "Make Your Gumball Machine Refillable", "slug": "/docs/learning-to-make-your-gumball-machine-refillable" },
-            { "label": "Create Owned Components", "slug": "/docs/learning-to-create-owned-components" },
-            { "label": "Build a Candy Store", "slug": "/docs/learning-to-build-a-candy-store" },
-            { "label": "Build a Multi-Blueprint Package", "slug": "/docs/learning-to-build-a-multi-blueprint-package" },
-            { "label": "Test a Multi-Blueprint Package", "slug": "/docs/learning-to-test-a-multi-blueprint-package" },
-            { "label": "Use External Blueprints", "slug": "/docs/learning-to-use-external-blueprints" },
-            { "label": "Use External Components", "slug": "/docs/learning-to-use-external-components" },
-            { "label": "Make Recallable Badges", "slug": "/docs/learning-to-make-recallable-badges" },
-            { "label": "Set Verification Metadata", "slug": "/docs/learning-to-set-verification-metadata" },
+            { "label": "Create and Use Transaction Manifests", "slug": "/docs/learning-to-create-and-use-transaction-manifests" },
             { "label": "Use the Gumball Machine on Stokenet", "slug": "/docs/learning-to-use-the-gumball-machine-on-stokenet" },
             { "label": "Run Your First Front End dApp", "slug": "/docs/learning-to-run-your-first-front-end-dapp" },
             { "label": "Run the Gumball Machine Front End dApp", "slug": "/docs/learning-to-run-the-gumball-machine-front-end-dapp" },
+            { "label": "Set Verification Metadata", "slug": "/docs/learning-to-set-verification-metadata" },
+            { "label": "Create Your First Non-Fungible", "slug": "/docs/learning-to-create-your-first-non-fungible" },
+            { "label": "Build a Candy Store", "slug": "/docs/learning-to-build-a-candy-store" },
+            { "label": "Make Recallable Badges", "slug": "/docs/learning-to-make-recallable-badges" },
+            { "label": "Build a Multi-Blueprint Package", "slug": "/docs/learning-to-build-a-multi-blueprint-package" },
+            { "label": "Create Owned Components", "slug": "/docs/learning-to-create-owned-components" },
+            { "label": "Use External Blueprints", "slug": "/docs/learning-to-use-external-blueprints" },
+            { "label": "Use External Components", "slug": "/docs/learning-to-use-external-components" },
+            { "label": "Explain Your First Test", "slug": "/docs/learning-to-explain-your-first-test" },
+            { "label": "Test a Multi-Blueprint Package", "slug": "/docs/learning-to-test-a-multi-blueprint-package" },
+            { "label": "Run the Radiswap dApp", "slug": "/docs/run-the-radiswap-dapp" },
             { "label": "Wrapping Up", "slug": "/docs/wrapping-up-the-learning-step-by-step" }
           ]
         },
@@ -159,20 +177,58 @@
           "type": "category",
           "slug": "/docs/dapp-application-stack",
           "children": [
-            { "label": "Application Stack", "slug": "/docs/dapp-application-stack" },
-            { "label": "Building a Frontend dApp", "slug": "/docs/building-a-frontend-dapp" },
-            { "label": "Building a Full Stack dApp", "slug": "/docs/building-a-full-stack-dapp" },
-            { "label": "Full Stack dApp Development", "slug": "/docs/fullstack-dapp-development" },
+            {
+              "label": "Application Stack",
+              "type": "category",
+              "slug": "/docs/dapp-application-stack",
+              "children": [
+                { "label": "Building a Frontend dApp", "slug": "/docs/building-a-frontend-dapp" },
+                { "label": "Building a Full Stack dApp", "slug": "/docs/building-a-full-stack-dapp" }
+              ]
+            },
+            {
+              "label": "dApp SDKs",
+              "type": "category",
+              "children": [
+                { "label": "dApp Toolkit", "slug": "/docs/dapp-toolkit" },
+                { "label": "Gateway SDK", "slug": "/docs/gateway-sdk" }
+              ]
+            },
+            { "label": "ROLA - Radix Off Ledger Auth", "slug": "/docs/rola-radix-off-ledger-auth" },
             { "label": "dApp Definition Setup", "slug": "/docs/dapp-definition-setup" },
-            { "label": "dApp Frontend Development", "slug": "/docs/dapp-frontend-development" },
-            { "label": "dApp Toolkit", "slug": "/docs/dapp-toolkit" },
-            { "label": "Run the Radiswap dApp", "slug": "/docs/run-the-radiswap-dapp" }
+            {
+              "label": "dApp Transactions",
+              "type": "category",
+              "children": [
+                { "label": "Writing Manifests", "slug": "/docs/writing-manifests" },
+                { "label": "Pre-authorization / Subintent Flow", "slug": "/docs/pre-authorizations-and-subintents" },
+                {
+                  "label": "Examples",
+                  "type": "category",
+                  "children": [
+                    { "label": "Simple Token Transfer", "slug": "/docs/simple-token-transfer" },
+                    { "label": "Non-Fungible Resource Creation", "slug": "/docs/transaction-non-fungible-resource-creation" }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Before You Release!",
+              "type": "category",
+              "slug": "/docs/before-you-release",
+              "children": [
+                { "label": "Code Hardening", "slug": "/docs/code-hardening" },
+                { "label": "Productionize Your Code", "slug": "/docs/productionize-your-code" }
+              ]
+            },
+            { "label": "Useful Links", "slug": "/docs/useful-links" }
           ]
         },
         {
           "label": "dApp Transactions",
           "type": "category",
           "slug": "/docs/dapp-transactions",
+          "_note": "Full dApp Transactions section (separate from the dApp Development > dApp Transactions subcategory)",
           "children": [
             { "label": "Transaction Overview", "slug": "/docs/transaction-overview" },
             { "label": "Transaction Structure", "slug": "/docs/transaction-structure" },
@@ -190,61 +246,91 @@
         {
           "label": "Scrypto",
           "type": "category",
-          "slug": "/docs/blueprints-and-components",
+          "slug": "/docs/scrypto",
           "children": [
+            {
+              "label": "Tools for Scrypto",
+              "type": "category",
+              "children": [
+                { "label": "Scrypto CLI Tool", "slug": "/docs/scrypto-cli-tool" },
+                { "label": "Scrypto Builder", "slug": "/docs/scrypto-builder" },
+                { "label": "resim (Radix Engine Simulator)", "slug": "/docs/resim-radix-engine-simulator" }
+              ]
+            },
             { "label": "Blueprints and Components", "slug": "/docs/blueprints-and-components" },
-            { "label": "Functions and Methods", "slug": "/docs/functions-and-methods" },
-            { "label": "Component Ownership", "slug": "/docs/component-ownership" },
-            { "label": "Reusable Blueprints Pattern", "slug": "/docs/reusable-blueprints-pattern" },
+            {
+              "label": "Resources",
+              "type": "category",
+              "slug": "/docs/resources",
+              "children": [
+                { "label": "Resource Creation in Detail", "slug": "/docs/resource-creation-in-detail" },
+                { "label": "Resource Behaviors", "slug": "/docs/resource-behaviors" },
+                { "label": "Buckets and Vaults", "slug": "/docs/buckets-and-vaults" },
+                { "label": "Non-fungible Data", "slug": "/docs/non-fungible-data" },
+                { "label": "Recalling Resources", "slug": "/docs/recalling-resources" },
+                { "label": "Freezing Vaults", "slug": "/docs/freezing-vaults" }
+              ]
+            },
+            {
+              "label": "Authorization",
+              "type": "category",
+              "slug": "/docs/auth",
+              "children": [
+                { "label": "Call a Protected Method/Function", "slug": "/docs/call-a-protected-method-function" },
+                { "label": "Using Proofs", "slug": "/docs/using-proofs" },
+                { "label": "Assign Function AccessRules", "slug": "/docs/assign-function-accessrules" },
+                { "label": "Assign Roles To Methods", "slug": "/docs/structure-roles-and-methods" },
+                { "label": "Assign Component Roles", "slug": "/docs/assign-component-roles" },
+                { "label": "Assign Roles to Resources", "slug": "/docs/assign-roles-to-resources" },
+                { "label": "Assign Metadata Roles", "slug": "/docs/assign-metadata-roles" },
+                { "label": "Assign Component Royalty Roles", "slug": "/docs/assign-component-royalty-roles" },
+                { "label": "Advanced AccessRules", "slug": "/docs/advanced-accessrules" }
+              ]
+            },
             { "label": "Data Types", "slug": "/docs/data-types" },
+            { "label": "Functions and Methods", "slug": "/docs/functions-and-methods" },
             { "label": "Logging", "slug": "/docs/logging" },
-            { "label": "Events", "slug": "/docs/scrypto-events" },
-            { "label": "Using Royalties", "slug": "/docs/using-royalties" },
+            { "label": "Component Ownership", "slug": "/docs/component-ownership" },
             { "label": "Advanced External Calls", "slug": "/docs/advanced-external-calls" },
-            { "label": "Code Hardening", "slug": "/docs/code-hardening" },
-            { "label": "Productionize Your Code", "slug": "/docs/productionize-your-code" },
-            { "label": "Scrypto CLI Tool", "slug": "/docs/scrypto-cli-tool" },
-            { "label": "Scrypto Builder", "slug": "/docs/scrypto-builder" },
-            { "label": "Scrypto Test", "slug": "/docs/scrypto-test" },
-            { "label": "Coverage Tool", "slug": "/docs/coverage-tool" }
-          ]
-        },
-        {
-          "label": "Resources",
-          "type": "category",
-          "slug": "/docs/resources",
-          "children": [
-            { "label": "Resource Creation in Detail", "slug": "/docs/resource-creation-in-detail" },
-            { "label": "Resource Behaviors", "slug": "/docs/resource-behaviors" },
-            { "label": "Buckets and Vaults", "slug": "/docs/buckets-and-vaults" },
-            { "label": "Freezing Vaults", "slug": "/docs/freezing-vaults" },
-            { "label": "Recalling Resources", "slug": "/docs/recalling-resources" },
-            { "label": "Fungible Resource Manager", "slug": "/docs/fungible-resource-manager" },
-            { "label": "Non-Fungible Data", "slug": "/docs/non-fungible-data" },
-            { "label": "Non-Fungible Display", "slug": "/docs/non-fungible-display" },
-            { "label": "Non-Fungible Data for Wallet Display", "slug": "/docs/non-fungible-data-for-wallet-display" },
-            { "label": "Transaction Non-Fungible Resource Creation", "slug": "/docs/transaction-non-fungible-resource-creation" }
-          ]
-        },
-        {
-          "label": "Authorization",
-          "type": "category",
-          "slug": "/docs/auth",
-          "children": [
-            { "label": "Authorization Model", "slug": "/docs/authorization-model" },
-            { "label": "Assign Component Roles", "slug": "/docs/assign-component-roles" },
-            { "label": "Assign Function AccessRules", "slug": "/docs/assign-function-accessrules" },
-            { "label": "Assign Roles to Resources", "slug": "/docs/assign-roles-to-resources" },
-            { "label": "Assign Metadata Roles", "slug": "/docs/assign-metadata-roles" },
-            { "label": "Assign Component Royalty Roles", "slug": "/docs/assign-component-royalty-roles" },
-            { "label": "Call a Protected Method/Function", "slug": "/docs/call-a-protected-method-function" },
-            { "label": "Using Proofs", "slug": "/docs/using-proofs" },
-            { "label": "Advanced AccessRules", "slug": "/docs/advanced-accessrules" },
-            { "label": "User Badge Pattern", "slug": "/docs/user-badge-pattern" },
-            { "label": "Actor Virtual Badge Pattern", "slug": "/docs/actor-virtual-badge-pattern" },
-            { "label": "Transient Badge Pattern", "slug": "/docs/transient-badge-pattern" },
-            { "label": "The Withdraw Pattern", "slug": "/docs/the-withdraw-pattern" },
-            { "label": "Account Deposit Patterns", "slug": "/docs/account-deposit-patterns" }
+            { "label": "Runtime API", "slug": "/docs/runtime" },
+            { "label": "Bech32 Address Types Conversion", "slug": "/docs/bech32-address-types-conversion" },
+            { "label": "Scrypto Events", "slug": "/docs/scrypto-events" },
+            { "label": "Coverage tool", "slug": "/docs/coverage-tool" },
+            { "label": "Entity Metadata", "slug": "/docs/entity-metadata" },
+            {
+              "label": "Royalties",
+              "type": "category",
+              "children": [
+                { "label": "Using Royalties", "slug": "/docs/using-royalties" }
+              ]
+            },
+            {
+              "label": "Cryptography",
+              "type": "category",
+              "children": [
+                { "label": "Keccak256", "slug": "/docs/keccak256" },
+                { "label": "BLS12-381", "slug": "/docs/bls12-381" }
+              ]
+            },
+            {
+              "label": "Testing",
+              "type": "category",
+              "children": [
+                { "label": "Scrypto Test", "slug": "/docs/scrypto-test" }
+              ]
+            },
+            {
+              "label": "Design Patterns",
+              "type": "category",
+              "children": [
+                { "label": "User Badge Pattern", "slug": "/docs/user-badge-pattern" },
+                { "label": "Actor Virtual Badge Pattern", "slug": "/docs/actor-virtual-badge-pattern" },
+                { "label": "The Withdraw Pattern", "slug": "/docs/the-withdraw-pattern" },
+                { "label": "Transient Badge Pattern", "slug": "/docs/transient-badge-pattern" },
+                { "label": "Reusable Blueprints Pattern", "slug": "/docs/reusable-blueprints-pattern" },
+                { "label": "Patterns for Application Deposit Use Cases", "slug": "/docs/account-deposit-patterns" }
+              ]
+            }
           ]
         },
         {
@@ -283,8 +369,7 @@
             { "label": "Pool", "slug": "/docs/pool" },
             { "label": "Locker", "slug": "/docs/locker" }
           ]
-        },
-        { "label": "Before You Release", "slug": "/docs/before-you-release" }
+        }
       ]
     },
     {

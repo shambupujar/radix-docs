@@ -1,5 +1,5 @@
 ---
-title: "--snip--"
+title: "Test a Multi-Blueprint Package"
 slug: /learning-to-test-a-multi-blueprint-package
 ---
 

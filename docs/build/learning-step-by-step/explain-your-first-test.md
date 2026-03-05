@@ -1,5 +1,5 @@
 ---
-title: "–snip–"
+title: "Explain Your First Test"
 slug: /learning-to-explain-your-first-test
 ---
 

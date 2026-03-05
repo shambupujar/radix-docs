@@ -111,10 +111,10 @@ const sidebars = {
               },
               "items": [
                 "integrate/radix-engine-toolkit/derivation",
-                "integrate/radix-engine-toolkit/manifest-builder",
-                "integrate/radix-engine-toolkit/examples"
+                "integrate/radix-engine-toolkit/manifest-builder"
               ]
-            }
+            },
+            "integrate/radix-engine-toolkit/examples"
           ],
           "link": {
             "type": "doc",
@@ -136,34 +136,78 @@ const sidebars = {
       "type": "category",
       "label": "Build",
       "items": [
-        "build/developer-quick-start",
-        "build/setting-up-for-development",
-        "build/choosing-an-ide",
-        "build/updating-scrypto",
+        {
+          "type": "category",
+          "label": "Developer Quick Start",
+          "items": [
+            {
+              "type": "doc",
+              "id": "build/dapp-development/dapp-frontend-development",
+              "label": "Frontend dApp (Client and Ledger)"
+            },
+            {
+              "type": "doc",
+              "id": "build/dapp-development/full-stack-dapp-development",
+              "label": "Fullstack dApp (Client, Server and Ledger)"
+            },
+            {
+              "type": "doc",
+              "id": "build/developer-quick-start",
+              "label": "Scrypto (Ledger)"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Setting up for Development",
+          "items": [
+            {
+              "type": "doc",
+              "id": "build/setting-up-for-development",
+              "label": "Setting Up"
+            },
+            {
+              "type": "link",
+              "label": "Getting Rust & Scrypto",
+              "href": "/docs/getting-rust-scrypto"
+            },
+            {
+              "type": "doc",
+              "id": "build/updating-scrypto",
+              "label": "Updating Scrypto"
+            },
+            {
+              "type": "doc",
+              "id": "build/choosing-an-ide",
+              "label": "Choosing a Code Editor/IDE"
+            }
+          ]
+        },
         {
           "type": "category",
           "label": "Learning Step-by-Step",
           "items": [
             "build/learning-step-by-step/run-your-first-scrypto-project",
             "build/learning-step-by-step/explain-your-first-scrypto-project",
-            "build/learning-step-by-step/explain-your-first-test",
-            "build/learning-step-by-step/build-a-gumball-machine",
             "build/learning-step-by-step/create-your-first-custom-resource",
-            "build/learning-step-by-step/create-your-first-non-fungible",
-            "build/learning-step-by-step/create-and-use-transaction-manifests",
+            "build/learning-step-by-step/build-a-gumball-machine",
             "build/learning-step-by-step/give-the-gumball-machine-an-owner",
             "build/learning-step-by-step/make-your-gumball-machine-refillable",
-            "build/learning-step-by-step/create-owned-components",
-            "build/learning-step-by-step/build-a-candy-store",
-            "build/learning-step-by-step/build-a-multi-blueprint-package",
-            "build/learning-step-by-step/test-a-multi-blueprint-package",
-            "build/learning-step-by-step/use-external-blueprints",
-            "build/learning-step-by-step/use-external-components",
-            "build/learning-step-by-step/make-recallable-badges",
-            "build/learning-step-by-step/set-verification-metadata",
+            "build/learning-step-by-step/create-and-use-transaction-manifests",
             "build/learning-step-by-step/use-the-gumball-machine-on-stokenet",
             "build/learning-step-by-step/run-your-first-front-end-dapp",
             "build/learning-step-by-step/run-the-gumball-machine-front-end-dapp",
+            "build/learning-step-by-step/set-verification-metadata",
+            "build/learning-step-by-step/create-your-first-non-fungible",
+            "build/learning-step-by-step/build-a-candy-store",
+            "build/learning-step-by-step/make-recallable-badges",
+            "build/learning-step-by-step/build-a-multi-blueprint-package",
+            "build/learning-step-by-step/create-owned-components",
+            "build/learning-step-by-step/use-external-blueprints",
+            "build/learning-step-by-step/use-external-components",
+            "build/learning-step-by-step/explain-your-first-test",
+            "build/learning-step-by-step/test-a-multi-blueprint-package",
+            "build/dapp-development/run-the-radiswap-dapp",
             "build/learning-step-by-step/wrapping-up"
           ],
           "link": {
@@ -175,19 +219,94 @@ const sidebars = {
           "type": "category",
           "label": "dApp Development",
           "items": [
-            "build/dapp-development/application-stack",
-            "build/dapp-development/building-a-frontend-dapp",
-            "build/dapp-development/building-a-full-stack-dapp",
-            "build/dapp-development/full-stack-dapp-development",
+            {
+              "type": "category",
+              "label": "Application Stack",
+              "link": {
+                "type": "doc",
+                "id": "build/dapp-development/application-stack"
+              },
+              "items": [
+                "build/dapp-development/building-a-frontend-dapp",
+                "build/dapp-development/building-a-full-stack-dapp"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "dApp SDKs",
+              "items": [
+                "build/dapp-development/dapp-toolkit",
+                {
+                  "type": "link",
+                  "label": "Gateway SDK",
+                  "href": "/docs/gateway-sdk"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "label": "ROLA - Radix Off Ledger Auth",
+              "href": "/docs/rola-radix-off-ledger-auth"
+            },
             "build/dapp-development/dapp-definition-setup",
-            "build/dapp-development/dapp-frontend-development",
-            "build/dapp-development/dapp-toolkit",
-            "build/dapp-development/run-the-radiswap-dapp"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/dapp-development/application-stack"
-          }
+            {
+              "type": "category",
+              "label": "dApp Transactions",
+              "items": [
+                {
+                  "type": "link",
+                  "label": "Writing Manifests",
+                  "href": "/docs/writing-manifests"
+                },
+                {
+                  "type": "link",
+                  "label": "Pre-authorization / Subintent Flow",
+                  "href": "/docs/pre-authorizations-and-subintents"
+                },
+                {
+                  "type": "category",
+                  "label": "Examples",
+                  "items": [
+                    {
+                      "type": "link",
+                      "label": "Simple Token Transfer",
+                      "href": "/docs/simple-token-transfer"
+                    },
+                    {
+                      "type": "link",
+                      "label": "Non-Fungible Resource Creation",
+                      "href": "/docs/transaction-non-fungible-resource-creation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Before You Release!",
+              "link": {
+                "type": "doc",
+                "id": "build/before-you-release"
+              },
+              "items": [
+                {
+                  "type": "link",
+                  "label": "Code Hardening",
+                  "href": "/docs/code-hardening"
+                },
+                {
+                  "type": "link",
+                  "label": "Productionize Your Code",
+                  "href": "/docs/productionize-your-code"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "label": "Useful Links",
+              "href": "/docs/useful-links"
+            }
+          ]
         },
         {
           "type": "category",
@@ -213,71 +332,137 @@ const sidebars = {
         {
           "type": "category",
           "label": "Scrypto",
+          "link": {
+            "type": "doc",
+            "id": "build/scrypto/index"
+          },
           "items": [
+            {
+              "type": "category",
+              "label": "Tools for Scrypto",
+              "items": [
+                "build/scrypto/scrypto-cli-tool",
+                "build/scrypto/scrypto-builder",
+                {
+                  "type": "link",
+                  "label": "resim (Radix Engine Simulator)",
+                  "href": "/docs/resim-radix-engine-simulator"
+                }
+              ]
+            },
             "build/scrypto/blueprints-and-components",
-            "build/scrypto/functions-and-methods",
-            "build/scrypto/component-ownership",
-            "build/scrypto/reusable-blueprints-pattern",
+            {
+              "type": "category",
+              "label": "Resources",
+              "link": {
+                "type": "doc",
+                "id": "build/resources/index"
+              },
+              "items": [
+                "build/resources/resource-creation-in-detail",
+                "build/resources/resource-behaviors",
+                "build/resources/buckets-and-vaults",
+                "build/resources/non-fungible-data",
+                "build/resources/recalling-resources",
+                "build/resources/freezing-vaults"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Authorization",
+              "link": {
+                "type": "doc",
+                "id": "build/authorization/index"
+              },
+              "items": [
+                "build/authorization/call-a-protected-method-function",
+                "build/authorization/using-proofs",
+                "build/authorization/assign-function-accessrules",
+                {
+                  "type": "link",
+                  "label": "Assign Roles To Methods",
+                  "href": "/docs/structure-roles-and-methods"
+                },
+                "build/authorization/assign-component-roles",
+                "build/authorization/assign-roles-to-resources",
+                "build/authorization/assign-metadata-roles",
+                "build/authorization/assign-component-royalty-roles",
+                "build/authorization/advanced-accessrules"
+              ]
+            },
             "build/scrypto/data-types",
+            "build/scrypto/functions-and-methods",
             "build/scrypto/logging",
-            "build/scrypto/events",
-            "build/scrypto/using-royalties",
+            "build/scrypto/component-ownership",
             "build/scrypto/advanced-external-calls",
-            "build/scrypto/code-hardening",
-            "build/scrypto/productionize-your-code",
-            "build/scrypto/scrypto-cli-tool",
-            "build/scrypto/scrypto-builder",
-            "build/scrypto/scrypto-test",
-            "build/scrypto/coverage-tool"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/scrypto/blueprints-and-components"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Resources",
-          "items": [
-            "build/resources/resource-creation-in-detail",
-            "build/resources/resource-behaviors",
-            "build/resources/buckets-and-vaults",
-            "build/resources/freezing-vaults",
-            "build/resources/recalling-resources",
-            "build/resources/fungible-resource-manager",
-            "build/resources/non-fungible-data",
-            "build/resources/non-fungible-display",
-            "build/resources/non-fungible-data-for-wallet-display",
-            "build/resources/transaction-non-fungible-resource-creation"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/resources/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Authorization",
-          "items": [
-            "build/authorization/authorization-model",
-            "build/authorization/assign-component-roles",
-            "build/authorization/assign-function-accessrules",
-            "build/authorization/assign-roles-to-resources",
-            "build/authorization/assign-metadata-roles",
-            "build/authorization/assign-component-royalty-roles",
-            "build/authorization/call-a-protected-method-function",
-            "build/authorization/using-proofs",
-            "build/authorization/advanced-accessrules",
-            "build/authorization/user-badge-pattern",
-            "build/authorization/actor-virtual-badge-pattern",
-            "build/authorization/transient-badge-pattern",
-            "build/authorization/the-withdraw-pattern",
-            "build/authorization/account-deposit-patterns"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "build/authorization/index"
-          }
+            {
+              "type": "link",
+              "label": "Runtime API",
+              "href": "/docs/runtime"
+            },
+            {
+              "type": "link",
+              "label": "Bech32 Address Types Conversion",
+              "href": "/docs/bech32-address-types-conversion"
+            },
+            {
+              "type": "doc",
+              "id": "build/scrypto/events",
+              "label": "Scrypto Events"
+            },
+            "build/scrypto/coverage-tool",
+            {
+              "type": "link",
+              "label": "Entity Metadata",
+              "href": "/docs/entity-metadata"
+            },
+            {
+              "type": "category",
+              "label": "Royalties",
+              "items": [
+                "build/scrypto/using-royalties"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Cryptography",
+              "items": [
+                {
+                  "type": "link",
+                  "label": "Keccak256",
+                  "href": "/docs/keccak256"
+                },
+                {
+                  "type": "link",
+                  "label": "BLS12-381",
+                  "href": "/docs/bls12-381"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Testing",
+              "items": [
+                "build/scrypto/scrypto-test"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Design Patterns",
+              "items": [
+                "build/authorization/user-badge-pattern",
+                "build/authorization/actor-virtual-badge-pattern",
+                "build/authorization/the-withdraw-pattern",
+                "build/authorization/transient-badge-pattern",
+                "build/scrypto/reusable-blueprints-pattern",
+                {
+                  "type": "doc",
+                  "id": "build/authorization/account-deposit-patterns",
+                  "label": "Patterns for Application Deposit Use Cases"
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "category",
@@ -324,8 +509,7 @@ const sidebars = {
             "type": "doc",
             "id": "build/native-blueprints/index"
           }
-        },
-        "build/before-you-release"
+        }
       ]
     },
     {
