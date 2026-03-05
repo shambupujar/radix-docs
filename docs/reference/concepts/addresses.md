@@ -19,7 +19,10 @@ The Radix Engine Toolkit can [generate virtual account addresses from a Ed25519 
 
 ## Encoded Data
 
-The data encoded in the Bech32m address is the byte representation of the address, which is an array of 30 bytes that is made up of two main parts: 1. Entity Byte: This is the first byte in the address and it defines the type of entity being addressed. 2. Address Bytes: These are the remaining 29 bytes in the array and they are the address of the entity.
+The data encoded in the Bech32m address is the byte representation of the address, which is an array of 30 bytes that is made up of two main parts:
+
+1. **Entity Byte:** This is the first byte in the address and it defines the type of entity being addressed.
+2. **Address Bytes:** These are the remaining 29 bytes in the array and they are the address of the entity.
 
 ![Address format](/img/image-24-.png)
 
