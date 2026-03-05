@@ -1,5 +1,6 @@
 ---
 title: "Integrate with Radix FAQs"
+slug: /integrate-with-radix-faqs
 ---
 
 # Integrate with Radix FAQs

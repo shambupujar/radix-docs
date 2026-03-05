@@ -1,5 +1,6 @@
 ---
 title: "Rust Libraries"
+slug: /rust-libraries-overview
 ---
 
 # Rust Libraries

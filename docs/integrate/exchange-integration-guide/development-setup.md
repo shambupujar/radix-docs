@@ -1,5 +1,6 @@
 ---
 title: "Development Setup"
+slug: /exchange-integration-development-set-up-for-developing-an-integration
 ---
 
 # Development Setup

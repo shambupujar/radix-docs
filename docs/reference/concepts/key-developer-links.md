@@ -1,5 +1,6 @@
 ---
 title: "Key Developer Links and Version"
+slug: /concepts-key-developer-links-and-version
 ---
 
 # Key Developer Links and Version

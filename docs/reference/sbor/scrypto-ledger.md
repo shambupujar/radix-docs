@@ -1,5 +1,6 @@
 ---
 title: "Scrypto Ledger"
+slug: /scrypto-ledger
 ---
 
 # Scrypto Ledger

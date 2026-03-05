@@ -1,5 +1,6 @@
 ---
 title: "Babylon Genesis"
+slug: /babylon-genesis
 ---
 
 # Babylon Genesis

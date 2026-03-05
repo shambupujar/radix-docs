@@ -1,5 +1,6 @@
 ---
 title: "Guided Setup"
+slug: /node-setup-guided
 ---
 
 # Guided Setup

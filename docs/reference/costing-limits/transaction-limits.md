@@ -1,5 +1,6 @@
 ---
 title: "Transaction Limits"
+slug: /transaction-limits
 ---
 
 # Transaction Limits

@@ -1,5 +1,6 @@
 ---
 title: "Transaction Intents"
+slug: /transaction-intents
 ---
 
 # Transaction Intents

@@ -1,5 +1,6 @@
 ---
 title: "Wallets Updates"
+slug: /wallets-milestones
 ---
 
 # Wallets Updates

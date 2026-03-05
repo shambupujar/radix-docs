@@ -1,5 +1,6 @@
 ---
 title: "SBOR"
+slug: /what-is-sbor
 ---
 
 # SBOR

@@ -1,5 +1,6 @@
 ---
 title: "Use External Blueprints"
+slug: /learning-to-use-external-blueprints
 ---
 
 # Use External Blueprints

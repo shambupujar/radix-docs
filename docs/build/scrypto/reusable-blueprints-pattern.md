@@ -1,5 +1,6 @@
 ---
 title: "Reusable Blueprints Pattern"
+slug: /reusable-blueprints-pattern
 ---
 
 # Reusable Blueprints Pattern

@@ -1,5 +1,6 @@
 ---
 title: "Core node:"
+slug: /node-setting-up-grafana
 ---
 
 ### Introduction

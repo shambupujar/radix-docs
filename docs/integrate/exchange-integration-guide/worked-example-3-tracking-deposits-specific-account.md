@@ -1,5 +1,6 @@
 ---
 title: "Worked Example 3: Tracking Deposits (Specific Account)"
+slug: /exchange-integration-worked-example-3-tracking-deposits-to-specific-account
 ---
 
 # Worked Example 3: Tracking Deposits (Specific Account)

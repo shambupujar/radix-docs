@@ -1,5 +1,6 @@
 ---
 title: "Curves, Keys, Signatures and Hashing"
+slug: /concepts-curves-keys-signatures-and-hashing
 ---
 
 # Curves, Keys, Signatures and Hashing

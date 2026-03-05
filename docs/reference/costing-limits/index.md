@@ -1,5 +1,6 @@
 ---
 title: "Costing & Limits"
+slug: /costing-and-limits
 ---
 
 # Costing & Limits

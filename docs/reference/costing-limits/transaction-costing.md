@@ -1,5 +1,6 @@
 ---
 title: "Transaction Costing"
+slug: /transaction-costing
 ---
 
 # Transaction Costing

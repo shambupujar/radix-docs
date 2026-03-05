@@ -1,5 +1,6 @@
 ---
 title: "Buckets And Vaults"
+slug: /buckets-and-vaults
 ---
 
 Because Scrypto is about safe resource handling, we introduce the concept of resource containers. There are two types of resource containers: Buckets and Vaults.

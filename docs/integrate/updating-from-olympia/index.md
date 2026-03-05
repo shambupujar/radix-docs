@@ -1,5 +1,6 @@
 ---
 title: "Updating from Olympia"
+slug: /updating-from-olympia
 ---
 
 # Updating from Olympia

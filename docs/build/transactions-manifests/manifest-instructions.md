@@ -1,5 +1,6 @@
 ---
 title: "This non-fungible token has no data"
+slug: /manifest-instructions
 ---
 
 :::note[Notes]

@@ -1,5 +1,6 @@
 ---
 title: "Complete"
+slug: /gateway-complete
 ---
 
 # Complete

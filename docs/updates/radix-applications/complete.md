@@ -1,5 +1,6 @@
 ---
 title: "Complete"
+slug: /radix-applications-complete
 ---
 
 # Complete

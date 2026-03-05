@@ -1,5 +1,6 @@
 ---
 title: "--snip--"
+slug: /learning-to-test-a-multi-blueprint-package
 ---
 
 

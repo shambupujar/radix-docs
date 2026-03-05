@@ -1,5 +1,6 @@
 ---
 title: "Pre-authorizations & Subintents"
+slug: /pre-authorizations-and-subintents
 ---
 
 # Pre-authorizations & Subintents

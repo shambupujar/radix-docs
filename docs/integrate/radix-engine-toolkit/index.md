@@ -1,5 +1,6 @@
 ---
 title: "Radix Engine Toolkit"
+slug: /radix-engine-toolkit
 ---
 
 # Radix Engine Toolkit

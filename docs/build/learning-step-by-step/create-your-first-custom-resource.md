@@ -1,5 +1,6 @@
 ---
 title: "Create Your First Custom Resource"
+slug: /learning-to-create-your-first-custom-resource
 ---
 
 # Create Your First Custom Resource

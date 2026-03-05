@@ -1,5 +1,6 @@
 ---
 title: "Component Ownership"
+slug: /component-ownership
 ---
 
 Scrypto allows a component to own other components, similar to how a component can own vaults. If a component is owned by another component, its methods may only be accessed by the blueprint of the parent component.

@@ -1,5 +1,6 @@
 ---
 title: "Radix Dashboard"
+slug: /radix-dashboard
 ---
 
 # Radix Dashboard

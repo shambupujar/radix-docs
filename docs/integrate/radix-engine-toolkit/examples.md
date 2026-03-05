@@ -1,5 +1,6 @@
 ---
 title: "Examples"
+slug: /radix-engine-toolkit-examples
 ---
 
 # Examples

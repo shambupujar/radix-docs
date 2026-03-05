@@ -1,5 +1,6 @@
 ---
 title: "Make Your Gumball Machine Refillable"
+slug: /learning-to-make-your-gumball-machine-refillable
 ---
 
 # Make Your Gumball Machine Refillable

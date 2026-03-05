@@ -1,5 +1,6 @@
 ---
 title: "Use the Gumball Machine on Stokenet"
+slug: /learning-to-use-the-gumball-machine-on-stokenet
 ---
 
 # Use the Gumball Machine on Stokenet

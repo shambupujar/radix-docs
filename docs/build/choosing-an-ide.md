@@ -1,5 +1,6 @@
 ---
 title: "Setting up your IDE"
+slug: /choosing-an-ide
 ---
 
 # Setting up your IDE

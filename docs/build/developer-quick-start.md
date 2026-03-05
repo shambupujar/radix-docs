@@ -1,5 +1,6 @@
 ---
 title: "Developer Quick Start"
+slug: /getting-rust-scrypto
 ---
 
 # Developer Quick Start

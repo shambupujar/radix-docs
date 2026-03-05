@@ -1,0 +1,566 @@
+{
+  "_meta": {
+    "source": "https://docs.radixdlt.com/",
+    "extracted_date": "2026-03-05",
+    "note": "Welcome, Essentials, Use verified from live site HTML. Integrate verified from expanded HTML. Build, Run, Updates derived from SUMMARY.md (labels/children may differ from live site). Reference partially verified: top items and Integrator Concepts from live HTML; Standards, Radix Engine, Transactions collapsed sections need live verification; SBOR expanded from SUMMARY.md.",
+    "sources": {
+      "live_html": ["Welcome", "Essentials", "Use", "Integrate", "Reference (partial)"],
+      "summary_md": ["Build", "Run", "Updates", "Reference > SBOR children"]
+    }
+  },
+  "sidebar": [
+    {
+      "label": "Welcome",
+      "type": "article",
+      "slug": "/docs/welcome"
+    },
+    {
+      "label": "Essentials",
+      "type": "category",
+      "slug": "/docs/essentials",
+      "children": [
+        { "label": "Asset-Oriented", "slug": "/docs/asset-oriented" },
+        { "label": "Reusable Code", "slug": "/docs/reusable-code" },
+        { "label": "Transactions on Radix", "slug": "/docs/transactions-on-radix" },
+        { "label": "Authorization Approach", "slug": "/docs/authorization-approach" },
+        { "label": "Getting Help", "slug": "/docs/getting-help" }
+      ]
+    },
+    {
+      "label": "Use",
+      "type": "category",
+      "slug": "/docs/use",
+      "children": [
+        { "label": "Radix Dashboard (Explorer+)", "slug": "/docs/radix-dashboard" },
+        { "label": "Radix Wallet Overview", "slug": "/docs/radix-wallet-overview" },
+        { "label": "Ecosystem Tools List", "slug": "/docs/ecosystem-tools-and-libraries" }
+      ]
+    },
+    {
+      "label": "Integrate",
+      "type": "category",
+      "slug": "/docs/integrate",
+      "children": [
+        {
+          "label": "Integrate with Radix",
+          "type": "category",
+          "slug": "/docs/integrate-with-radix",
+          "children": [
+            { "label": "Introduction to Radix at Babylon", "slug": "/docs/introduction-to-radix-at-babylon" },
+            {
+              "label": "Exchange Integration Guide",
+              "type": "category",
+              "slug": "/docs/exchange-integration-guide",
+              "children": [
+                { "label": "Infrastructure Setup", "slug": "/docs/exchange-integration-infrastructure-set-up" },
+                { "label": "Development Setup", "slug": "/docs/exchange-integration-development-set-up-for-developing-an-integration" },
+                { "label": "LTS Core API", "slug": "/docs/exchange-integration-lts-core-api" },
+                { "label": "LTS Toolkit", "slug": "/docs/exchange-integration-lts-toolkit" },
+                { "label": "Detecting Deposits", "slug": "/docs/exchange-integration-detecting-deposits-from-different-users" },
+                { "label": "Worked Example 1: Transfer Transaction", "slug": "/docs/exchange-integration-worked-example-1-transfer-transaction-submission-flow" },
+                { "label": "Worked Example 2: Tracking Deposits (Any Account)", "slug": "/docs/exchange-integration-worked-example-2-tracking-deposits-to-any-account" },
+                { "label": "Worked Example 3: Tracking Deposits (Specific Account)", "slug": "/docs/exchange-integration-worked-example-3-tracking-deposits-to-specific-account" },
+                { "label": "Worked Example 4: Node Status & Monitoring", "slug": "/docs/exchange-integration-worked-example-4-node-status-and-monitoring" }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Updating from Olympia",
+          "type": "category",
+          "slug": "/docs/updating-from-olympia",
+          "children": [
+            { "label": "Changes in Babylon from Olympia", "slug": "/docs/changes-in-babylon-from-olympia" },
+            { "label": "Address Mapping & Reconciliation", "slug": "/docs/olympia-to-babylon-migration-address-mapping-and-reconciliation" },
+            { "label": "Sourcing Data from Olympia", "slug": "/docs/sourcing-data-from-olympia" }
+          ]
+        },
+        { "label": "Integrate with Radix FAQs", "slug": "/docs/integrate-with-radix-faqs" },
+        {
+          "label": "Network APIs",
+          "type": "category",
+          "slug": "/docs/network-apis",
+          "children": [
+            { "label": "Core API Providers", "slug": "/docs/core-api-providers" },
+            { "label": "Gateway API Providers", "slug": "/docs/gateway-api-providers" }
+          ],
+          "_note": "Live site has only 2 children (no Gateway SDK). SUMMARY.md includes Gateway SDK."
+        },
+        {
+          "label": "Radix Engine Toolkit",
+          "type": "category",
+          "slug": "/docs/radix-engine-toolkit",
+          "children": [
+            { "label": "Architecture", "slug": "/docs/radix-engine-toolkit-architecture" },
+            { "label": "Getting Started", "slug": "/docs/radix-engine-toolkit-installation", "_note": "Label is 'Getting Started' on live site, 'Installation' in SUMMARY.md" },
+            { "label": "Derivation", "slug": "/docs/radix-engine-toolkit-derivation" },
+            { "label": "Manifest Builder", "slug": "/docs/radix-engine-toolkit-manifest-builder" },
+            { "label": "Examples", "slug": "/docs/radix-engine-toolkit-examples" },
+            {
+              "label": "Usage Guide",
+              "type": "category",
+              "slug": "/docs/radix-engine-toolkit-usage-guide",
+              "_note": "Subcategory on live site, flat doc in SUMMARY.md/Docusaurus"
+            }
+          ]
+        },
+        {
+          "label": "Rust Libraries",
+          "type": "category",
+          "slug": "/docs/rust-libraries-overview",
+          "children": [
+            { "label": "Manifest Builder", "slug": "/docs/rust-manifest-builder" },
+            { "label": "Transaction Building", "slug": "/docs/rust-transaction-building" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Build",
+      "type": "category",
+      "slug": "/docs/build",
+      "_source": "summary_md",
+      "children": [
+        { "label": "Developer Quick Start", "slug": "/docs/getting-rust-scrypto" },
+        { "label": "Setting up for Development", "slug": "/docs/setting-up-for-dapp-development" },
+        { "label": "Choosing an IDE", "slug": "/docs/choosing-an-ide" },
+        { "label": "Updating Scrypto", "slug": "/docs/updating-scrypto" },
+        {
+          "label": "Learning Step-by-Step",
+          "type": "category",
+          "slug": "/docs/learning-step-by-step",
+          "children": [
+            { "label": "Run Your First Scrypto Project", "slug": "/docs/learning-to-run-your-first-scrypto-project" },
+            { "label": "Explain Your First Scrypto Project", "slug": "/docs/learning-to-explain-your-first-scrypto-project" },
+            { "label": "Explain Your First Test", "slug": "/docs/learning-to-explain-your-first-test" },
+            { "label": "Build a Gumball Machine", "slug": "/docs/learning-to-build-a-gumball-machine" },
+            { "label": "Create Your First Custom Resource", "slug": "/docs/learning-to-create-your-first-custom-resource" },
+            { "label": "Create Your First Non-Fungible", "slug": "/docs/learning-to-create-your-first-non-fungible" },
+            { "label": "Create and Use Transaction Manifests", "slug": "/docs/learning-to-create-and-use-transaction-manifests" },
+            { "label": "Give the Gumball Machine an Owner", "slug": "/docs/learning-to-give-the-gumball-machine-an-owner" },
+            { "label": "Make Your Gumball Machine Refillable", "slug": "/docs/learning-to-make-your-gumball-machine-refillable" },
+            { "label": "Create Owned Components", "slug": "/docs/learning-to-create-owned-components" },
+            { "label": "Build a Candy Store", "slug": "/docs/learning-to-build-a-candy-store" },
+            { "label": "Build a Multi-Blueprint Package", "slug": "/docs/learning-to-build-a-multi-blueprint-package" },
+            { "label": "Test a Multi-Blueprint Package", "slug": "/docs/learning-to-test-a-multi-blueprint-package" },
+            { "label": "Use External Blueprints", "slug": "/docs/learning-to-use-external-blueprints" },
+            { "label": "Use External Components", "slug": "/docs/learning-to-use-external-components" },
+            { "label": "Make Recallable Badges", "slug": "/docs/learning-to-make-recallable-badges" },
+            { "label": "Set Verification Metadata", "slug": "/docs/learning-to-set-verification-metadata" },
+            { "label": "Use the Gumball Machine on Stokenet", "slug": "/docs/learning-to-use-the-gumball-machine-on-stokenet" },
+            { "label": "Run Your First Front End dApp", "slug": "/docs/learning-to-run-your-first-front-end-dapp" },
+            { "label": "Run the Gumball Machine Front End dApp", "slug": "/docs/learning-to-run-the-gumball-machine-front-end-dapp" },
+            { "label": "Wrapping Up", "slug": "/docs/wrapping-up-the-learning-step-by-step" }
+          ]
+        },
+        {
+          "label": "dApp Development",
+          "type": "category",
+          "slug": "/docs/dapp-application-stack",
+          "children": [
+            { "label": "Application Stack", "slug": "/docs/dapp-application-stack" },
+            { "label": "Building a Frontend dApp", "slug": "/docs/building-a-frontend-dapp" },
+            { "label": "Building a Full Stack dApp", "slug": "/docs/building-a-full-stack-dapp" },
+            { "label": "Full Stack dApp Development", "slug": "/docs/fullstack-dapp-development" },
+            { "label": "dApp Definition Setup", "slug": "/docs/dapp-definition-setup" },
+            { "label": "dApp Frontend Development", "slug": "/docs/dapp-frontend-development" },
+            { "label": "dApp Toolkit", "slug": "/docs/dapp-toolkit" },
+            { "label": "Run the Radiswap dApp", "slug": "/docs/run-the-radiswap-dapp" }
+          ]
+        },
+        {
+          "label": "dApp Transactions",
+          "type": "category",
+          "slug": "/docs/dapp-transactions",
+          "children": [
+            { "label": "Transaction Overview", "slug": "/docs/transaction-overview" },
+            { "label": "Transaction Structure", "slug": "/docs/transaction-structure" },
+            { "label": "Transaction Intents", "slug": "/docs/transaction-intents" },
+            { "label": "Pre-authorizations & Subintents", "slug": "/docs/pre-authorizations-and-subintents" },
+            { "label": "Subintents", "slug": "/docs/subintents" },
+            { "label": "Intent Structure", "slug": "/docs/intent-structure" },
+            { "label": "Intent Processor", "slug": "/docs/intent-processor" },
+            { "label": "Transaction Notary", "slug": "/docs/transaction-notary" },
+            { "label": "Transaction Tracker", "slug": "/docs/transaction-tracker" },
+            { "label": "Simple Token Transfer", "slug": "/docs/simple-token-transfer" },
+            { "label": "Common Transactions", "slug": "/docs/common-transactions" }
+          ]
+        },
+        {
+          "label": "Scrypto",
+          "type": "category",
+          "slug": "/docs/blueprints-and-components",
+          "children": [
+            { "label": "Blueprints and Components", "slug": "/docs/blueprints-and-components" },
+            { "label": "Functions and Methods", "slug": "/docs/functions-and-methods" },
+            { "label": "Component Ownership", "slug": "/docs/component-ownership" },
+            { "label": "Reusable Blueprints Pattern", "slug": "/docs/reusable-blueprints-pattern" },
+            { "label": "Data Types", "slug": "/docs/data-types" },
+            { "label": "Logging", "slug": "/docs/logging" },
+            { "label": "Events", "slug": "/docs/scrypto-events" },
+            { "label": "Using Royalties", "slug": "/docs/using-royalties" },
+            { "label": "Advanced External Calls", "slug": "/docs/advanced-external-calls" },
+            { "label": "Code Hardening", "slug": "/docs/code-hardening" },
+            { "label": "Productionize Your Code", "slug": "/docs/productionize-your-code" },
+            { "label": "Scrypto CLI Tool", "slug": "/docs/scrypto-cli-tool" },
+            { "label": "Scrypto Builder", "slug": "/docs/scrypto-builder" },
+            { "label": "Scrypto Test", "slug": "/docs/scrypto-test" },
+            { "label": "Coverage Tool", "slug": "/docs/coverage-tool" }
+          ]
+        },
+        {
+          "label": "Resources",
+          "type": "category",
+          "slug": "/docs/resources",
+          "children": [
+            { "label": "Resource Creation in Detail", "slug": "/docs/resource-creation-in-detail" },
+            { "label": "Resource Behaviors", "slug": "/docs/resource-behaviors" },
+            { "label": "Buckets and Vaults", "slug": "/docs/buckets-and-vaults" },
+            { "label": "Freezing Vaults", "slug": "/docs/freezing-vaults" },
+            { "label": "Recalling Resources", "slug": "/docs/recalling-resources" },
+            { "label": "Fungible Resource Manager", "slug": "/docs/fungible-resource-manager" },
+            { "label": "Non-Fungible Data", "slug": "/docs/non-fungible-data" },
+            { "label": "Non-Fungible Display", "slug": "/docs/non-fungible-display" },
+            { "label": "Non-Fungible Data for Wallet Display", "slug": "/docs/non-fungible-data-for-wallet-display" },
+            { "label": "Transaction Non-Fungible Resource Creation", "slug": "/docs/transaction-non-fungible-resource-creation" }
+          ]
+        },
+        {
+          "label": "Authorization",
+          "type": "category",
+          "slug": "/docs/auth",
+          "children": [
+            { "label": "Authorization Model", "slug": "/docs/authorization-model" },
+            { "label": "Assign Component Roles", "slug": "/docs/assign-component-roles" },
+            { "label": "Assign Function AccessRules", "slug": "/docs/assign-function-accessrules" },
+            { "label": "Assign Roles to Resources", "slug": "/docs/assign-roles-to-resources" },
+            { "label": "Assign Metadata Roles", "slug": "/docs/assign-metadata-roles" },
+            { "label": "Assign Component Royalty Roles", "slug": "/docs/assign-component-royalty-roles" },
+            { "label": "Call a Protected Method/Function", "slug": "/docs/call-a-protected-method-function" },
+            { "label": "Using Proofs", "slug": "/docs/using-proofs" },
+            { "label": "Advanced AccessRules", "slug": "/docs/advanced-accessrules" },
+            { "label": "User Badge Pattern", "slug": "/docs/user-badge-pattern" },
+            { "label": "Actor Virtual Badge Pattern", "slug": "/docs/actor-virtual-badge-pattern" },
+            { "label": "Transient Badge Pattern", "slug": "/docs/transient-badge-pattern" },
+            { "label": "The Withdraw Pattern", "slug": "/docs/the-withdraw-pattern" },
+            { "label": "Account Deposit Patterns", "slug": "/docs/account-deposit-patterns" }
+          ]
+        },
+        {
+          "label": "Transactions & Manifests",
+          "type": "category",
+          "slug": "/docs/manifest",
+          "children": [
+            { "label": "Writing Manifests", "slug": "/docs/writing-manifests" },
+            { "label": "Manifest Instructions", "slug": "/docs/manifest-instructions" },
+            { "label": "Manifest Value Syntax", "slug": "/docs/manifest-value-syntax" },
+            { "label": "Manifest SBOR Specs", "slug": "/docs/manifest-sbor-specs" },
+            { "label": "Conforming Manifest Types", "slug": "/docs/conforming-manifest-types" }
+          ]
+        },
+        {
+          "label": "Metadata",
+          "type": "category",
+          "slug": "/docs/metadata",
+          "children": [
+            { "label": "Entity Metadata", "slug": "/docs/entity-metadata" },
+            { "label": "Metadata for Wallet Display", "slug": "/docs/metadata-for-wallet-display" },
+            { "label": "Metadata for Verification", "slug": "/docs/metadata-for-verification" },
+            { "label": "Scrypto Entity Metadata", "slug": "/docs/scrypto-entity-metadata" }
+          ]
+        },
+        {
+          "label": "Native Blueprints",
+          "type": "category",
+          "slug": "/docs/native-blueprints",
+          "children": [
+            { "label": "Account", "slug": "/docs/account" },
+            { "label": "Access Controller", "slug": "/docs/access-controller" },
+            { "label": "Validator", "slug": "/docs/validator" },
+            { "label": "Identity", "slug": "/docs/identity" },
+            { "label": "Consensus Manager", "slug": "/docs/consensus-manager" },
+            { "label": "Pool", "slug": "/docs/pool" },
+            { "label": "Locker", "slug": "/docs/locker" }
+          ]
+        },
+        { "label": "Before You Release", "slug": "/docs/before-you-release" }
+      ]
+    },
+    {
+      "label": "Run",
+      "type": "category",
+      "slug": "/docs/run",
+      "_source": "summary_md",
+      "children": [
+        { "label": "Overview", "slug": "/docs/node" },
+        { "label": "Running a Node", "slug": "/docs/running-a-node" },
+        { "label": "Running Infrastructure", "slug": "/docs/running-infrastructure" },
+        {
+          "label": "Node Setup",
+          "type": "category",
+          "slug": "/docs/node-setup",
+          "children": [
+            { "label": "Basic Node Setup", "slug": "/docs/basic-node-setup" },
+            { "label": "Setup with CLI", "slug": "/docs/setup-with-cli" },
+            { "label": "Requirements", "slug": "/docs/requirements" }
+          ]
+        },
+        {
+          "label": "Guided Setup",
+          "type": "category",
+          "slug": "/docs/node-setup-guided",
+          "children": [
+            { "label": "Installing CLI", "slug": "/docs/node-setup-guided-installing-cli" },
+            { "label": "Installing the BabylonNode CLI", "slug": "/docs/installing-the-babylonnode-cli" },
+            { "label": "Installing Node", "slug": "/docs/node-setup-guided-installing-node" },
+            { "label": "Updating Node", "slug": "/docs/node-setup-guided-updating-node" }
+          ]
+        },
+        {
+          "label": "Docker Setup",
+          "type": "category",
+          "slug": "/docs/node-setup-docker",
+          "children": [
+            { "label": "Register as a Validator (Docker)", "slug": "/docs/docker-register-as-a-validator" }
+          ]
+        },
+        {
+          "label": "Systemd Setup",
+          "type": "category",
+          "slug": "/docs/node-setup-systemd",
+          "children": [
+            { "label": "Register as a Validator (Systemd)", "slug": "/docs/systemd-register-as-a-validator" },
+            { "label": "Systemd Update", "slug": "/docs/node-setup-systemd-update" }
+          ]
+        },
+        { "label": "Custom Setup", "slug": "/docs/custom-setup" },
+        { "label": "Registering as a Validator", "slug": "/docs/node-registering-as-a-validator" },
+        { "label": "Protocol Updates", "slug": "/docs/node-protocol-updates" },
+        { "label": "Protocol Update Readiness", "slug": "/docs/node-protocol-update-readiness" },
+        { "label": "Monitoring & Health", "slug": "/docs/node-monitoring-health" },
+        { "label": "Optimizing Performance", "slug": "/docs/node-optimizing-performance" },
+        { "label": "Setting Up Grafana", "slug": "/docs/node-setting-up-grafana" },
+        {
+          "label": "Network Gateway",
+          "type": "category",
+          "slug": "/docs/network-gateway",
+          "children": [
+            { "label": "Setup", "slug": "/docs/network-gateway-setup" },
+            { "label": "Configuration", "slug": "/docs/configuration" },
+            { "label": "Monitoring", "slug": "/docs/monitoring" },
+            { "label": "Releasing", "slug": "/docs/releasing" }
+          ]
+        },
+        { "label": "Enabling the Engine State API", "slug": "/docs/enabling-the-engine-state-api" },
+        { "label": "Engine Tech Docs", "slug": "/docs/engine-tech-docs" }
+      ]
+    },
+    {
+      "label": "Reference",
+      "type": "category",
+      "slug": "/docs/reference",
+      "children": [
+        { "label": "Environments", "slug": "/docs/environments" },
+        { "label": "Address Description", "slug": "/docs/address-description" },
+        { "label": "Well-known Addresses", "slug": "/docs/well-known-addresses-1" },
+        {
+          "label": "Standards",
+          "type": "category",
+          "slug": "/docs/standards",
+          "collapsed": true,
+          "children": [],
+          "_note": "Collapsed in live site capture. Children unknown."
+        },
+        {
+          "label": "Integrator Concepts",
+          "type": "category",
+          "slug": "/docs/babylon-technical-concepts",
+          "children": [
+            { "label": "Addresses", "slug": "/docs/concepts-addresses" },
+            { "label": "Environments", "slug": "/docs/concepts-environments" },
+            { "label": "Well-known Addresses", "slug": "/docs/well-known-addresses" },
+            { "label": "Infrastructure and APIs", "slug": "/docs/concepts-infrastructure-and-apis" },
+            { "label": "Consensus, Ledger Forks, Blocks, and Trust chains", "slug": "/docs/concepts-consensus-ledger-forks-blocks-and-trust-chains" },
+            { "label": "Curves, Keys, Signatures and Hashing", "slug": "/docs/concepts-curves-keys-signatures-and-hashing" },
+            { "label": "State Model - Introduction", "slug": "/docs/concepts-state-model-introduction" },
+            { "label": "State Model - Advanced", "slug": "/docs/concepts-state-model-advanced" },
+            { "label": "Native Token - XRD", "slug": "/docs/concepts-native-token-xrd" },
+            { "label": "Transactions for Integrators", "slug": "/docs/concepts-transactions" },
+            { "label": "Getting test XRD and paying fees from the Faucet", "slug": "/docs/concepts-getting-test-xrd-and-paying-fees-from-the-faucet" },
+            { "label": "Key developer links and version", "slug": "/docs/concepts-key-developer-links-and-version" },
+            { "label": "Network Upgrades once live", "slug": "/docs/concepts-network-upgrades-once-live" },
+            { "label": "DApps, Dashboards and Wallets", "slug": "/docs/concepts-dapps-dashboards-and-wallets" }
+          ]
+        },
+        {
+          "label": "Well-Known Addresses",
+          "slug": "/docs/well-known-addresses",
+          "_source": "summary_md",
+          "_note": "Present in SUMMARY.md Reference but not as standalone item on live site (appears under Integrator Concepts)"
+        },
+        { "label": "Bech32 Address Types & Conversion", "slug": "/docs/bech32-address-types-conversion", "_source": "summary_md" },
+        { "label": "Resource Address Display", "slug": "/docs/resource-address-display", "_source": "summary_md" },
+        {
+          "label": "Radix Engine",
+          "type": "category",
+          "collapsed": true,
+          "children": [],
+          "_note": "Collapsed in live site capture. Children unknown."
+        },
+        {
+          "label": "Transactions",
+          "type": "category",
+          "collapsed": true,
+          "children": [],
+          "_note": "Collapsed in live site capture. Children unknown."
+        },
+        {
+          "label": "SBOR Serialization",
+          "type": "category",
+          "slug": "/docs/what-is-sbor",
+          "_source_children": "summary_md",
+          "children": [
+            { "label": "What is SBOR", "slug": "/docs/what-is-sbor" },
+            { "label": "SBOR Type Model", "slug": "/docs/sbor-type-model" },
+            { "label": "SBOR Value Model", "slug": "/docs/sbor-value-model" },
+            { "label": "SBOR String Formats", "slug": "/docs/sbor-string-formats" },
+            { "label": "SBOR Programmatic JSON", "slug": "/docs/sbor-programmatic-json" },
+            { "label": "SBOR in Rust/Scrypto", "slug": "/docs/sbor-in-rust-scrypto" },
+            { "label": "SBOR in Java", "slug": "/docs/sbor-in-java" },
+            { "label": "Scrypto SBOR Specs", "slug": "/docs/scrypto-sbor-specs" },
+            { "label": "Scrypto Type Model", "slug": "/docs/scrypto-type-model" },
+            { "label": "Scrypto Value Kinds", "slug": "/docs/scrypto-value-kinds" },
+            { "label": "Scrypto Ledger", "slug": "/docs/scrypto-ledger" }
+          ]
+        },
+        {
+          "label": "Cryptography",
+          "type": "category",
+          "slug": "/docs/cryptography",
+          "_source": "summary_md",
+          "children": [
+            { "label": "BLS12-381", "slug": "/docs/bls12-381" },
+            { "label": "Keccak256", "slug": "/docs/keccak256" }
+          ]
+        },
+        {
+          "label": "Core System Features",
+          "type": "category",
+          "slug": "/docs/core-system-features",
+          "_source": "summary_md",
+          "children": [
+            { "label": "Runtime", "slug": "/docs/runtime" },
+            { "label": "Structure Roles & Methods", "slug": "/docs/structure-roles-and-methods" }
+          ]
+        },
+        {
+          "label": "Costing & Limits",
+          "type": "category",
+          "slug": "/docs/costing-and-limits",
+          "_source": "summary_md",
+          "children": [
+            { "label": "Transaction Costing", "slug": "/docs/transaction-costing" },
+            { "label": "Transaction Limits", "slug": "/docs/transaction-limits" }
+          ]
+        },
+        {
+          "label": "Developer Tools",
+          "type": "category",
+          "slug": "/docs/developer-console",
+          "_source": "summary_md",
+          "children": [
+            { "label": "Developer Console", "slug": "/docs/developer-console" },
+            { "label": "Radix Engine Simulator (Resim)", "slug": "/docs/resim-radix-engine-simulator" },
+            { "label": "Environments", "slug": "/docs/environments" }
+          ]
+        },
+        { "label": "ROLA (Radix Off-Ledger Auth)", "slug": "/docs/rola-radix-off-ledger-auth", "_source": "summary_md" },
+        { "label": "Useful Links", "slug": "/docs/useful-links", "_source": "summary_md" }
+      ]
+    },
+    {
+      "label": "Updates",
+      "type": "category",
+      "_source": "summary_md",
+      "children": [
+        { "label": "Roadmap", "slug": "/docs/roadmap" },
+        {
+          "label": "Protocol Updates",
+          "type": "category",
+          "slug": "/docs/protocol-updates",
+          "children": [
+            { "label": "Babylon Genesis", "slug": "/docs/babylon-genesis" },
+            { "label": "Anemone", "slug": "/docs/anemone" },
+            { "label": "Bottlenose", "slug": "/docs/bottlenose" },
+            { "label": "Cuttlefish", "slug": "/docs/cuttlefish" },
+            { "label": "Dugong", "slug": "/docs/dugong" }
+          ]
+        },
+        {
+          "label": "Scrypto Updates",
+          "type": "category",
+          "slug": "/docs/scrypto-milestones",
+          "children": [
+            { "label": "Scrypto v1.1.0", "slug": "/docs/scrypto-v1-1-0" },
+            { "label": "Scrypto v1.2.0", "slug": "/docs/scrypto-v1-2-0" },
+            { "label": "Scrypto v1.3.0", "slug": "/docs/scrypto-v1-3-0" },
+            { "label": "Backlog", "slug": "/docs/scrypto-backlog" },
+            { "label": "Underway", "slug": "/docs/scrypto-underway" },
+            { "label": "Milestones", "slug": "/docs/scrypto-milestones" }
+          ]
+        },
+        {
+          "label": "Gateway Updates",
+          "type": "category",
+          "slug": "/docs/gateway-milestones",
+          "children": [
+            { "label": "Backlog", "slug": "/docs/gateway-backlog" },
+            { "label": "Underway", "slug": "/docs/gateway-underway" },
+            { "label": "Complete", "slug": "/docs/gateway-complete" },
+            { "label": "Milestones", "slug": "/docs/gateway-milestones" }
+          ]
+        },
+        {
+          "label": "Node/Engine Updates",
+          "type": "category",
+          "slug": "/docs/node-engine-milestones",
+          "children": [
+            { "label": "Backlog", "slug": "/docs/node-engine-backlog" },
+            { "label": "Underway", "slug": "/docs/node-engine-underway" },
+            { "label": "Complete", "slug": "/docs/node-engine-complete" },
+            { "label": "Milestones", "slug": "/docs/node-engine-milestones" }
+          ]
+        },
+        {
+          "label": "Developer Tools Updates",
+          "type": "category",
+          "slug": "/docs/developer-tools-backlog",
+          "children": [
+            { "label": "Backlog", "slug": "/docs/developer-tools-backlog" },
+            { "label": "Underway", "slug": "/docs/developer-tools-underway" }
+          ]
+        },
+        {
+          "label": "Radix Applications",
+          "type": "category",
+          "slug": "/docs/radix-applications-backlog",
+          "children": [
+            { "label": "Backlog", "slug": "/docs/radix-applications-backlog" },
+            { "label": "Underway", "slug": "/docs/radix-applications-underway" },
+            { "label": "Complete", "slug": "/docs/radix-applications-complete" }
+          ]
+        },
+        {
+          "label": "Wallets Updates",
+          "type": "category",
+          "slug": "/docs/wallets-milestones",
+          "children": [
+            { "label": "Backlog", "slug": "/docs/wallets-backlog" },
+            { "label": "Underway", "slug": "/docs/wallets-underway" },
+            { "label": "Milestones", "slug": "/docs/wallets-milestones" }
+          ]
+        }
+      ]
+    }
+  ]
+}

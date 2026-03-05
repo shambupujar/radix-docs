@@ -1,5 +1,6 @@
 ---
 title: "Wrapping Up"
+slug: /wrapping-up-the-learning-step-by-step
 ---
 
 # Wrapping Up

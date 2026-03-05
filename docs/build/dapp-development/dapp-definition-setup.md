@@ -1,5 +1,6 @@
 ---
 title: "dApp Definition Setup"
+slug: /dapp-definition-setup
 ---
 
 # dApp Definition Setup

@@ -1,5 +1,6 @@
 ---
 title: "Run the Gumball Machine Front End dApp"
+slug: /learning-to-run-the-gumball-machine-front-end-dapp
 ---
 
 # Run the Gumball Machine Front End dApp

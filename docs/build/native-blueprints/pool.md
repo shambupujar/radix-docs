@@ -1,5 +1,6 @@
 ---
 title: "Pool"
+slug: /pool
 ---
 
 ## Resource Pools

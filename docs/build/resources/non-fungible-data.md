@@ -1,5 +1,6 @@
 ---
 title: "Non Fungible Data"
+slug: /non-fungible-data
 ---
 
 

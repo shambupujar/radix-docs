@@ -1,5 +1,6 @@
 ---
 title: "Run The Radiswap Dapp"
+slug: /run-the-radiswap-dapp
 ---
 
 The Radiswap dApp is the last example in the step-by-step learning journey. It takes the concepts learned in the previous sections and combines them with some new additions to make a single, more complex demonstration of what you can do with Scrypto. The Radiswap dApp is a decentralized exchange (DEX) that allows users to deposit and swap between two tokens.

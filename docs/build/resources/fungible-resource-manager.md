@@ -1,5 +1,6 @@
 ---
 title: "Fungible Resource Manager"
+slug: /fungible-resource-manager
 ---
 
 # Fungible Resource Manager

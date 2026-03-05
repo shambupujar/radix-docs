@@ -1,5 +1,6 @@
 ---
 title: "Changes in Babylon from Olympia"
+slug: /changes-in-babylon-from-olympia
 ---
 
 # Changes in Babylon from Olympia

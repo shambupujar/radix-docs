@@ -1,5 +1,6 @@
 ---
 title: "Build a Candy Store"
+slug: /learning-to-build-a-candy-store
 ---
 
 # Build a Candy Store

@@ -1,5 +1,6 @@
 ---
 title: "LTS Core API"
+slug: /exchange-integration-lts-core-api
 ---
 
 # LTS Core API

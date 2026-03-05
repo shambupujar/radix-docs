@@ -1,5 +1,6 @@
 ---
 title: "Functions And Methods"
+slug: /functions-and-methods
 ---
 
 Functions and methods form the primary part of the implementation of a blueprint; they define the behavior to accomplish specific tasks. Calls to functions and methods are also how transactions interact with blueprints and components on the Radix network.

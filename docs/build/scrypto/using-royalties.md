@@ -1,5 +1,6 @@
 ---
 title: "Using Royalties"
+slug: /using-royalties
 ---
 
 Royalties can be configured on methods and functions by a package publisher, or an instantiator, and are paid by transactions interacting with the given package or component as part of the transaction fee.

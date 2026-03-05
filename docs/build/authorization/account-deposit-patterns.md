@@ -1,5 +1,6 @@
 ---
 title: "Account Deposit Patterns"
+slug: /account-deposit-patterns
 ---
 
 # Account Deposit Patterns

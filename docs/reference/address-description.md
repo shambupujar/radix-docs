@@ -1,5 +1,6 @@
 ---
 title: "Address Description"
+slug: /address-description
 ---
 
 # Address Description

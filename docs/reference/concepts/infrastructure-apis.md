@@ -1,5 +1,6 @@
 ---
 title: "Infrastructure and APIs"
+slug: /concepts-infrastructure-and-apis
 ---
 
 # Infrastructure and APIs

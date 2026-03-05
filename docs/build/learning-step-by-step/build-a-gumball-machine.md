@@ -1,5 +1,6 @@
 ---
 title: "Build A Gumball Machine"
+slug: /learning-to-build-a-gumball-machine
 ---
 
 It’s time to take a look at our next Scrypto package. The Gumball Machine is a Radix favorite. Here we cover the creation of its simplest version, which allows users to purchase a gumball in exchange for XRD. This will be the basis for next few steps in our learning journey.

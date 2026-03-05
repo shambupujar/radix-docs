@@ -1,5 +1,6 @@
 ---
 title: "Basic Node Setup"
+slug: /basic-node-setup
 ---
 
 # Basic Node Setup

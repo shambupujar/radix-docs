@@ -1,5 +1,6 @@
 ---
 title: "Architecture"
+slug: /radix-engine-toolkit-architecture
 ---
 
 # Architecture

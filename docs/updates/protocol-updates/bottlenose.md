@@ -1,5 +1,6 @@
 ---
 title: "Bottlenose"
+slug: /bottlenose
 ---
 
 # Bottlenose

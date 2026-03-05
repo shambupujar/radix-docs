@@ -1,5 +1,6 @@
 ---
 title: "Worked Example 4: Node Status & Monitoring"
+slug: /exchange-integration-worked-example-4-node-status-and-monitoring
 ---
 
 # Worked Example 4: Node Status & Monitoring

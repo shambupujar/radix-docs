@@ -1,5 +1,6 @@
 ---
 title: "Anemone"
+slug: /anemone
 ---
 
 # Anemone

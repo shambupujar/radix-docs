@@ -1,5 +1,6 @@
 ---
 title: "Authorization Model"
+slug: /authorization-model
 ---
 
 # Authorization Model

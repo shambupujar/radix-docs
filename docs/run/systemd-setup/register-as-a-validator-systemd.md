@@ -1,5 +1,6 @@
 ---
 title: "Register as a Validator (Systemd)"
+slug: /systemd-register-as-a-validator
 ---
 
 # Register as a Validator (Systemd)

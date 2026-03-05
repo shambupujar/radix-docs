@@ -1,5 +1,6 @@
 ---
 title: "Productionize Your Code"
+slug: /productionize-your-code
 ---
 
 ## Ensure That All Entities Have an Owner

@@ -1,5 +1,6 @@
 ---
 title: "install wget and unzip if they don't come preinstalled on your system"
+slug: /node-setup-systemd
 ---
 
 ### Introduction

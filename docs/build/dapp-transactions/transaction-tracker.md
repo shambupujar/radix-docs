@@ -1,5 +1,6 @@
 ---
 title: "Transaction Tracker"
+slug: /transaction-tracker
 ---
 
 # Transaction Tracker

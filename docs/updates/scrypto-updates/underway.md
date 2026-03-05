@@ -1,5 +1,6 @@
 ---
 title: "Underway"
+slug: /scrypto-underway
 ---
 
 # Underway

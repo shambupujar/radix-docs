@@ -1,5 +1,6 @@
 ---
 title: "Scrypto SBOR Specs"
+slug: /scrypto-sbor-specs
 ---
 
 # Scrypto SBOR Specs

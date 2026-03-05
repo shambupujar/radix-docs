@@ -1,5 +1,6 @@
 ---
 title: "Before You Release"
+slug: /before-you-release
 ---
 
 # Before You Release

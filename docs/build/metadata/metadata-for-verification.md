@@ -1,5 +1,6 @@
 ---
 title: "Metadata for Verification"
+slug: /metadata-for-verification
 ---
 
 # Metadata for Verification

@@ -1,5 +1,6 @@
 ---
 title: "Resource Creation In Detail"
+slug: /resource-creation-in-detail
 ---
 
 ## The `ResourceBuilder`

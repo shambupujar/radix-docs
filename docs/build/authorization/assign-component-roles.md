@@ -1,5 +1,6 @@
 ---
 title: "Assign Component Roles"
+slug: /assign-component-roles
 ---
 
 ### Assign Component Roles

@@ -1,5 +1,6 @@
 ---
 title: "Code Hardening"
+slug: /code-hardening
 ---
 
 ## Check The Resource Address of All Proofs Passed by Intent

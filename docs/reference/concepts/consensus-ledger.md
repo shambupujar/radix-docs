@@ -1,5 +1,6 @@
 ---
 title: "Consensus, Ledger Forks, Blocks, and Trust chains"
+slug: /concepts-consensus-ledger-forks-blocks-and-trust-chains
 ---
 
 # Consensus, Ledger Forks, Blocks, and Trust chains

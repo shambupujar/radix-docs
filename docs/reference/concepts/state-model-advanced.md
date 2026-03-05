@@ -1,5 +1,6 @@
 ---
 title: "State Model Advanced"
+slug: /concepts-state-model-advanced
 ---
 
 # State Model Advanced

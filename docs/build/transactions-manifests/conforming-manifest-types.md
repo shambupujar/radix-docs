@@ -1,5 +1,6 @@
 ---
 title: "Conforming Manifest Types"
+slug: /conforming-manifest-types
 ---
 
 # Conforming Manifest Types

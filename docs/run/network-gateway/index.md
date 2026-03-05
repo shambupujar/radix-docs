@@ -1,5 +1,6 @@
 ---
 title: "Network Gateway"
+slug: /network-gateway
 ---
 
 # Network Gateway

@@ -1,5 +1,6 @@
 ---
 title: "Worked Example 2: Tracking Deposits (Any Account)"
+slug: /exchange-integration-worked-example-2-tracking-deposits-to-any-account
 ---
 
 # Worked Example 2: Tracking Deposits (Any Account)

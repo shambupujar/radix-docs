@@ -1,5 +1,6 @@
 ---
 title: "SBOR Value Model"
+slug: /sbor-value-model
 ---
 
 # SBOR Value Model

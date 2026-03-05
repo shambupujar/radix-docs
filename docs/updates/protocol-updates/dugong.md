@@ -1,5 +1,6 @@
 ---
 title: "Dugong"
+slug: /dugong
 ---
 
 # Dugong

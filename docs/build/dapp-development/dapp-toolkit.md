@@ -1,5 +1,6 @@
 ---
 title: "dApp Toolkit"
+slug: /dapp-toolkit
 ---
 
 # dApp Toolkit

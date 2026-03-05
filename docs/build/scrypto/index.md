@@ -1,5 +1,6 @@
 ---
 title: "Index"
+slug: /scrypto
 ---
 
 Scrypto splits the concept of "smart contract" into two parts: blueprints and components.

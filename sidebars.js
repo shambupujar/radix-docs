@@ -11,7 +11,6 @@ const sidebars = {
       "label": "Welcome",
       "items": [
         "welcome/getting-started",
-        "welcome/introduction-to-radix-at-babylon",
         "welcome/getting-help"
       ]
     },

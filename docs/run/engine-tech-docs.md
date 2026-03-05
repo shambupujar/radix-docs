@@ -1,5 +1,6 @@
 ---
 title: "Engine Tech Docs"
+slug: /engine-tech-docs
 ---
 
 # Engine Tech Docs

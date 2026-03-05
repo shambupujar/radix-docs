@@ -1,5 +1,6 @@
 ---
 title: "Non-Fungible Data for Wallet Display"
+slug: /non-fungible-data-for-wallet-display
 ---
 
 # Non-Fungible Data for Wallet Display

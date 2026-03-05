@@ -1,5 +1,6 @@
 ---
 title: "Gateway API Providers"
+slug: /gateway-api-providers
 ---
 
 # Gateway API Providers

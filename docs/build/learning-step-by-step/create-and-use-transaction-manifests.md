@@ -1,5 +1,6 @@
 ---
 title: "Create and Use Transaction Manifests"
+slug: /learning-to-create-and-use-transaction-manifests
 ---
 
 # Create and Use Transaction Manifests

@@ -1,5 +1,6 @@
 ---
 title: "Manifest Value Syntax"
+slug: /manifest-value-syntax
 ---
 
 # Manifest Value Syntax

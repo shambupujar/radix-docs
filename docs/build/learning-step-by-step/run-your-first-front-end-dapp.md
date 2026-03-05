@@ -1,5 +1,6 @@
 ---
 title: "Run Your First Front End dApp"
+slug: /learning-to-run-your-first-front-end-dapp
 ---
 
 # Run Your First Front End dApp

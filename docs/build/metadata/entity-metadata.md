@@ -1,5 +1,6 @@
 ---
 title: "Entity Metadata"
+slug: /entity-metadata
 ---
 
 # Entity Metadata

@@ -1,5 +1,6 @@
 ---
 title: "Running Infrastructure"
+slug: /running-infrastructure
 ---
 
 # Running Infrastructure

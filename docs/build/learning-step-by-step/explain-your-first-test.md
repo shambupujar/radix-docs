@@ -1,5 +1,6 @@
 ---
 title: "–snip–"
+slug: /learning-to-explain-your-first-test
 ---
 
 It’s time to focus on testing. Thorough testing is essential to ensuring the proper predictable working of any Scrypto packages we write. You may have noticed an example of this in the Hello template used in several previous sections. It has a `test/` directory that holds a `lib.rs` file containing two test functions. These demonstrate two ways to test the Hello blueprint and the two main ways to test any Scrypto package. Here we’ll explain both and show you how to run the tests.

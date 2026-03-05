@@ -1,5 +1,6 @@
 ---
 title: "Transaction Structure"
+slug: /transaction-structure
 ---
 
 # Transaction Structure

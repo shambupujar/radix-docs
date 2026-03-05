@@ -1,5 +1,6 @@
 ---
 title: "Transfer 100 XRD from the default account to <ACCOUNT_2_ADDRESS>"
+slug: /resim-radix-engine-simulator
 ---
 
 ## `resim`

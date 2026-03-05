@@ -1,5 +1,6 @@
 ---
 title: "Make Recallable Badges"
+slug: /learning-to-make-recallable-badges
 ---
 
 It’s time to introduce some more resource behaviors. In this section, we will add the ability to recall and burn staff badges to our candy store (from [Build a Candy Store](build-a-candy-store.md)). We don’t want staff that stop working for us to keep their badges and the access that gives them. We’ll trigger these behaviours in a different way to previous sections. Instead of adding a new method the recall action will be described purely in a transaction manifest, but to allow this to happen we will need to add some new permissions to the staff badge resource.

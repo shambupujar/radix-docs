@@ -1,5 +1,6 @@
 ---
 title: "Monitoring & Health"
+slug: /node-monitoring-health
 ---
 
 # Monitoring & Health

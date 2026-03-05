@@ -1,5 +1,6 @@
 ---
 title: "Asset-Oriented"
+slug: /asset-oriented
 ---
 
 # Asset-Oriented
