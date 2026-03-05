@@ -23,27 +23,7 @@ const sidebars = {
         "essentials/asset-oriented",
         "essentials/reusable-code",
         "essentials/transactions-on-radix",
-        "essentials/authorization-approach",
-        {
-          "type": "category",
-          "label": "Concepts",
-          "link": { "type": "doc", "id": "essentials/concepts/index" },
-          "items": [
-            "essentials/concepts/addresses",
-            "essentials/concepts/environments",
-            "essentials/concepts/consensus-ledger",
-            "essentials/concepts/dapps-dashboards-wallets",
-            "essentials/concepts/infrastructure-apis",
-            "essentials/concepts/native-token-xrd",
-            "essentials/concepts/network-upgrades",
-            "essentials/concepts/state-model-introduction",
-            "essentials/concepts/state-model-advanced",
-            "essentials/concepts/transactions",
-            "essentials/concepts/getting-test-xrd",
-            "essentials/concepts/key-developer-links",
-            "essentials/concepts/curves-keys-signatures"
-          ]
-        }
+        "essentials/authorization-approach"
       ]
     },
     {
@@ -422,7 +402,27 @@ const sidebars = {
       "type": "category",
       "label": "Reference",
       "items": [
-        "reference/well-known-addresses",
+        {
+          "type": "category",
+          "label": "Concepts",
+          "link": { "type": "doc", "id": "reference/concepts/index" },
+          "items": [
+            "reference/concepts/addresses",
+            "reference/concepts/environments",
+            "reference/well-known-addresses",
+            "reference/concepts/consensus-ledger",
+            "reference/concepts/dapps-dashboards-wallets",
+            "reference/concepts/infrastructure-apis",
+            "reference/concepts/native-token-xrd",
+            "reference/concepts/network-upgrades",
+            "reference/concepts/state-model-introduction",
+            "reference/concepts/state-model-advanced",
+            "reference/concepts/transactions",
+            "reference/concepts/getting-test-xrd",
+            "reference/concepts/key-developer-links",
+            "reference/concepts/curves-keys-signatures"
+          ]
+        },
         "reference/well-known-addresses-full-list",
         "reference/address-description",
         "reference/bech32-address-types-conversion",
