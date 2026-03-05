@@ -516,82 +516,171 @@ const sidebars = {
       "type": "category",
       "label": "Run",
       "items": [
-        "run/overview",
-        "run/running-a-node",
         "run/running-infrastructure",
         {
           "type": "category",
-          "label": "Node Setup",
-          "items": [
-            "run/node-setup/basic-node-setup",
-            "run/node-setup/setup-with-cli",
-            "run/node-setup/requirements"
-          ],
+          "label": "Node",
           "link": {
             "type": "doc",
-            "id": "run/node-setup/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Guided Setup",
+            "id": "run/overview"
+          },
           "items": [
-            "run/guided-setup/installing-cli",
-            "run/guided-setup/installing-the-babylonnode-cli",
-            "run/guided-setup/installing-node",
-            "run/guided-setup/updating-node"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "run/guided-setup/index"
-          }
+            {
+              "type": "category",
+              "label": "Installation and Basic Setup",
+              "link": {
+                "type": "doc",
+                "id": "run/node-setup/basic-node-setup"
+              },
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Guided Setup (Recommended)",
+                  "link": {
+                    "type": "doc",
+                    "id": "run/guided-setup/index"
+                  },
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "run/guided-setup/installing-the-babylonnode-cli",
+                      "label": "Installing the babylonnode CLI"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "run/guided-setup/installing-node",
+                      "label": "Installing the node"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "run/guided-setup/updating-node",
+                      "label": "Updating the node"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Manual Setup (Advanced)",
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "run/docker-setup/index",
+                      "label": "Manual Setup with Docker"
+                    },
+                    {
+                      "type": "category",
+                      "label": "Manual Node Setup with systemd",
+                      "link": {
+                        "type": "doc",
+                        "id": "run/systemd-setup/index"
+                      },
+                      "items": [
+                        {
+                          "type": "doc",
+                          "id": "run/systemd-setup/systemd-update",
+                          "label": "Update the Node"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Maintenance and Administration",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "run/monitoring-health",
+                  "label": "Monitoring node's health"
+                },
+                {
+                  "type": "doc",
+                  "id": "run/protocol-update-readiness",
+                  "label": "Signalling Protocol Update Readiness"
+                },
+                {
+                  "type": "doc",
+                  "id": "run/registering-as-a-validator",
+                  "label": "Registering as a Validator"
+                },
+                {
+                  "type": "doc",
+                  "id": "run/optimizing-performance",
+                  "label": "Optimizing node's performance"
+                },
+                {
+                  "type": "doc",
+                  "id": "run/setting-up-grafana",
+                  "label": "Setting up a Grafana dashboard"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Workbench",
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Trash - to remove",
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "run/docker-setup/register-as-a-validator-docker",
+                      "label": "Register as a Validator"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
-        {
-          "type": "category",
-          "label": "Docker Setup",
-          "items": [
-            "run/docker-setup/register-as-a-validator-docker"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "run/docker-setup/index"
-          }
-        },
-        {
-          "type": "category",
-          "label": "Systemd Setup",
-          "items": [
-            "run/systemd-setup/register-as-a-validator-systemd",
-            "run/systemd-setup/systemd-update"
-          ],
-          "link": {
-            "type": "doc",
-            "id": "run/systemd-setup/index"
-          }
-        },
-        "run/custom-setup",
-        "run/registering-as-a-validator",
-        "run/protocol-updates",
-        "run/protocol-update-readiness",
-        "run/monitoring-health",
-        "run/optimizing-performance",
-        "run/setting-up-grafana",
         {
           "type": "category",
           "label": "Network Gateway",
-          "items": [
-            "run/network-gateway/setup",
-            "run/network-gateway/configuration",
-            "run/network-gateway/monitoring",
-            "run/network-gateway/releasing"
-          ],
           "link": {
             "type": "doc",
             "id": "run/network-gateway/index"
-          }
-        },
-        "run/enabling-the-engine-state-api",
-        "run/engine-tech-docs"
+          },
+          "items": [
+            {
+              "type": "category",
+              "label": "Setup",
+              "link": {
+                "type": "doc",
+                "id": "run/network-gateway/setup"
+              },
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "run/node-setup/setup-with-cli",
+                  "label": "Setup with CLI"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Custom Setup",
+              "link": {
+                "type": "doc",
+                "id": "run/custom-setup"
+              },
+              "items": [
+                "run/node-setup/requirements",
+                "run/network-gateway/configuration"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Maintenance",
+              "items": [
+                "run/network-gateway/monitoring",
+                "run/network-gateway/releasing"
+              ]
+            }
+          ]
+        }
       ]
     },
     {

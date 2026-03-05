@@ -376,69 +376,104 @@
       "label": "Run",
       "type": "category",
       "slug": "/docs/run",
-      "_source": "summary_md",
+      "_source": "live_html",
       "children": [
-        { "label": "Overview", "slug": "/docs/node" },
-        { "label": "Running a Node", "slug": "/docs/running-a-node" },
         { "label": "Running Infrastructure", "slug": "/docs/running-infrastructure" },
         {
-          "label": "Node Setup",
+          "label": "Node",
           "type": "category",
-          "slug": "/docs/node-setup",
+          "slug": "/docs/node",
           "children": [
-            { "label": "Basic Node Setup", "slug": "/docs/basic-node-setup" },
-            { "label": "Setup with CLI", "slug": "/docs/setup-with-cli" },
-            { "label": "Requirements", "slug": "/docs/requirements" }
+            {
+              "label": "Installation and Basic Setup",
+              "type": "category",
+              "slug": "/docs/basic-node-setup",
+              "children": [
+                {
+                  "label": "Guided Setup (Recommended)",
+                  "type": "category",
+                  "slug": "/docs/node-setup-guided",
+                  "children": [
+                    { "label": "Installing the babylonnode CLI", "slug": "/docs/installing-the-babylonnode-cli" },
+                    { "label": "Installing the node", "slug": "/docs/node-setup-guided-installing-node" },
+                    { "label": "Updating the node", "slug": "/docs/node-setup-guided-updating-node" }
+                  ]
+                },
+                {
+                  "label": "Manual Setup (Advanced)",
+                  "type": "category",
+                  "children": [
+                    { "label": "Manual Setup with Docker", "slug": "/docs/node-setup-docker" },
+                    {
+                      "label": "Manual Node Setup with systemd",
+                      "type": "category",
+                      "slug": "/docs/node-setup-systemd",
+                      "children": [
+                        { "label": "Update the Node", "slug": "/docs/node-setup-systemd-update" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Maintenance and Administration",
+              "type": "category",
+              "children": [
+                { "label": "Monitoring node's health", "slug": "/docs/node-monitoring-health" },
+                { "label": "Signalling Protocol Update Readiness", "slug": "/docs/node-protocol-update-readiness" },
+                { "label": "Registering as a Validator", "slug": "/docs/node-registering-as-a-validator" },
+                { "label": "Optimizing node's performance", "slug": "/docs/node-optimizing-performance" },
+                { "label": "Setting up a Grafana dashboard", "slug": "/docs/node-setting-up-grafana" }
+              ]
+            },
+            {
+              "label": "Workbench",
+              "type": "category",
+              "children": [
+                {
+                  "label": "Trash - to remove",
+                  "type": "category",
+                  "children": [
+                    { "label": "Register as a Validator", "slug": "/docs/docker-register-as-a-validator" }
+                  ]
+                }
+              ]
+            }
           ]
         },
-        {
-          "label": "Guided Setup",
-          "type": "category",
-          "slug": "/docs/node-setup-guided",
-          "children": [
-            { "label": "Installing CLI", "slug": "/docs/node-setup-guided-installing-cli" },
-            { "label": "Installing the BabylonNode CLI", "slug": "/docs/installing-the-babylonnode-cli" },
-            { "label": "Installing Node", "slug": "/docs/node-setup-guided-installing-node" },
-            { "label": "Updating Node", "slug": "/docs/node-setup-guided-updating-node" }
-          ]
-        },
-        {
-          "label": "Docker Setup",
-          "type": "category",
-          "slug": "/docs/node-setup-docker",
-          "children": [
-            { "label": "Register as a Validator (Docker)", "slug": "/docs/docker-register-as-a-validator" }
-          ]
-        },
-        {
-          "label": "Systemd Setup",
-          "type": "category",
-          "slug": "/docs/node-setup-systemd",
-          "children": [
-            { "label": "Register as a Validator (Systemd)", "slug": "/docs/systemd-register-as-a-validator" },
-            { "label": "Systemd Update", "slug": "/docs/node-setup-systemd-update" }
-          ]
-        },
-        { "label": "Custom Setup", "slug": "/docs/custom-setup" },
-        { "label": "Registering as a Validator", "slug": "/docs/node-registering-as-a-validator" },
-        { "label": "Protocol Updates", "slug": "/docs/node-protocol-updates" },
-        { "label": "Protocol Update Readiness", "slug": "/docs/node-protocol-update-readiness" },
-        { "label": "Monitoring & Health", "slug": "/docs/node-monitoring-health" },
-        { "label": "Optimizing Performance", "slug": "/docs/node-optimizing-performance" },
-        { "label": "Setting Up Grafana", "slug": "/docs/node-setting-up-grafana" },
         {
           "label": "Network Gateway",
           "type": "category",
           "slug": "/docs/network-gateway",
           "children": [
-            { "label": "Setup", "slug": "/docs/network-gateway-setup" },
-            { "label": "Configuration", "slug": "/docs/configuration" },
-            { "label": "Monitoring", "slug": "/docs/monitoring" },
-            { "label": "Releasing", "slug": "/docs/releasing" }
+            {
+              "label": "Setup",
+              "type": "category",
+              "slug": "/docs/network-gateway-setup",
+              "children": [
+                { "label": "Setup with CLI", "slug": "/docs/setup-with-cli" }
+              ]
+            },
+            {
+              "label": "Custom Setup",
+              "type": "category",
+              "slug": "/docs/custom-setup",
+              "children": [
+                { "label": "Requirements", "slug": "/docs/requirements" },
+                { "label": "Configuration", "slug": "/docs/configuration" }
+              ]
+            },
+            {
+              "label": "Maintenance",
+              "type": "category",
+              "children": [
+                { "label": "Monitoring", "slug": "/docs/monitoring" },
+                { "label": "Releasing", "slug": "/docs/releasing" }
+              ]
+            }
           ]
-        },
-        { "label": "Enabling the Engine State API", "slug": "/docs/enabling-the-engine-state-api" },
-        { "label": "Engine Tech Docs", "slug": "/docs/engine-tech-docs" }
+        }
       ]
     },
     {

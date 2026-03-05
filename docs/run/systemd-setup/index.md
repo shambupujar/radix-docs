@@ -1,5 +1,5 @@
 ---
-title: "install wget and unzip if they don't come preinstalled on your system"
+title: "Manual Node Setup with systemd"
 slug: /node-setup-systemd
 ---
 
