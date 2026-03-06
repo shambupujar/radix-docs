@@ -68,7 +68,7 @@ The encodings of Arrays and Maps “lift up” the value kinds of their children
 | **Array** - Any number of ordered elements of the same value kind. In Rust, this can correspond to `[T]` or `[T; N]` or any iterable collection | `0x20` | The discriminator of the value kind, then the LEB128-encoded element count of the array, followed by each value **without** its value kind discriminator |
 | **Tuple** - A general product type: An ordered list of elements of possibly different value kinds. This corresponds to a Rust tuple or struct | `0x21` | The LEB128-encoded item count of the tuple, followed by each value **with** its value kind discriminator |
 | **Enum** - A general sum type / discriminated union with a tuple-like payload. This corresponds to a Rust enum. | `0x22` | A byte for the enum’s discriminator, followed by the its tuple data, i.e. the LEB128-encoded item count of its data tuple, followed by each value **with** its value kind discriminator |
-|  | `0x23` | The discriminator of the key value kind, then the discriminator of the value value kind, then the LEB128-encoded entry count of the map, followed by each entry (i.e. key then value **without** their value kind discriminators) |
+| **Map** - A collection of key-value pairs where both keys and values share their respective value kinds | `0x23` | The discriminator of the key value kind, then the discriminator of the value value kind, then the LEB128-encoded entry count of the map, followed by each entry (i.e. key then value **without** their value kind discriminators) |
 
 ### Value Model Caveats
 
