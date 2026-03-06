@@ -2,13 +2,20 @@
 
 Issues identified during migration from Document360 to Docusaurus that need manual review.
 
-## 1. Tables not closed properly
+## 1. Table formatting issues
 
-Some markdown tables are missing closing pipes or have malformed rows, causing them to render as plain text instead of tables.
+Some tables had formatting problems from the Document360 migration.
 
-**How to find:** Search for lines starting with `|` that don't end with `|`, or table rows with mismatched column counts.
+**Scan results:** All docs scanned for HTML tables, empty header cells, and malformed markdown tables.
 
-**Example found:** `docs/updates/scrypto-updates/scrypto-v1-3-0.md` and similar pages may have broken table syntax.
+**Fixed:**
+- `docs/build/native-blueprints/locker.md` — 10 verbose HTML tables (each ~130 lines) compacted to match `pool.md` format (~15 lines each). Added missing `</table>` closing tags and `<tbody>` wrappers.
+- `docs/reference/sbor/sbor-value-model.md` line 71 — "Map" row was missing its label/description in the Composite Value Kinds table. Added description to match Array/Tuple/Enum rows.
+
+**No fix needed (intentional patterns):**
+- `docs/build/native-blueprints/pool.md` lines 80–88 — Role/permissions table with blank first column header (row labels in first column). Renders correctly.
+- `docs/build/native-blueprints/pool.md` lines 378–385, 393–400 — Key-value API tables with empty header rows. Deliberate documentation pattern for method reference.
+- `docs/reference/concepts/environments.md` line 55 — `<br/>` tags inside table cell for line breaks between list items. Valid HTML, renders correctly.
 
 ## 2. Bullet points not appearing
 
