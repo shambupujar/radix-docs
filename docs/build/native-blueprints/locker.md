@@ -40,7 +40,6 @@ The functionality provided by the account locker blueprint is perhaps better exp
 
 <p align="center">
 
-
 </p>
 
 This state machine represents the movement of resources between an account, the worktop, and an account locker component. The resources start in an account and could be withdrawn to the worktop.
@@ -72,272 +71,105 @@ The interface of the `AccountLocker` has an account-first interface where all of
 ### Functions
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>instantiate</code>
-</td>
-
+<td>Name</td>
+<td><code>instantiate</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Function
-</td>
-
+<td>Type</td>
+<td>Function</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-This function instantiates a new account locker returning a <code>Global\<AccountLocker\></code> back to the caller configured based on the passed arguments.
-</td>
-
+<td>Description</td>
+<td>This function instantiates a new account locker returning a <code>Global&lt;AccountLocker&gt;</code> back to the caller configured based on the passed arguments.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-None
-</td>
-
+<td>Events</td>
+<td>None</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
 <code>owner_role: OwnerRole</code> - The definition of the role that owns the instantiated component. As described in the “Roles” section, the owner role is not given any powers aside from the implicit metadata roles.
 </li>
-
 <li>
-
 <code>storer_role: AccessRule</code> - The access rule to assign to the role that can deposit resources into the account locker for user accounts to claim at a later point.
 </li>
-
 <li>
-
 <code>storer_updater_role: AccessRule</code> - The access rule to assign to the role that can update the <code>AccessRule</code> controlling who can deposit resources into the account locker component.
 </li>
-
 <li>
-
 <code>recoverer_role: AccessRule</code> - The access rule to assign to the role that can forcefully withdraw resources out of the account locker component.
 </li>
-
 <li>
-
 <code>recoverer_updater_role: AccessRule</code> - The access rule to assign to the role that can forcefully withdraw resources out of the account locker component.
 </li>
-
 <li>
-
-<code>address_reservation: Option\<GlobalAddressReservation\></code> - An optional address reservation to use when globalizing the account locker component.
+<code>address_reservation: Option&lt;GlobalAddressReservation&gt;</code> - An optional address reservation to use when globalizing the account locker component.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Global\<AccountLocker\></code> - A reference to the global account locker component instantiated in this function.
-</td>
-
+<td>Returns</td>
+<td><code>Global&lt;AccountLocker&gt;</code> - A reference to the global account locker component instantiated in this function.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>instantiate_simple</code>
-</td>
-
+<td>Name</td>
+<td><code>instantiate_simple</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Function
-</td>
-
+<td>Type</td>
+<td>Function</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
-This function instantiates a new account locker returning a <code>Global\<AccountLocker\></code> back to the caller configured based on the passed arguments.
-
+<td>Description</td>
+<td><p>
+This function instantiates a new account locker returning a <code>Global&lt;AccountLocker&gt;</code> back to the caller configured based on the passed arguments.
 This is a second constructor for the blueprint that is meant to be much simpler than the instantiate function. This creates a new admin badge resource and uses it as the owner, storer, storer_updater, recoverer, and recoverer_updater depending on whether the instantiator wishes to allow for forceful withdraws from the component.
-
 If the <code>allow_recover</code> argument is set to true then the admin badge created in this function will be set as the recoverer and recoverer_updater role. Otherwise, if it’s set to false then those roles are set to <code>rule!(deny_all)</code> which effectively means that no one is allowed to forcefully withdraw resources from the account locker. Once a claim is deposited into it then it either gets claimed or stays there forever.
-
 Under the hood, aside from the creation of the admin badge resource, this function will call <code>instantiate</code>.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-None
-</td>
-
+<td>Events</td>
+<td>None</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
 <code>allow_recover: bool</code> - A boolean that controls whether forceful withdraws of resources in the account locker should be allowed for the admin badge created by this function. If true then the admin badge can withdraw any resources in the component, otherwise, no one can perform forceful withdraws.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<ul>
-
+<td>Returns</td>
+<td><ul>
 <li>
-
-<code>Global\<AccountLocker\></code> - A reference to the global account locker component instantiated in this function.
+<code>Global&lt;AccountLocker&gt;</code> - A reference to the global account locker component instantiated in this function.
 </li>
-
 <li>
-
 <code>Bucket</code> - A bucket containing the admin badge created in this function.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
-
+</tbody>
+</table>
 
 ### Methods
 
@@ -346,1021 +178,381 @@ Returns
 This section contains the methods that are callable by the `storer` role which are: `store` and `airdrop`. These two methods perform the same functionality: Storing resources in the locker for users to claim and *potentially* first attempting to deposit the resources into the claimant’s account before storing them if a `try_direct_send` flag is set to `true`. The main difference between these two methods is that the `airdrop` method can be thought of as a batch version of `store` that provides an interface that makes airdrops simpler. Where `store` takes in a single claimant account, `airdrop` takes in *multiple* claimant accounts and distributes the passed bucket according to the specified amounts/ids and then calls `store` for each claimant and bucket.
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>store</code>
-</td>
-
+<td>Name</td>
+<td><code>store</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-<code>storer</code> Role
-</td>
-
+<td>Callable By</td>
+<td><code>storer</code> Role</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A privileged method that can be called only by the <code>storer</code> role to store some resources in the locker to be claimed by a particular account or attempt to deposit them into the claimant’s account.
-
-If the account does not have any prior resources locked in the locker then a new <code>KeyValueStore\<ResourceAddress, Vault\></code> will be created for the account. Similarly, if a particular account and resource address pair does not have a corresponding vault then a new entry will be added to the aforementioned key-value store with a newly created vault.
-
+If the account does not have any prior resources locked in the locker then a new <code>KeyValueStore&lt;ResourceAddress, Vault&gt;</code> will be created for the account. Similarly, if a particular account and resource address pair does not have a corresponding vault then a new entry will be added to the aforementioned key-value store with a newly created vault.
 The behavior of this method changes depending on the <code>try_direct_send</code> flag. When <code>true</code> this method will first attempt to deposit the resources into the account. If the deposit fails then the resources will be stored in the locker. Otherwise, if the flag is <code>false</code> then no deposit will be attempted and the resources will be stored in the locker for the account to claim.
-
 This method emits a <code>StoreEvent</code> when resources are stored in the locker. In cases when a deposit is attempted and succeeds then no <code>StoreEvent</code> is emitted as nothing was stored in the locker.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>StoreEvent</code> is emitted for each account claim stored in the locker. Any claims that were successfully deposited into their destination accounts will not have this event emitted for them.
-</td>
-
+<td>Events</td>
+<td>A <code>StoreEvent</code> is emitted for each account claim stored in the locker. Any claims that were successfully deposited into their destination accounts will not have this event emitted for them.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the account that can claim the stored resources. If true then the admin badge can withdraw any resources in the component, otherwise, no one can perform forceful withdraws.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the account that can claim the stored resources. If true then the admin badge can withdraw any resources in the component, otherwise, no one can perform forceful withdraws.
 </li>
-
 <li>
-
 <code>bucket: Bucket</code> - A bucket of resources to store in the account locker for the claimant account allowing them to claim it at a later point.
 </li>
-
 <li>
-
 <code>try_direct_send: bool</code> - Controls whether this method will first attempt to deposit the resources into the claimant account or not. If <code>true</code> then a deposit into the account will be attempted.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-None
-</td>
-
+<td>Returns</td>
+<td>None</td>
 </tr>
-
-
+</tbody>
+</table>
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>airdrop</code>
-</td>
-
+<td>Name</td>
+<td><code>airdrop</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-<code>storer</code> Role
-</td>
-
+<td>Callable By</td>
+<td><code>storer</code> Role</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A privileged method that can be called only by the <code>storer</code> role to perform an airdrop into some accounts.
-
 This method takes in a single bucket of resources and a map of claimants and the amount that they’re to be given. The bucket is distributed among the claimants according to the amounts/ids specified for each claimant. The behavior then differs based on the <code>try_direct_send</code> flag. For each claimant and bucket if the <code>try_direct_send</code> flag is set to true then the locker component will first attempt to deposit the resources into the account and if the deposit fails then they will be stored in the locker.
-
 Since this method distributes the bucket among the claimants there could potentially be some change at the end. In this case, a <code>Bucket</code> is returned from this method with that change.
-
 If the <code>try_direct_send</code> flag is set to true some deposits might succeed and some might fail, in which case the ones that failed will be stored in the locker (not returned back to the caller). A <code>StoreEvent</code> is emitted for each claim that is stored in the locker meaning that ones that were successfully deposited into accounts won’t have events emitted for them.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>StoreEvent</code> is emitted for each account claim stored in the locker. Any claims that were successfully deposited into their destination accounts will not have this event emitted for them.
-</td>
-
+<td>Events</td>
+<td>A <code>StoreEvent</code> is emitted for each account claim stored in the locker. Any claims that were successfully deposited into their destination accounts will not have this event emitted for them.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimants: IndexMap\<Global\<Account\>, ResourceSpecifier\></code> - An <code>IndexMap</code> of all of the claimants and the amount or ids of resources that go to them.
+<code>claimants: IndexMap&lt;Global&lt;Account&gt;, ResourceSpecifier&gt;</code> - An <code>IndexMap</code> of all of the claimants and the amount or ids of resources that go to them.
 </li>
-
 <li>
-
 <code>bucket: Bucket</code> - A bucket of resources. Ideally, the sum of all of the <code>ResourceSpecifier</code>s in the claimants should total up to what is in this bucket. If it does not, then some change is returned. This bucket will be split up across the claimants based on the specified <code>ResourceSpecifier</code>
 </li>
-
 <li>
-
 <code>try_direct_send: bool</code> - Controls whether this method will first attempt to deposit the resources into the claimant account or not. If <code>true</code> then a deposit into the account will be attempted.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Option\<Bucket\></code> - A bucket of change of the unused resources.
-</td>
-
+<td>Returns</td>
+<td><code>Option&lt;Bucket&gt;</code> - A bucket of change of the unused resources.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 #### `recoverer` Methods
 
 This section has an API reference for the methods that are callable by the `recoverer` role which are two methods: `recover` and `recover_non_fungibles`. Both of these two methods provide the same functionality: the ability for the `recoverer` role to forcefully withdraw resources from the account locker that they might have previously committed to the locker. This can be useful in many cases including airdropped resources that were not claimed within a specified period. The main difference between these two methods is the same as the difference between the `withdraw` and the `withdraw_non_fungibles` method on account: it’s whether the recovery will happen based on the amount or ids of resources.
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>recover</code>
-</td>
-
+<td>Name</td>
+<td><code>recover</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-<code>recoverer</code> Role
-</td>
-
+<td>Callable By</td>
+<td><code>recoverer</code> Role</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A privileged method that can be called only by the <code>recoverer</code> role to forcefully withdraw resources from the account locker.
-
 This method allows the <code>recoverer</code> role to recover or forcefully withdraw resources from the account locker. This might be useful in cases when the resources have been there for a while and have not been claimed. If the <code>recoverer</code> and <code>recoverer_updater</code> are set to <code>rule!(deny_all)</code> then no resources can be recovered from the account locker.
-
 This method follows the behavior of the <code>withdraw</code> method on the account blueprint in terms of the fungible and non-fungible treatment. More specifically it allows for recovery of both fungible and non-fungible resources by amount.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>RecoverEvent</code> is emitted when a claim is recovered.
-</td>
-
+<td>Events</td>
+<td>A <code>RecoverEvent</code> is emitted when a claim is recovered.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the account to forcefully withdraw resources from their claims.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the account to forcefully withdraw resources from their claims.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to forcefully withdraw.
 </li>
-
 <li>
-
 <code>amount: Decimal</code> - The amount of resources to forcefully withdraw.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Bucket</code> - A bucket of the resources forcefully withdrawn.
-</td>
-
+<td>Returns</td>
+<td><code>Bucket</code> - A bucket of the resources forcefully withdrawn.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>recover_non_fungibles</code>
-</td>
-
+<td>Name</td>
+<td><code>recover_non_fungibles</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-<code>recoverer</code> Role
-</td>
-
+<td>Callable By</td>
+<td><code>recoverer</code> Role</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A privileged method that can be called only by the <code>recoverer</code> role to forcefully withdraw resources from the account locker.
-
 This method allows the <code>recoverer</code> role to recover or forcefully withdraw resources from the account locker. This might be useful in cases when the resources have been there for a while and have not been claimed. If the <code>recoverer</code> and <code>recoverer_updater</code> are set to <code>rule!(deny_all)</code> then no resources can be recovered from the account locker.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>RecoverEvent</code> is emitted when a claim is recovered.
-</td>
-
+<td>Events</td>
+<td>A <code>RecoverEvent</code> is emitted when a claim is recovered.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the account to forcefully withdraw resources from their claims.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the account to forcefully withdraw resources from their claims.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to forcefully withdraw.
 </li>
-
 <li>
-
-<code>ids: IndexSet\<NonFungibleLocalId\></code> - The set of non-fungible local ids to recover.
+<code>ids: IndexSet&lt;NonFungibleLocalId&gt;</code> - The set of non-fungible local ids to recover.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Bucket</code> - A bucket of the resources forcefully withdrawn.
-</td>
-
+<td>Returns</td>
+<td><code>Bucket</code> - A bucket of the resources forcefully withdrawn.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 #### User Methods
 
 This section has an API reference for the methods that are publicly callable on locker components which are the `claim` and `claim_non_fungibles` methods. Much like the `recoverer` role methods, the main difference between these two methods is the same as the difference between the `withdraw` and the `withdraw_non_fungibles` method on account: it’s whether the claim will happen based on the amount or ids of resources.
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>claim</code>
-</td>
-
+<td>Name</td>
+<td><code>claim</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A public method called by the claimant to claim their resources from the account locker.
-
 To determine if the claim is allowed to go through this method reads the claimant’s owner role and asserts against it. If the assertion is successful then the claim is allowed to go through, otherwise, the transaction fails.
-
 If the owner check succeeds then the amount specified as an argument will be claimed from the vault associated with the passed claimant and resource address.
-
 This method follows the behavior of the <code>withdraw</code> method on the account blueprint in terms of the fungible and non-fungible treatment. More specifically it allows for claiming of both fungible and non-fungible resources by amount.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>ClaimEvent</code> is emitted when resources are claimed.
-</td>
-
+<td>Events</td>
+<td>A <code>ClaimEvent</code> is emitted when resources are claimed.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the claimant.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the claimant.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to claim.
 </li>
-
 <li>
-
 <code>amount: Decimal</code> - The amount of resources to claim.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Bucket</code> - A bucket of the resources claimed.
-</td>
-
+<td>Returns</td>
+<td><code>Bucket</code> - A bucket of the resources claimed.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>claim_non_fungibles</code>
-</td>
-
+<td>Name</td>
+<td><code>claim_non_fungibles</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-<p>
-
+<td>Description</td>
+<td><p>
 A public method called by the claimant to claim their resources from the account locker.
-
 To determine if the claim is allowed to go through this method reads the claimant’s owner role and asserts against it. If the assertion is successful then the claim is allowed to go through, otherwise, the transaction fails.
-
 If the owner check succeeds then the amount specified as an argument will be claimed from the vault associated with the passed claimant and resource address.
-</p>
-
-    </td>
-
+</p></td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-A <code>ClaimEvent</code> is emitted when resources are claimed.
-</td>
-
+<td>Events</td>
+<td>A <code>ClaimEvent</code> is emitted when resources are claimed.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the claimant.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the claimant.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to claim.
 </li>
-
 <li>
-
-<code>ids: IndexSet\<NonFungibleLocalId\></code> - The set of non-fungible local ids to claim.
+<code>ids: IndexSet&lt;NonFungibleLocalId&gt;</code> - The set of non-fungible local ids to claim.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Bucket</code> - A bucket of the resources claimed.
-</td>
-
+<td>Returns</td>
+<td><code>Bucket</code> - A bucket of the resources claimed.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 #### Getter Methods
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>get_amount</code>
-</td>
-
+<td>Name</td>
+<td><code>get_amount</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-A public method that can be called by anyone to get the amount of resources currently available in a claimant’s vault.
-</td>
-
+<td>Description</td>
+<td>A public method that can be called by anyone to get the amount of resources currently available in a claimant’s vault.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-None
-</td>
-
+<td>Events</td>
+<td>None</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the claimant.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the claimant.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to get the amount of.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>Decimal</code> - The amount of the resources in the vault.
-</td>
-
+<td>Returns</td>
+<td><code>Decimal</code> - The amount of the resources in the vault.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 <table>
-
+<tbody>
 <tr>
-
-<td>
-
-Name
-</td>
-
-<td>
-
-<code>get_non_fungible_local_ids</code>
-</td>
-
+<td>Name</td>
+<td><code>get_non_fungible_local_ids</code></td>
 </tr>
-
 <tr>
-
-<td>
-
-Type
-</td>
-
-<td>
-
-Method
-</td>
-
+<td>Type</td>
+<td>Method</td>
 </tr>
-
 <tr>
-
-<td>
-
-Callable By
-</td>
-
-<td>
-
-Anyone
-</td>
-
+<td>Callable By</td>
+<td>Anyone</td>
 </tr>
-
 <tr>
-
-<td>
-
-Description
-</td>
-
-<td>
-
-A public method that can be called by anyone to get the non-fungible local IDs of resources currently available in a claimant’s vault.
-</td>
-
+<td>Description</td>
+<td>A public method that can be called by anyone to get the non-fungible local IDs of resources currently available in a claimant’s vault.</td>
 </tr>
-
 <tr>
-
-<td>
-
-Events
-</td>
-
-<td>
-
-None
-</td>
-
+<td>Events</td>
+<td>None</td>
 </tr>
-
 <tr>
-
-<td>
-
-Arguments
-</td>
-
-<td>
-
-<ul>
-
+<td>Arguments</td>
+<td><ul>
 <li>
-
-<code>claimant: Global\<Account\></code> - A global account address of the claimant.
+<code>claimant: Global&lt;Account&gt;</code> - A global account address of the claimant.
 </li>
-
 <li>
-
 <code>resource_address: ResourceAddress</code> - The address of the resource to get the ids of.
 </li>
-
 <li>
-
 <code>limit: u32</code> - An upper limit on the number of ids to return.
 </li>
-
-</ul>
-
-</td>
-
+</ul></td>
 </tr>
-
 <tr>
-
-<td>
-
-Returns
-</td>
-
-<td>
-
-<code>IndexSet\<NonFungibleLocalId\></code> - The set of the first <code>limit</code> non-fungible local ids in the vault.
-</td>
-
+<td>Returns</td>
+<td><code>IndexSet&lt;NonFungibleLocalId&gt;</code> - The set of the first <code>limit</code> non-fungible local ids in the vault.</td>
 </tr>
-
-
+</tbody>
+</table>
 
 ## Events
 
