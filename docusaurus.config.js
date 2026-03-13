@@ -70,7 +70,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/radix-social-card.svg',
+      metadata: [
+        {name: 'og:title', content: 'Radix Technical Documentation'},
+        {name: 'og:description', content: 'Build better dApps on Radix'},
+      ],
       colorMode: {
         respectPrefersColorScheme: true,
       },
