@@ -11,13 +11,11 @@ const config = {
     v4: true,
   },
 
-  //For GitHub Pages deployment, we need to set the url and baseUrl according to our repo name.
-  // url: 'https://shambupujar.github.io',
-  // baseUrl: '/radix-docs/',
-
-  //For Cloudflare Pages deployment, we can set the url to our custom domain and baseUrl to '/'.
-  url: 'https://radix-docs-ahe.pages.dev',
-  baseUrl: '/',
+  // Set DEPLOY_TARGET=cloudflare to build for Cloudflare Pages, defaults to GitHub Pages
+  url: process.env.DEPLOY_TARGET === 'cloudflare'
+    ? (process.env.SITE_URL || 'https://radix-docs-ahe.pages.dev')
+    : 'https://shambupujar.github.io',
+  baseUrl: process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/radix-docs/',
 
 
 

@@ -7,12 +7,21 @@ This site is built with [Docusaurus 3](https://docusaurus.io/). The primary depl
 - Node.js 20+
 - npm
 
+## Environment-Based Config
+
+The `docusaurus.config.js` uses the `DEPLOY_TARGET` environment variable to set the correct `url` and `baseUrl`:
+
+| Variable | Values | Description |
+|----------|--------|-------------|
+| `DEPLOY_TARGET` | `cloudflare` (or unset) | When set to `cloudflare`, builds for Cloudflare Pages (`baseUrl: '/'`). Otherwise defaults to GitHub Pages (`baseUrl: '/radix-docs/'`). |
+| `SITE_URL` | Any URL | Optional. Override the site URL for Cloudflare builds (e.g. `https://docs.radixdlt.com`). Defaults to `https://radix-docs-ahe.pages.dev`. |
+
 ## Local Build & Preview
 
 ```bash
 npm ci
-npm run build
-npx serve build       # preview at http://localhost:3000
+npm run build                    # builds for GitHub Pages (default)
+npx serve build
 ```
 
 ---
@@ -20,11 +29,12 @@ npx serve build       # preview at http://localhost:3000
 ## GitHub Pages (Primary)
 
 Deployment is automated via `.github/workflows/deploy.yml`. Pushing to the `release` branch triggers a build and deploy to GitHub Pages. That way changes done can be verified before going live.
-The current config in `docusaurus.config.js` is set for GitHub Pages:
 
-```js
-url: 'https://shambupujar.github.io',
-baseUrl: '/radix-docs/',
+No env vars needed — the default config targets GitHub Pages:
+
+```
+url: https://shambupujar.github.io
+baseUrl: /radix-docs/
 ```
 
 Enable GitHub Pages in repo Settings → Pages → Source: "GitHub Actions".
@@ -33,20 +43,7 @@ Enable GitHub Pages in repo Settings → Pages → Source: "GitHub Actions".
 
 ## Cloudflare Pages (Manual Alternative)
 
-If you want to deploy to Cloudflare Pages instead, follow these steps.
-
-### 1. Config Changes
-
-Update `docusaurus.config.js` before building:
-
-```js
-url: 'https://<your-project-name>.pages.dev',  // or your custom domain
-baseUrl: '/',                                   // Cloudflare serves from root, not a subpath
-```
-
-> **Note:** The `<your-project-name>.pages.dev` subdomain is assigned when you create the project in step 3. The name must be globally unique across all Cloudflare Pages users. If `radix-docs` is taken, choose a different name (e.g. `radixdlt-docs`) and use that consistently in all commands below.
-
-### 2. Setup Wrangler
+### 1. Setup Wrangler
 
 Authenticate with Cloudflare (uses `npx` to ensure wrangler v2+):
 
@@ -54,7 +51,7 @@ Authenticate with Cloudflare (uses `npx` to ensure wrangler v2+):
 npx wrangler login
 ```
 
-### 3. Create the Pages Project
+### 2. Create the Pages Project
 
 ```bash
 npx wrangler@latest pages project create radix-docs --production-branch=release
@@ -65,33 +62,37 @@ npx wrangler@latest pages project create radix-docs --production-branch=release
 > export CLOUDFLARE_ACCOUNT_ID=<your-account-id>
 > ```
 
-### 4. Build & Deploy
+### 3. Build & Deploy
 
 ```bash
-npm run build
+DEPLOY_TARGET=cloudflare npm run build
+npx wrangler@latest pages deploy build --project-name=radix-docs
+```
+
+To use a custom domain URL:
+
+```bash
+DEPLOY_TARGET=cloudflare SITE_URL=https://docs.radixdlt.com npm run build
 npx wrangler@latest pages deploy build --project-name=radix-docs
 ```
 
 Your site will be available at `https://<your-project-name>.pages.dev`.
 
-### 5. Local Preview with Wrangler
+### 4. Local Preview with Wrangler
 
 ```bash
-npm run build
+DEPLOY_TARGET=cloudflare npm run build
 npx wrangler pages dev build
 ```
 
-### 6. Custom Domain (e.g. docs.radixdlt.com)
+### 5. Custom Domain (e.g. docs.radixdlt.com)
 
 1. Go to Cloudflare dashboard → Pages → `radix-docs` project → Custom domains.
 2. Add `docs.radixdlt.com` (or your domain).
 3. If your domain is already on Cloudflare DNS, it's automatic. Otherwise, Cloudflare will provide DNS records to configure.
-4. Update the `url` in `docusaurus.config.js` to match:
-   ```js
-   url: 'https://docs.radixdlt.com',
-   ```
+4. Use `SITE_URL` when building to match the custom domain (see step 3 above).
 
-### 7. Optional: CI/CD for Cloudflare Pages
+### 6. Optional: CI/CD for Cloudflare Pages
 
 If you want automated Cloudflare deployments, replace the GitHub Pages workflow with:
 
@@ -112,7 +113,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: DEPLOY_TARGET=cloudflare npm run build
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
