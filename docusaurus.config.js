@@ -5,19 +5,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Radix Documentation',
   tagline: 'Build better dApps on Radix',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/radix-logo.svg',
 
   future: {
     v4: true,
   },
 
   //For GitHub Pages deployment, we need to set the url and baseUrl according to our repo name.
-  url: 'https://shambupujar.github.io',
-  baseUrl: '/radix-docs/',
+  // url: 'https://shambupujar.github.io',
+  // baseUrl: '/radix-docs/',
 
   //For Cloudflare Pages deployment, we can set the url to our custom domain and baseUrl to '/'.
-  //url: 'https://radix-docs-ahe.pages.dev',
-  //baseUrl: '/',
+  url: 'https://radix-docs-ahe.pages.dev',
+  baseUrl: '/',
 
 
 
