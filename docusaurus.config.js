@@ -11,8 +11,15 @@ const config = {
     v4: true,
   },
 
+  //For GitHub Pages deployment, we need to set the url and baseUrl according to our repo name.
   url: 'https://shambupujar.github.io',
   baseUrl: '/radix-docs/',
+
+  //For Cloudflare Pages deployment, we can set the url to our custom domain and baseUrl to '/'.
+  //url: 'https://radix-docs-ahe.pages.dev',
+  //baseUrl: '/',
+
+
 
   organizationName: 'radixdlt',
   projectName: 'radix-docs',
