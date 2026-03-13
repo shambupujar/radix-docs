@@ -84,7 +84,7 @@ const config = {
         title: 'Radix Docs',
         logo: {
           alt: 'Radix Logo',
-          src: 'img/logo.svg',
+          src: 'img/radix-logo.svg',
         },
         items: [
           {
