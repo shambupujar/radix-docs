@@ -21,7 +21,7 @@ The node’s APIs are:
 
 ### Exchanges
 
-For most exchanges, the [LTS sub-section **Core API** of a node](https://radix-babylon-core-api.redoc.ly/#tag/LTS) should be sufficient, and offers:
+For most exchanges, the [LTS sub-section **Core API** of a node](/api-reference/core-api-specs.html#tag/LTS) should be sufficient, and offers:
 
 - Transaction Submission
 - Transaction Status

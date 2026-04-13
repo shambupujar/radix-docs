@@ -17,7 +17,7 @@ Web3 applications often need information about the current (or past) state of th
 
 - What is the status of a given component?
 
-The Gateway SDK is a thin wrapper around the [Gateway API](index.md), documentation for this API can be found <a href="https://radix-babylon-gateway-api.redoc.ly/" target="_blank">here</a>.
+The Gateway SDK is a thin wrapper around the [Gateway API](index.md), documentation for this API can be found <a href="/api-reference/gateway-api-specs.html" target="_blank">here</a>.
 
 :::note
 Note if you are already using the Radix dApp Toolkit, it exposes an interface for this and you do not need to import seperately.

@@ -11,7 +11,7 @@ slug: /useful-links
 
 ### Radix API Docs
 
-[Gateway API: ReDocly Documentation](https://radix-babylon-gateway-api.redoc.ly/) [Core API: ReDocly Documentation](https://radix-babylon-core-api.redoc.ly/) [System API: ReDocly Documentation](https://radix-babylon-system-api.redoc.ly/)
+[Gateway API: ReDocly Documentation](/api-reference/gateway-api-specs.html) [Core API: ReDocly Documentation](/api-reference/core-api-specs.html) [System API: ReDocly Documentation](/api-reference/system-api-specs.html)
 
 ### NPM Packages
 

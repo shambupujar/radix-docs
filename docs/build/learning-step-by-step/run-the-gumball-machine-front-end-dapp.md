@@ -97,7 +97,7 @@ Then we generate an instance so we can use it’s various methods:
 const gatewayApi = GatewayApiClient.initialize(dappConfig);
 ```
 
-The Gateway API is used by the Radix Wallet and both the Console and Dashboard that we’ve been using to deploy packages and instantiate components. It gives us access to [a wide array of different network interaction](https://radix-babylon-gateway-api.redoc.ly), but we’ll use it to query the network for the state of the ledger, the status of the network and of specific transactions. Specifically, we’ll be using the Gateway API for:
+The Gateway API is used by the Radix Wallet and both the Console and Dashboard that we’ve been using to deploy packages and instantiate components. It gives us access to [a wide array of different network interaction](/api-reference/gateway-api-specs.html), but we’ll use it to query the network for the state of the ledger, the status of the network and of specific transactions. Specifically, we’ll be using the Gateway API for:
 
 - Getting the status of various transactions after they’ve been submitted to the network via the wallet:
 
