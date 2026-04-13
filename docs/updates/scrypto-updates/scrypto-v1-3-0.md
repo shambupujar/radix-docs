@@ -109,7 +109,7 @@ let subintent_manifest = ManifestBuilder::new_subintent_v2()
 
 #### V2 Preview
 
-The `TransactionBuilder::new_v2()` can also be used to build a `PreviewTransactionV2`, with the `build_preview_transaction(transaction_intent_signer_public_keys)` method, which can be used before signing/notarizing. The `PreviewTransactionV2` can be used in the new preview-v2 API on the [Core API](https://radix-babylon-core-api.redoc.ly/#tag/Transaction/paths/~1transaction~1preview-v2/post) or [Gateway API](https://radix-babylon-gateway-api.redoc.ly/#operation/TransactionPreviewV2).
+The `TransactionBuilder::new_v2()` can also be used to build a `PreviewTransactionV2`, with the `build_preview_transaction(transaction_intent_signer_public_keys)` method, which can be used before signing/notarizing. The `PreviewTransactionV2` can be used in the new preview-v2 API on the [Core API](pathname:///api-reference/core-api-specs.html#tag/Transaction/paths/~1transaction~1preview-v2/post) or [Gateway API](pathname:///api-reference/gateway-api-specs.html#operation/TransactionPreviewV2).
 
 ### New Manifest Instructions
 

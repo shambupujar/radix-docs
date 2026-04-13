@@ -13,7 +13,7 @@ The dApp definition provides information about the dApp, and is a hub to establi
 
 There is a <a href="https://console.radixdlt.com/configure-metadata">tool on the developer console</a> to help with setting up and validating the entity metadata. See the [dApp Definition Setup Guide](../dapp-development/dapp-definition-setup.md) for more information.
 
-The resolved links are returned by the <a href="https://radix-babylon-gateway-api.redoc.ly/#operation/StateEntityDetails">/state/entity/details endpoint</a> on the [Gateway API](../../integrate/network-apis/index.md).
+The resolved links are returned by the <a href="pathname:///api-reference/gateway-api-specs.html#operation/StateEntityDetails">/state/entity/details endpoint</a> on the [Gateway API](../../integrate/network-apis/index.md).
 
 ## Overview
 
