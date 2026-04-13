@@ -1,6 +1,8 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
+const baseUrl = process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/radix-docs/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Radix Documentation',
@@ -15,7 +17,7 @@ const config = {
   url: process.env.DEPLOY_TARGET === 'cloudflare'
     ? (process.env.SITE_URL || 'https://radix-docs-ahe.pages.dev')
     : 'https://shambupujar.github.io',
-  baseUrl: process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/radix-docs/',
+  baseUrl,
 
 
 
@@ -94,6 +96,33 @@ const config = {
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Documentation',
+          },
+          {
+            type: 'dropdown',
+            label: 'API Reference',
+            position: 'left',
+            items: [
+              {
+                label: 'Core API',
+                href: `${baseUrl}api-reference/core-api-specs.html`,
+                target: '_blank',
+              },
+              {
+                label: 'Gateway API',
+                href: `${baseUrl}api-reference/gateway-api-specs.html`,
+                target: '_blank',
+              },
+              {
+                label: 'Engine State API',
+                href: `${baseUrl}api-reference/engine-state-api-specs.html`,
+                target: '_blank',
+              },
+              {
+                label: 'System API',
+                href: `${baseUrl}api-reference/system-api-specs.html`,
+                target: '_blank',
+              },
+            ],
           },
           {
             href: 'https://github.com/radixdlt',
