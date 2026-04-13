@@ -129,7 +129,7 @@ services:
       RADIXDLT_LOG_LEVEL: info
       RADIXDLT_NETWORK_USE_PROXY_PROTOCOL: 'false'
       RADIXDLT_VALIDATOR_KEY_LOCATION: /home/radixdlt/node-keystore.ks
-      RADIX_NODE_KEYSTORE_PASSWORD: "\${RADIXDLT_NODE_KEY_PASSWORD}"
+      RADIX_NODE_KEYSTORE_PASSWORD: "${RADIXDLT_NODE_KEY_PASSWORD}"
     image: radixdlt/babylon-node:v1.2.1
     init: true
     mem_limit: 14000m
@@ -194,7 +194,7 @@ services:
       RADIXDLT_LOG_LEVEL: info
       RADIXDLT_NETWORK_USE_PROXY_PROTOCOL: 'false'
       RADIXDLT_VALIDATOR_KEY_LOCATION: /home/radixdlt/node-keystore.ks
-      RADIX_NODE_KEYSTORE_PASSWORD: "\${RADIXDLT_NODE_KEY_PASSWORD}"
+      RADIX_NODE_KEYSTORE_PASSWORD: "${RADIXDLT_NODE_KEY_PASSWORD}"
     image: radixdlt/babylon-node:v1.2.1
     init: true
     mem_limit: 14000m
