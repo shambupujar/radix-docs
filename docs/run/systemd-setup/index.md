@@ -160,10 +160,14 @@ It’s time to choose the network that your node will join (you can read more ab
 
   - use the following `network.p2p.seed_nodes`
 
-    
+    <details>
+    <summary>Mainnet Seed Nodes</summary>
 
+    ```
+    {{MAINNET_SEED_NODES_CSV}}
+    ```
 
-    
+    </details>
 
 - **Stokenet**
 
@@ -171,10 +175,15 @@ It’s time to choose the network that your node will join (you can read more ab
 
   - use the following `network.p2p.seed_nodes`
 
-    
+    <details>
+    <summary>Stokenet Seed Nodes</summary>
 
+    ```
+    {{STOKENET_SEED_NODES_CSV}}
+    ```
 
-    
+    </details>
+
 
 Create a `/srv/radixdlt/babylon-mainnet/mainnet.config` file with the following content:
 
