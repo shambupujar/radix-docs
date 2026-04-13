@@ -476,7 +476,7 @@ const sidebars = {
                   "items": [
                     {
                       "type": "doc",
-                      "id": "run/guided-setup/installing-the-babylonnode-cli",
+                      "id": "run/guided-setup/installing-cli",
                       "label": "Installing the babylonnode CLI"
                     },
                     {

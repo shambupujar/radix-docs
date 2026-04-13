@@ -115,7 +115,7 @@ Below is a matrix of all productionised setup modes that have been covered in th
 Before we move on, it's a good time to introduce our node runner helper application: the \`babylonnode\` CLI.  
 It is not required to use it, but it can greatly reduce the effort of setting up a node, and thus we recommend doing so. It supports both of our recommended setup modes, that is: SystemD and Docker.
 
-### Next (Optional, but recommended): [Installing the babylonnode CLI](guided-setup/installing-the-babylonnode-cli.md)
+### Next (Optional, but recommended): [Installing the babylonnode CLI](guided-setup/installing-cli.md)
 
 ### Next next (or just "Next" if skipping the CLI): [Basic node setup](node-setup/basic-node-setup.md)
 
