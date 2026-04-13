@@ -3,7 +3,7 @@ title: "Transaction Non Fungible Resource Creation"
 slug: /transaction-non-fungible-resource-creation
 ---
 
-It is possible to create non-fungible resources with transactions, but it is quite hard to create them manually - this is because a non-fungible resource includes a [Scrypto SBOR Schema](/v1/docs/sbor-schemas) for the non-fungible data.
+It is possible to create non-fungible resources with transactions, but it is quite hard to create them manually - this is because a non-fungible resource includes a [Scrypto SBOR Schema](/docs/scrypto-sbor-specs) for the non-fungible data.
 
 Instead, it’s better to build the transaction with the [Rust Manifest Builder](../../integrate/rust-libraries/manifest-builder.md), and then submit it using the [developer console](../../reference/developer-tools/developer-console.md).
 

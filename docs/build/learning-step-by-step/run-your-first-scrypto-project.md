@@ -9,7 +9,7 @@ slug: /learning-to-run-your-first-scrypto-project
 
 In this learning journey section, we’ll walk you through running and interacting with Scrypto within the Radix Engine Simulator. By the end, you’ll have locally deployed and used your first Scrypto “smart contract”.
 
-This section focuses on getting existing code working on your machine. In the [Explain Your First Scrypto Project](/learning-to-explain-your-first-scrypto-project) article, we will delve deeper into what the code is doing.
+This section focuses on getting existing code working on your machine. In the [Explain Your First Scrypto Project](/docs/learning-to-explain-your-first-scrypto-project) article, we will delve deeper into what the code is doing.
 
 :::note[Before we begin]
 Make sure you have the [Scrypto toolchain installed](../developer-quick-start.md). If you do, let’s get started!
@@ -70,7 +70,7 @@ Next we deploy the package in the Radix Engine Simulator.
 
 ## Deploying the package locally via Radix Engine Simulator `resim`
 
-On distributed ledgers like Radix, each action on the network incurs transaction fees. [Transaction fees](https://docs.radixdlt.com/docs/en/transaction-costing) reflect the load each transaction puts on the network and are used to compensate the [network validators](../native-blueprints/validator.md).
+On distributed ledgers like Radix, each action on the network incurs transaction fees. [Transaction fees](/docs/transaction-costing) reflect the load each transaction puts on the network and are used to compensate the [network validators](../native-blueprints/validator.md).
 
 To deploy our package, we will therefore need an account with enough XRD to cover the transaction fees. We can create both in `resim`.
 

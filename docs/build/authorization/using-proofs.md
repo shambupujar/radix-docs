@@ -360,7 +360,7 @@ For convenience, the `authorize` method also exists on Vaults and Buckets. This 
 
 ### Passing a Proof by intent
 
-In Scrypto, you can just pass a non-restricted tangible Proof in the arguments of a [cross-component call](/v1/docs/cross-blueprint-calls).
+In Scrypto, you can just pass a non-restricted tangible Proof in the arguments of a [cross-component call](/docs/learning-to-use-external-blueprints).
 
 In transaction manifests, to provide Proofs as method arguments, you will usually just pop the latest added Proof from the AuthZone and then call your method, as follows:
 

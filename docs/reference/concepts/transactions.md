@@ -30,7 +30,7 @@ User transactions are formed of a core transaction “intent”, which is then s
 More specifically, you can think of a transaction as a shell. The innermost layer is the **Transaction Intent** - which is the body of the transaction. It includes:
 
 - A “header” with data such as the epoch window in which the transaction is valid, a message, and a nonce to allow for creation of duplicate intents. It also includes the **notary** public key which needs to sign the transaction before submission, and a flag which marks that the notary should count as a signer.
-- A “[manifest](/docs/transaction-manifest)” which contains human-readable instructions for the transaction.
+- A “[manifest](/docs/manifest)” which contains human-readable instructions for the transaction.
   - The LTS Toolkit has an easy builder to help you create a manifest for fungible transfers without learning about the manifest.
 - Optionally, “blobs” - payloads which can be referenced from the manifest.
 

@@ -17,7 +17,7 @@ Manifests are human-readable so that developers or client software (such as [the
 
 A manifest is a grouping of the following parts of an [intent core](../dapp-transactions/transaction-structure.md) (in a [transaction intent](../dapp-transactions/transaction-intents.md) or [subintent](../dapp-transactions/subintents.md)):
 
-- [Manifest Instructions](manifest-instructions.md) which will be executed by the [Intent Processor](/docs/transaction-processor) in the Radix Engine
+- [Manifest Instructions](manifest-instructions.md) which will be executed by the [Intent Processor](/docs/intent-processor) in the Radix Engine
 
 - Blobs (efficiently encoded byte payloads which can be passed into method/function calls)
 

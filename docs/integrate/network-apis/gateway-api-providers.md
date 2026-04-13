@@ -41,4 +41,4 @@ Community dApps have partnered together to reduce the overhead of running their 
 
 ### Run your own
 
-[Running a gateway](/v1/docs/run-infrastructure) is relatively complex. It required more resources than a node, and more infrastructure. It also includes running a node, and will require keeping the infrastructure updated regularly along with the network’s protocol updates.
+[Running a gateway](/docs/node) is relatively complex. It required more resources than a node, and more infrastructure. It also includes running a node, and will require keeping the infrastructure updated regularly along with the network’s protocol updates.

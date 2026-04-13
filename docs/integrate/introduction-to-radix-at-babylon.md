@@ -23,4 +23,4 @@ There are three key milestones in the Radix journey:
 
 **This guide will help you to prepare for an integration with the Radix Babylon Network.**
 
-Given that Olympia is no longer live, most integrators do not need to worry about Olympia. In which case, you should start at **[Babylon Technical Concepts](/v1/docs/babylon-technical-concepts)**. Some integrators (e.g. auditors, tax integrations, etc) may also care about ingesting data from Olympia, please also see the **[Integrations with the historic Olympia ledger](/v1/docs/integrations-with-the-historic-olympia-ledger)** section if this applies to you.
+Given that Olympia is no longer live, most integrators do not need to worry about Olympia. In which case, you should start at **[Babylon Technical Concepts](/docs/introduction-to-radix-at-babylon)**. Some integrators (e.g. auditors, tax integrations, etc) may also care about ingesting data from Olympia, please also see the **[Integrations with the historic Olympia ledger](/docs/updating-from-olympia)** section if this applies to you.

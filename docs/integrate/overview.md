@@ -7,7 +7,7 @@ slug: /integrate-with-radix
 
 This section is a guide for those looking to build programmatic integrations with the Radix Network. It is intended for exchanges and integrators to understand how Babylon works in order to prepare an integration with Radix’s mainnet. 
 
-A broad overview of the Radix technical landscape at Babylon can be found in [Technical Concepts](/v1/docs/babylon-technical-concepts) (formerly a part of this guide). This integration guidance is focused towards constructing and tracking fungible transfers to and from accounts.
+A broad overview of the Radix technical landscape at Babylon can be found in [Technical Concepts](/docs/introduction-to-radix-at-babylon) (formerly a part of this guide). This integration guidance is focused towards constructing and tracking fungible transfers to and from accounts.
 
   
 

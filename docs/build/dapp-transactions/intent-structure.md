@@ -9,7 +9,7 @@ This article explains the tree-based structure of intents in a transaction. If y
 
 ## Intent Tree
 
-In any transaction, there is a single [transaction intent](/docs/transaction-intent) and zero or more [subintents](subintents.md).
+In any transaction, there is a single [transaction intent](/docs/transaction-intents) and zero or more [subintents](subintents.md).
 
 Together, these are called the intents of a transaction. In a valid transaction, these intents form a tree, with the transaction intent at the root, and subintents below, in layers.
 
@@ -48,7 +48,7 @@ This ensures that a successful transaction must have executed the content of eve
 
 Sometimes, when constructing a subintent, you only want it to be used by a particular counterparty. For example, it could be used by dApps to give users or regulated integrators guarantees who will consume the subintent.
 
-This is where the “verify parent” check comes in. Subintents can use the `VERIFY_PARENT <access_rule>;` [manifest instruction](../transactions-manifests/manifest-instructions.md) to assert against the [auth zone](/docs/authzone) of the parent intent’s processor, which can see: \* Signatures of the parent intent (using a [signature requirement](../authorization/advanced-accessrules.md#signature-requirements)) \* Proofs (e.g. of badges) created during execution which are currently on the parent’s auth zone
+This is where the “verify parent” check comes in. Subintents can use the `VERIFY_PARENT <access_rule>;` [manifest instruction](../transactions-manifests/manifest-instructions.md) to assert against the auth zone of the parent intent’s processor, which can see: \* Signatures of the parent intent (using a [signature requirement](../authorization/advanced-accessrules.md#signature-requirements)) \* Proofs (e.g. of badges) created during execution which are currently on the parent’s auth zone
 
 ## Limits
 

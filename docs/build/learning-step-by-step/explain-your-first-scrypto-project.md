@@ -3,7 +3,7 @@ title: "Explain Your First Scrypto Project"
 slug: /learning-to-explain-your-first-scrypto-project
 ---
 
-After using the Hello package in [Run Your First Scrypto Project](/learning-to-run-your-first-scrypto-project) I’m sure you’ll want to better understand what you just did. We give you a full explanation below, where you’ll get a more of a taste for of how asset-oriented programming with Scrypto for DeFi works.
+After using the Hello package in [Run Your First Scrypto Project](/docs/learning-to-run-your-first-scrypto-project) I’m sure you’ll want to better understand what you just did. We give you a full explanation below, where you’ll get a more of a taste for of how asset-oriented programming with Scrypto for DeFi works.
 
 You can find the Hello package code discussed here [on github](https://github.com/radixdlt/official-examples/tree/main/step-by-step/02-hello-token-explained), or by simply creating a new package with `scrypto new-package <PACKAGE_NAME>`.
 
@@ -191,7 +191,7 @@ The lack of `;` at the end of the line means that the result of the last express
 
 ## Wrapping Up
 
-That’s it! You now know how the `Hello` package works. The information here is the foundation for the rest of this [learning journey](index.md). The next step is to [Create Your First Custom Resource](/learning-to-create-your-first-custom-resource). Where we look in more detail at metadata, why to change it and how.
+That’s it! You now know how the `Hello` package works. The information here is the foundation for the rest of this [learning journey](index.md). The next step is to [Create Your First Custom Resource](/docs/learning-to-create-your-first-custom-resource). Where we look in more detail at metadata, why to change it and how.
 
 :::note
 Let us know if you find any section helpful or not by clicking one of the buttons below ⬇. You can also let us know about a typo or outdated information using the same buttons.

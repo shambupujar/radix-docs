@@ -26,7 +26,7 @@ Other versions of LLVM and/or Rust may also work, but are not tested.
 
 ## Install the Scrypto Toolchain
 
-To begin working with Scrypto, you need to first prepare you system for Rust development. Then you can install the Scrypto Libraries, [Radix Engine Simulator](../reference/developer-tools/radix-engine-simulator-resim.md) (`resim`) and command line tools. You can do this by following the manual steps for [Windows](docs/getting-rust-scrypto/#manual-windows-install), [macOS](docs/getting-rust-scrypto/#manual-macos-install) or [Linux](docs/getting-rust-scrypto/#manual-linux-install) systems, or run our scripts for [automated installation](docs/getting-rust-scrypto/#automated-installation) at the latests scrypto version.
+To begin working with Scrypto, you need to first prepare you system for Rust development. Then you can install the Scrypto Libraries, [Radix Engine Simulator](../reference/developer-tools/radix-engine-simulator-resim.md) (`resim`) and command line tools. You can do this by following the manual steps for [Windows](/docs/getting-rust-scrypto/#manual-windows-install), [macOS](/docs/getting-rust-scrypto/#manual-macos-install) or [Linux](/docs/getting-rust-scrypto/#manual-linux-install) systems, or run our scripts for [automated installation](/docs/getting-rust-scrypto/#automated-installation) at the latests scrypto version.
 
 ### Automated Installation
 
@@ -53,7 +53,7 @@ curl -fsSL https://raw.githubusercontent.com/radixdlt/radixdlt-scrypto/refs/head
 #### Next steps
 
 :::note[After Instillation]
-Look at [After Installing Scrypto](docs/getting-rust-scrypto/#after-installing-scrypto) for more helpful tools and suggestions
+Look at [After Installing Scrypto](/docs/getting-rust-scrypto/#after-installing-scrypto) for more helpful tools and suggestions
 :::
 
 
@@ -108,7 +108,7 @@ cargo install --force radix-clis@1.3.0
 
 #### 5. Next Steps
 
-Go to the [After Installing Scrypto](docs/getting-rust-scrypto/#after-installing-scrypto)
+Go to the [After Installing Scrypto](/docs/getting-rust-scrypto/#after-installing-scrypto)
 
 ### Manual macOS Install
 
@@ -165,7 +165,7 @@ cargo install --force radix-clis@1.3.0
 
 #### 5. Next Steps
 
-Go to the [After Installing Scrypto](docs/getting-rust-scrypto/#after-installing-scrypto)
+Go to the [After Installing Scrypto](/docs/getting-rust-scrypto/#after-installing-scrypto)
 
 ### Manual Linux Install
 
@@ -204,7 +204,7 @@ cargo install --force radix-clis@1.3.0
 
 #### 5. Next Steps
 
-Go to the [After Installing Scrypto](docs/getting-rust-scrypto/#after-installing-scrypto)
+Go to the [After Installing Scrypto](/docs/getting-rust-scrypto/#after-installing-scrypto)
 
 ## Troubleshooting
 
@@ -216,7 +216,7 @@ Go to the [After Installing Scrypto](docs/getting-rust-scrypto/#after-installing
     clang --version
     ```
 
-2.  Check your **LLVM/Clang** version is compatible with your **Rust** and **Resim** versions by looking at the [Compatibility Table](docs/getting-rust-scrypto#compatibility)
+2.  Check your **LLVM/Clang** version is compatible with your **Rust** and **Resim** versions by looking at the [Compatibility Table](/docs/getting-rust-scrypto#compatibility)
 
 3.  Install the appropriate LLVM version from [the LLVM GitHub repository](https://github.com/llvm/llvm-project/releases).
 
@@ -358,4 +358,4 @@ If your not sure what to do after installing scrypto have a look at our [Learnin
 
 - [Scrypto CLI](scrypto/scrypto-cli-tool.md)
 
-- [Radix Engine Simulator](/docs/radix-engine-simulator-resim)
+- [Radix Engine Simulator](/docs/resim-radix-engine-simulator)

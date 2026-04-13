@@ -17,7 +17,7 @@ Resources – whether fungibles (tokens) or non-fungibles (NFTs) – are defined
 
 We can refer to a resource (or its resource manager) by its unique **resource address**, which is generated automatically by the system.
 
-A resource address looks something like this (see the [addresses](/v1/docs/addresses) article for full details): \> `resource_rdx1t4upr78guuapv5ept7d7ptekk9mqhy605zgms33mcszen8l9fac8vf`
+A resource address looks something like this (see the [addresses](/docs/concepts-addresses) article for full details): \> `resource_rdx1t4upr78guuapv5ept7d7ptekk9mqhy605zgms33mcszen8l9fac8vf`
 
 As with all entity addresses, when displaying them for users, developers should abbreviate them in a consistent way. The standard is to abbreviate using the first 4 and last 6 characters separated by an ellipsis (4…​6). For example, a friendly list of resources for a user might show something like this:
 

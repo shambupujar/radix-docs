@@ -44,4 +44,4 @@ Search for "Radix Developer Tools"
 
 Click on Install
 
-You are now ready to start writing your first Scrypto blueprint. Head over to the [Run Your First Project](/v1/docs/run-your-first-project) page to start.
+You are now ready to start writing your first Scrypto blueprint. Head over to the [Run Your First Project](/docs/learning-to-run-your-first-scrypto-project) page to start.

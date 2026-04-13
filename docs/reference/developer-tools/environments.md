@@ -25,7 +25,7 @@ Stokenet's network ID is 2, and addresses on Stokenet have `_tdx_2_` immediately
 
 ## Local Environment
 
-When using the Radix Engine Simulator ([resim](/v1/docs/radix-engine-simulator-resim)), all deployment and interactions take place on your local filesystem and local machine.
+When using the Radix Engine Simulator ([resim](/docs/resim-radix-engine-simulator)), all deployment and interactions take place on your local filesystem and local machine.
 
 You can reset your local environment at will.
 

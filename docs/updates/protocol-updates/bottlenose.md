@@ -20,7 +20,7 @@ slug: /bottlenose
 - New API for reading a component’s owner role from Scrypto
 - New substates that expose the current protocol-related parameters
 - Add recovery fee vault to the [Access Controller](../../build/native-blueprints/access-controller.md), removing the need for third-party fee locking during the recovery process
-- Various improvements to the [Account](../../build/native-blueprints/account.md) and [Transaction Processor](/docs/transaction-processor) native blueprints
+- Various improvements to the [Account](../../build/native-blueprints/account.md) and [Transaction Processor](/docs/intent-processor) native blueprints
 - Various improvements to the Radix Engine implementation
 
 ## Release Notes

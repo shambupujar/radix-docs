@@ -28,9 +28,9 @@ In the unlikely circumstance where you are using the Rust manifest builder to bu
 
 To build V2 transactions, you can use the [TransactionV2Builder](https://docs.rs/radix-transactions/latest/radix_transactions/builder/struct.TransactionV1Builder.html), along with the [ManifestBuilder](https://docs.rs/radix-transactions/latest/radix_transactions/builder/struct.ManifestBuilder.html).
 
-You will need to integrate with the [Gateway API](/docs/gateway-api) or [Core API](/docs/core-api) to resolve the current epoch.
+You will need to integrate with the [Gateway API](/docs/network-apis) or [Core API](/docs/network-apis) to resolve the current epoch.
 
-Support for external signers (e.g. HSMs) is available via implementing the (blocking/non-async) `Signer` trait. Note the [Curves, Keys, Signatures and Hashing](../../essentials/concepts/curves-keys-signatures.md) guide for the canonical serialization to use for keys and signatures.
+Support for external signers (e.g. HSMs) is available via implementing the (blocking/non-async) `Signer` trait. Note the [Curves, Keys, Signatures and Hashing](/docs/concepts-curves-keys-signatures-and-hashing) guide for the canonical serialization to use for keys and signatures.
 
 You will likely want to read the documentation on [intent structure](../../build/dapp-transactions/intent-structure.md) before beginning.
 
@@ -146,9 +146,9 @@ let subintent_manifest = ManifestBuilder::new_subintent_v2()
 
 To build basic V1 transations, you can use the [TransactionV1Builder](https://docs.rs/radix-transactions/latest/radix_transactions/builder/struct.TransactionV1Builder.html), along with the [ManifestBuilder](manifest-builder.md).
 
-You will need to integrate with the [Gateway API](/docs/gateway-api) or [Core API](/docs/core-api) to resolve the current epoch.
+You will need to integrate with the [Gateway API](/docs/network-apis) or [Core API](/docs/network-apis) to resolve the current epoch.
 
-Support for external signers (e.g. HSMs) is available via implementing the (blocking/non-async) `Signer` trait. Note the [Curves, Keys, Signatures and Hashing](../../essentials/concepts/curves-keys-signatures.md) guide for the canonical serialization to use for keys and signatures.
+Support for external signers (e.g. HSMs) is available via implementing the (blocking/non-async) `Signer` trait. Note the [Curves, Keys, Signatures and Hashing](/docs/concepts-curves-keys-signatures-and-hashing) guide for the canonical serialization to use for keys and signatures.
 
 ``` rust
 // The notary can be an ephemeral key (in which case, set notary_is_signatory as false)

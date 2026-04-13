@@ -15,7 +15,7 @@ Non-fungibles are transferred individually, and each holds its own data. This da
 
 For example, I might have a set of “Dallas Mavericks Tickets” NFTs where the data struct says that each individual ticket non-fungible must have a `game_date` and `seat_number`. Each separate non-fungible under this resource will potentially have a different value for `game_date` and `seat_number`.
 
-Non-fungible data is encoded as [Scrypto SBOR](/docs/scrypto-sbor), and the engine ensures it matches the schema of the Non-Fungible data type, defined on the Non-Fungible Resource. The engine also validates that the top-layer is of a Tuple type with named fields.
+Non-fungible data is encoded as [Scrypto SBOR](/docs/scrypto-sbor-specs), and the engine ensures it matches the schema of the Non-Fungible data type, defined on the Non-Fungible Resource. The engine also validates that the top-layer is of a Tuple type with named fields.
 
 This data structure is recursive, and can be displayed by parsing the [annotated programmatic SBOR JSON](../../reference/sbor/sbor-programmatic-json.md) from the Gateway API.
 

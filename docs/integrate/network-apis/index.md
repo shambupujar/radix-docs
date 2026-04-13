@@ -11,7 +11,7 @@ Radix currently offers a couple of few main APIs, targeted to different use case
 
 ### Core API
 
-**Key Links:** <a href="pathname:///api-reference/core-api-specs.html"><strong>Full Core API Documentation</strong></a> **\|** <a href="/v1/docs/core-api-providers"><strong>Core API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-core-api-sdk"><strong>Typescript Core API SDK</strong></a>
+**Key Links:** <a href="pathname:///api-reference/core-api-specs.html"><strong>Full Core API Documentation</strong></a> **\|** <a href="/docs/core-api-providers"><strong>Core API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-core-api-sdk"><strong>Typescript Core API SDK</strong></a>
 
 The Core API provides low-level and high-level abstractions, and includes:
 
@@ -23,11 +23,11 @@ The Core API provides low-level and high-level abstractions, and includes:
 
 - A committed transaction stream, at varying abstraction levels
 
-The Core API is exposed by [Radix nodes](/v1/docs/run-infrastructure). It is predominantly intended as a private API, but there [are some RPC providers offering it](core-api-providers.md) for public integrations.
+The Core API is exposed by [Radix nodes](/docs/node). It is predominantly intended as a private API, but there [are some RPC providers offering it](core-api-providers.md) for public integrations.
 
 ### Gateway API
 
-**Key Links:** <a href="pathname:///api-reference/gateway-api-specs.html"><strong>Full Gateway API Documentation</strong></a> **\|** <a href="/v1/docs/gateway-api-providers"><strong>Gateway API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-gateway-api-sdk"><strong>Typescript Gateway API SDK</strong></a>
+**Key Links:** <a href="pathname:///api-reference/gateway-api-specs.html"><strong>Full Gateway API Documentation</strong></a> **\|** <a href="/docs/gateway-api-providers"><strong>Gateway API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-gateway-api-sdk"><strong>Typescript Gateway API SDK</strong></a>
 
 The Gateway API provides low-level and high-level abstractions, but is primarily intended for use by dApp website frontends and general network clients like dashboards. It can be used for:
 
@@ -39,7 +39,7 @@ The Gateway API provides low-level and high-level abstractions, but is primarily
 
 - Queries of historic ledger state
 
-The Gateway API is exposed by the [Network Gateway](/v1/docs/run-infrastructure), and provided by [Gateway API Providers](gateway-api-providers.md).
+The Gateway API is exposed by the [Network Gateway](/docs/node), and provided by [Gateway API Providers](gateway-api-providers.md).
 
 ### Engine State API
 
@@ -53,7 +53,7 @@ The Engine State API allows for accessing the complete current state of the Engi
 
 - It is useful for integrators to explore how the engine thinks about state.
 
-The Engine State API is exposed by [Radix nodes](/v1/docs/run-infrastructure). The node has to be explicitly configured to enable this API. Details on how to configure the node <a href="https://github.com/radixdlt/babylon-node/releases/tag/v1.1.3.1">can be found in the v1.1.3.1 release notes</a>.
+The Engine State API is exposed by [Radix nodes](/docs/node). The node has to be explicitly configured to enable this API. Details on how to configure the node <a href="https://github.com/radixdlt/babylon-node/releases/tag/v1.1.3.1">can be found in the v1.1.3.1 release notes</a>.
 
 ------------------------------------------------------------------------
 

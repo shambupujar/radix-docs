@@ -42,7 +42,7 @@ Proofs can enter the auth zone from two places:
 
 - Signatures on the transaction are automatically added to the authorization zone as "virtual signature proofs". This, for example, is how you are able to call the withdraw method on a pre-allocated account component which is still set up to require a proof of a signature with its corresponding public key hash.
 
-- Proofs can also be returned by calls to methods. They are automatically added to the authorization zone by the [transaction processor](/v1/docs/transaction-processor).
+- Proofs can also be returned by calls to methods. They are automatically added to the authorization zone by the [transaction processor](/docs/intent-processor).
 
 For more about proofs and authorization, please see the [Authorization Model](../authorization/authorization-model.md).
 
@@ -109,7 +109,7 @@ You can edit the auto-generated manifest to modify or add any other instructions
 
 ## Using the Rust Manifest Builder
 
-See<a href="/v1/docs/rust-manifest-builder">Rust Manifest Builder</a>.
+See<a href="/docs/rust-manifest-builder">Rust Manifest Builder</a>.
 
 ## Writing Transaction Manifests Manually
 

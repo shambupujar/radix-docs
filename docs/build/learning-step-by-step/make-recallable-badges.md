@@ -52,7 +52,7 @@ And here:
         Bucket("staff_badge_bucket")
     ;
 
-This is another way we can interact with resources in the radix engine. If they have rules that allow it, we can call them directly from the transaction manifest. A full list of the available manifest actions can be found in the [Manifest Instructions](/manifest-instructions) section of the docs.
+This is another way we can interact with resources in the radix engine. If they have rules that allow it, we can call them directly from the transaction manifest. A full list of the available manifest actions can be found in the [Manifest Instructions](/docs/manifest-instructions) section of the docs.
 
 ## Making Staff Badges Non-Fungible
 

@@ -57,4 +57,4 @@ You may also need to set the current user as the owner of the`radixdlt`directory
 :::
 
 
-**Next:**<a href="/v1/docs/node-setup-guided-installing-node"><strong>Installing the Node</strong></a>
+**Next:**<a href="/docs/node-setup-guided-installing-node"><strong>Installing the Node</strong></a>

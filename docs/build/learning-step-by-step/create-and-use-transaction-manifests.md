@@ -5,7 +5,7 @@ slug: /learning-to-create-and-use-transaction-manifests
 
 # Create and Use Transaction Manifests
 
-In this Step-by-Step section there are no changes to the previous [Refillable Gumball Machine](/learning-to-make-your-gumball-machine-refillable) blueprint. Instead we focus on transaction manifests, what they do and how to use them.
+In this Step-by-Step section there are no changes to the previous [Refillable Gumball Machine](/docs/learning-to-make-your-gumball-machine-refillable) blueprint. Instead we focus on transaction manifests, what they do and how to use them.
 
 :::note
 **The scrypto package referenced in this section can be found in [our official examples here](https://github.com/radixdlt/official-examples/tree/main/step-by-step/07-gumball-machine-transaction-manifests**

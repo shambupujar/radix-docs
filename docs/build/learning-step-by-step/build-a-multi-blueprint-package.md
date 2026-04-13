@@ -19,7 +19,7 @@ There are two broad ways to do this, with distinct advantages. This section cove
 
 ## Modular Packages
 
-Using [several blueprints in one package](https://docs.radixdlt.com/docs/en/reusable-blueprints-pattern#small-modular-reusable-blueprints) is a common pattern with advantages of making it;
+Using [several blueprints in one package](/docs/reusable-blueprints-pattern#small-modular-reusable-blueprints) is a common pattern with advantages of making it;
 
 - easier to manage and upgrade parts of your application,
 - more secure, by limiting the scope of each component,
