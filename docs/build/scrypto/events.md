@@ -21,7 +21,7 @@ Events can be observed in the transaction stream. To receive events in this stre
         "receipt_events": true
     }
 
-[Gateway API Stream endpoint documentation can be found here](/api-reference/gateway-api-specs.html#operation/StreamTransactions).
+[Gateway API Stream endpoint documentation can be found here](pathname:///api-reference/gateway-api-specs.html#operation/StreamTransactions).
 
 Events can also be observed in the `events` section of transaction receipts e.g:
 
@@ -80,7 +80,7 @@ Events can also be observed in the `events` section of transaction receipts e.g:
 }
 ```
 
-These are available with a [Gateway API Committed Transaction Details endpoint](/api-reference/gateway-api-specs.html#operation/TransactionCommittedDetails)
+These are available with a [Gateway API Committed Transaction Details endpoint](pathname:///api-reference/gateway-api-specs.html#operation/TransactionCommittedDetails)
 
 ## Custom Events
 

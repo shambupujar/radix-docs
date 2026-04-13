@@ -46,7 +46,7 @@ The pre-authorization flow happens in four parts:
    * Each subintent aggregation service may have their own requests for metadata the dApp provides. Some may request that the manifest stub contains a `VERIFY_PARENT` instruction to ensure only their aggregator can be used.
 4. **Transaction construction and submission:** The subintent aggregator finds/creates other intents to work with the subintent(s) it receives, builds up the transaction using a v2 partial transaction builder / transaction builder, previews the resulting transaction, and if happy, notarizes it and submits it to the network.
    * The [v2 (partial) transaction builders](../../integrate/rust-libraries/transaction-building.md) are available in the [v1.3.0+ rust radix-transactions crate](../../integrate/rust-libraries/index.md) or in a variety of UniFFI [Radix Engine Toolkits](../../integrate/radix-engine-toolkit/index.md). As of December 2024, they are not yet available in the Typescript Radix Engine Toolkit.
-   * A v2 preview transaction can be created from the transaction builder, and previewed with the v2 preview endpoint on the [Core API](/api-reference/core-api-specs.html#tag/Transaction/paths/~1transaction~1preview-v2/post) or [Gateway API](/api-reference/gateway-api-specs.html#operation/TransactionPreviewV2).
+   * A v2 preview transaction can be created from the transaction builder, and previewed with the v2 preview endpoint on the [Core API](pathname:///api-reference/core-api-specs.html#tag/Transaction/paths/~1transaction~1preview-v2/post) or [Gateway API](pathname:///api-reference/gateway-api-specs.html#operation/TransactionPreviewV2).
 
 ## Use Cases
 

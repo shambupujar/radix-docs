@@ -208,7 +208,7 @@ There is no way to read a single specified non-fungible data field by name yet. 
         }
 ```
 
-You could use a [Gateway API call](/api-reference/gateway-api-specs.html#operation/NonFungibleData) to find the position of your chosen data field.
+You could use a [Gateway API call](pathname:///api-reference/gateway-api-specs.html#operation/NonFungibleData) to find the position of your chosen data field.
 
 ## Modifying Non-fungible Data
 

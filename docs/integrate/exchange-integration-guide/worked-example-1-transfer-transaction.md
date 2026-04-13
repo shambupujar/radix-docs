@@ -17,7 +17,7 @@ As preparation:
 - Use the `/core/lts/transaction/construction` Core API endpoint to find the current epoch. You should check that the `ledger_clock` field is close to the current time to ensure that the node is synced up, and that the current epoch is accurate.
 - Check the account’s current XRD balance with `/core/lts/state/account-fungible-resource-balance` to ensure you have sufficient XRD balance to pay fees from the account, and any resource you wish to transfer.
 - Use the `/core/lts/state/account-deposit-behaviour` Core API to check whether the target account [currently accepts deposits](worked-example-2-tracking-deposits-any-account.md#configuring-account-deposit-modes-and-resource-preference-map) of the resource you are transferring.
-  - This endpoint returns all the details explaining why the given transfer would be accepted (or not). Please expand the response schema of its [API documentation](/api-reference/core-api-specs.html#tag/LTS/paths/~1lts~1state~1account-deposit-behaviour/post) to see the summary of all relevant transfer rules.
+  - This endpoint returns all the details explaining why the given transfer would be accepted (or not). Please expand the response schema of its [API documentation](pathname:///api-reference/core-api-specs.html#tag/LTS/paths/~1lts~1state~1account-deposit-behaviour/post) to see the summary of all relevant transfer rules.
   - If the API tells you that the account does not currently accept the deposit, you should inform the user to update their account settings.
 
 Then, use the Toolkit for exchanges to build the transaction:

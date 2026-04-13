@@ -11,7 +11,7 @@ Radix currently offers a couple of few main APIs, targeted to different use case
 
 ### Core API
 
-**Key Links:** <a href="/api-reference/core-api-specs.html"><strong>Full Core API Documentation</strong></a> **\|** <a href="/v1/docs/core-api-providers"><strong>Core API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-core-api-sdk"><strong>Typescript Core API SDK</strong></a>
+**Key Links:** <a href="pathname:///api-reference/core-api-specs.html"><strong>Full Core API Documentation</strong></a> **\|** <a href="/v1/docs/core-api-providers"><strong>Core API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-core-api-sdk"><strong>Typescript Core API SDK</strong></a>
 
 The Core API provides low-level and high-level abstractions, and includes:
 
@@ -27,7 +27,7 @@ The Core API is exposed by [Radix nodes](/v1/docs/run-infrastructure). It is pre
 
 ### Gateway API
 
-**Key Links:** <a href="/api-reference/gateway-api-specs.html"><strong>Full Gateway API Documentation</strong></a> **\|** <a href="/v1/docs/gateway-api-providers"><strong>Gateway API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-gateway-api-sdk"><strong>Typescript Gateway API SDK</strong></a>
+**Key Links:** <a href="pathname:///api-reference/gateway-api-specs.html"><strong>Full Gateway API Documentation</strong></a> **\|** <a href="/v1/docs/gateway-api-providers"><strong>Gateway API Providers</strong></a> **\|** <a href="https://www.npmjs.com/package/@radixdlt/babylon-gateway-api-sdk"><strong>Typescript Gateway API SDK</strong></a>
 
 The Gateway API provides low-level and high-level abstractions, but is primarily intended for use by dApp website frontends and general network clients like dashboards. It can be used for:
 
@@ -43,7 +43,7 @@ The Gateway API is exposed by the [Network Gateway](/v1/docs/run-infrastructure)
 
 ### Engine State API
 
-**Key Links:** <a href="/api-reference/engine-state-api-specs.html"><strong>Full Engine State API Documentation</strong></a>
+**Key Links:** <a href="pathname:///api-reference/engine-state-api-specs.html"><strong>Full Engine State API Documentation</strong></a>
 
 The Engine State API allows for accessing the complete current state of the Engine ledger, at the abstraction of the engine.
 
@@ -94,6 +94,6 @@ If you are are responsible for providing an API service and would like it to be 
 
 ### System API
 
-**Key Links:** <a href="/api-reference/system-api-specs.html"><strong>Full System API Documentation</strong></a>
+**Key Links:** <a href="pathname:///api-reference/system-api-specs.html"><strong>Full System API Documentation</strong></a>
 
-Radix Nodes also expose the System API, which can be used for debugging the node. Its <a href="/api-reference/system-api-specs.html">documentation is available on ReDocly here</a>.
+Radix Nodes also expose the System API, which can be used for debugging the node. Its <a href="pathname:///api-reference/system-api-specs.html">documentation is available on ReDocly here</a>.

@@ -11,7 +11,7 @@ slug: /useful-links
 
 ### Radix API Docs
 
-[Gateway API: ReDocly Documentation](/api-reference/gateway-api-specs.html) [Core API: ReDocly Documentation](/api-reference/core-api-specs.html) [System API: ReDocly Documentation](/api-reference/system-api-specs.html)
+[Gateway API: ReDocly Documentation](pathname:///api-reference/gateway-api-specs.html) [Core API: ReDocly Documentation](pathname:///api-reference/core-api-specs.html) [System API: ReDocly Documentation](pathname:///api-reference/system-api-specs.html)
 
 ### NPM Packages
 
