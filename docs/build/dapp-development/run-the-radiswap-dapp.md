@@ -17,7 +17,7 @@ The Radiswap dApp is the last example in the step-by-step learning journey. It t
 
 ### Two Resource Pools
 
-The Radiswap package is a customised wrapper around the standard TwoResourcePool native blueprint with the addition of a swap function. There are a range of [native pool blueprints](https://docs.radixdlt.com/docs/pool-component) available in the Radix Engine, and the TwoResourcePool is one of the most commonly used. It does what you would expect and holds two resources allowing users to deposit and withdraw from the pool in exchange for Pool Unit resources (often called LP tokens). This is a useful part of the functionality of many dApps and these functions are accessed with the `add_liquidity` and `remove_liquidity` methods. In our case the Radiswap blueprint extends the pool blueprint’s methods by also allowing users to swap between the two resources in the pool.
+The Radiswap package is a customised wrapper around the standard TwoResourcePool native blueprint with the addition of a swap function. There are a range of [native pool blueprints](/docs/pool) available in the Radix Engine, and the TwoResourcePool is one of the most commonly used. It does what you would expect and holds two resources allowing users to deposit and withdraw from the pool in exchange for Pool Unit resources (often called LP tokens). This is a useful part of the functionality of many dApps and these functions are accessed with the `add_liquidity` and `remove_liquidity` methods. In our case the Radiswap blueprint extends the pool blueprint’s methods by also allowing users to swap between the two resources in the pool.
 
 ### The Swap Method
 

@@ -7,7 +7,7 @@ slug: /learning-to-create-your-first-custom-resource
 
 Using Scrypto you can create a wide range of resources, whether fungible, non-fungible, simple tokens or more complex authorization badges. Being able to modify their properties allows you to accurately represent your chosen entity/idea for each.
 
-In [Run Your First Project](https://docs.radixdlt.com/docs/run-your-first-project) you’ve created your first resource. Before we start modifying resources let’s understand what they are a little more.
+In [Run Your First Project](/docs/learning-to-run-your-first-scrypto-project) you’ve created your first resource. Before we start modifying resources let’s understand what they are a little more.
 
 As an [Asset-Oriented](../../essentials/asset-oriented.md) language resources/assets are not implemented on top of Scrypto, but are native to it. Many other platforms do not have resources at the core of their engines. Asset’s and their behaviours must be implemented through additional code that requires checking and tracking that transactions have happened as expected.
 

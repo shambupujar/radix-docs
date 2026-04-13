@@ -269,7 +269,7 @@ But access rules can also include requirements on **implicit proofs** under spec
 
 ### Signature Requirements
 
-For each public key which signed a given notarized transaction, the system creates an implicit non-fungible proof of `NonFungibleLocalId::bytes(LOWER_29_BYTES_OF_BLAKE256B_HASH_OF_PUBLIC_KEY_BYTES)` in the authorization zone of the [transaction processor](/v1/docs/transaction-processor) call frame. The non-fungible proof is created under one of the following special reserved non-fungible resource addresses (see [well-known native addresses](../../reference/well-known-addresses.md)):
+For each public key which signed a given notarized transaction, the system creates an implicit non-fungible proof of `NonFungibleLocalId::bytes(LOWER_29_BYTES_OF_BLAKE256B_HASH_OF_PUBLIC_KEY_BYTES)` in the authorization zone of the [transaction processor](/docs/intent-processor) call frame. The non-fungible proof is created under one of the following special reserved non-fungible resource addresses (see [well-known native addresses](../../reference/well-known-addresses.md)):
 
 - Secp256k1 Signature Resource (<a href="https://stokenet-dashboard.radixdlt.com/resource/resource_tdx_2_1nfxxxxxxxxxxsecpsgxxxxxxxxx004638826440xxxxxxxxxcdcdpa">stokenet</a>, <a href="https://dashboard.radixdlt.com/resource/resource_rdx1nfxxxxxxxxxxsecpsgxxxxxxxxx004638826440xxxxxxxxxsecpsg">mainnet</a>)
 

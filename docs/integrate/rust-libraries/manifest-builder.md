@@ -91,7 +91,7 @@ let manifest = ManifestBuilder::new()
 
 3.  We can chain multiple manifest instructions together within a `TransactionManifest`.
 
-4.  We can pass expressions as arguments as well. More info [here](/v1/docs/specifications)
+4.  We can pass expressions as arguments as well. More info [here](/docs/manifest-instructions)
 
 ### Special Account Methods
 
@@ -336,7 +336,7 @@ dump_manifest_to_file_system(  // #1
 
 5.  Specifying the Transaction Manifest name.
 
-6.  Specifying the network which entity addresses will be encoded to. Please see [addressing page](/v1/docs/addressing-on-radix) for reference.
+6.  Specifying the network which entity addresses will be encoded to. Please see [addressing page](/docs/concepts-addresses) for reference.
 
 7.  Generates an error if the transaction manifest is statically invalid.
 

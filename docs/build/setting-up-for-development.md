@@ -13,4 +13,4 @@ If you haven’t yet read through the [Essentials](../essentials/overview.md) se
 
 You can also sign up for the [Developer Program](https://developers.radixdlt.com/devprogram) to receive communications about the latest development news, earn rewards, and gain priority access to dev events.
 
-For frontend and fullstack development take a look at the [Developer Quick Start Guides](/docs/developer-quick-start) and for Radix Engine development in Scrypto you’ll be able to get started by [setting up Scrypto here](developer-quick-start.md).
+For frontend and fullstack development take a look at the [Developer Quick Start Guides](/docs/getting-rust-scrypto) and for Radix Engine development in Scrypto you’ll be able to get started by [setting up Scrypto here](developer-quick-start.md).

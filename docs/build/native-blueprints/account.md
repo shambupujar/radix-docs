@@ -73,7 +73,7 @@ The following is the algorithm used to derive the pre-allocated account address 
 
 - Construct a 30 byte array by setting the first byte to `0xD1` for a Secp256k1 public key or `0x51` for an Ed25519 public key, and then appending the last 29 bytes of the public key hash.
 
-- Bech32m encode the above with the `account_\${network_specifier}` HRP where the network_specifier depends on the network that the address will be used for (see [addressing](/v1/docs/addressing-on-radix)).
+- Bech32m encode the above with the `account_\${network_specifier}` HRP where the network_specifier depends on the network that the address will be used for (see [addressing](/docs/concepts-addresses)).
 
 ## Account Metadata and Owner Keys
 
@@ -535,7 +535,7 @@ CALL_METHOD
 <td><p>Attempts to deposit resources in the account, refunding them returns them if the deposit fails.</p>
 <p>This method attempts to deposit a bucket of resources into the account, if the account is configured to disallow deposits of this resource then they’re returned and refunded back as a bucket.</p>
 <p>This method is intended to be used for automated airdrop scenarios where the owner isn’t present. If the owner is present, use <code>deposit</code> instead. For transfers, use <code>try_deposit_or_abort</code> instead.</p>
-<p><strong>Using this method causes the manifest to be</strong> <a href="/v1/docs/conforming-transaction-manifest-types"><strong>non-conforming</strong></a><strong>.</strong></p></td>
+<p><strong>Using this method causes the manifest to be</strong> <a href="/docs/conforming-manifest-types"><strong>non-conforming</strong></a><strong>.</strong></p></td>
 </tr>
 </tbody>
 
@@ -644,7 +644,7 @@ CALL_METHOD
 <td><p>Attempts to deposit buckets of resources into the account and refunds <strong>all</strong> of them if <strong>any</strong> of them can’t be deposited.</p>
 <p>This method attempts to deposit buckets of resources into the account, if the account is configured to disallow deposit of <strong>any</strong> the resources then they’re <strong>all</strong> returned and refunded back as buckets.</p>
 <p>This method is intended to be used for automated airdrop scenarios where the owner isn’t present. If the owner is present, use <code>deposit_batch</code> instead. For transfers, use <code>try_deposit_batch_or_abort</code> instead.</p>
-<p><strong>Using this method causes the manifest to be</strong> <a href="/v1/docs/conforming-transaction-manifest-types"><strong>non-conforming</strong></a><strong>.</strong></p></td>
+<p><strong>Using this method causes the manifest to be</strong> <a href="/docs/conforming-manifest-types"><strong>non-conforming</strong></a><strong>.</strong></p></td>
 </tr>
 </tbody>
 

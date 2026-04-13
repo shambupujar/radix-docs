@@ -95,7 +95,7 @@ let staff_badge: Bucket = ResourceBuilder::new_fungible(OwnerRole::None)
 
 This means that only the instantiated `CandyStore` component can mint the Staff badge, which can be done with the `mint_staff_badge` method called from the component.
 
-This is the **Virtual Badge pattern** described in [Use the Gumball Machine on Stokenet](/learning-to-use-the-gumball-machine-on-stokenet).
+This is the **Virtual Badge pattern** described in [Use the Gumball Machine on Stokenet](/docs/learning-to-use-the-gumball-machine-on-stokenet).
 
 The same minting rule is applied to our candy and chocolate egg tokens. This Scrypto code means that we’ll know that they must have come from our `buy_candy` and `buy_chocolate_egg` methods, as only the `CandyStore` component can mint them.
 

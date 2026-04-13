@@ -16,7 +16,7 @@ slug: /cuttlefish
 
 ## Main Changes
 
-- A new V2 transaction format supporting an [intent structure](../../build/dapp-transactions/intent-structure.md) containing [subintents](../../build/dapp-transactions/subintents.md), and the associated [pre-authorization flows](/docs/preauthorizations) to propose them in your dApp and have them reviewed and signed in the wallet.
+- A new V2 transaction format supporting an [intent structure](../../build/dapp-transactions/intent-structure.md) containing [subintents](../../build/dapp-transactions/subintents.md), and the associated [pre-authorization flows](/docs/pre-authorizations-and-subintents) to propose them in your dApp and have them reviewed and signed in the wallet.
   - This is covered in depth in [this twitter space (starts at 4:30)](https://x.com/i/spaces/1vAxROdXqYVKl)
   - This powers [Anthic Flash Liquidity](https://www.radixdlt.com/blog/technical-deep-dive-how-flash-liquidity-will-work)
 - Getters for balances on the native [Account](../../build/native-blueprints/account.md) blueprint.

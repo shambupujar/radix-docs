@@ -5,7 +5,7 @@ slug: /subintents
 
 # Subintents
 
-A subintent (also known as a **pre-authorization** in the dApp/wallet [pre-authorization flow](/docs/preauthorizations)) can be thought of as being its own independent mini transaction: \* It has its own manifest, its own messages and its own intent header describing when it can be valid \* It has its own id, the hash of the subintent, and is typically encountered bech32-encoded starting with `subtxid_...`.
+A subintent (also known as a **pre-authorization** in the dApp/wallet [pre-authorization flow](/docs/pre-authorizations-and-subintents)) can be thought of as being its own independent mini transaction: \* It has its own manifest, its own messages and its own intent header describing when it can be valid \* It has its own id, the hash of the subintent, and is typically encountered bech32-encoded starting with `subtxid_...`.
 
 Subintents can only be committed as part of a transaction.
 
@@ -23,7 +23,7 @@ These guarantee that in a successful execution, every subintent will be executed
 
 ### Self-contained Subintents
 
-Sometimes, subintents can be considered by a wallet to be equivalent to a transaction manifest, because it doesn’t receive anything from its parent. This is known as it being “self-contained”, and allows the wallet to offer a better user experience using [conforming manifest classification](/docs/conforming-transaction-manifest-types) and preview.
+Sometimes, subintents can be considered by a wallet to be equivalent to a transaction manifest, because it doesn’t receive anything from its parent. This is known as it being “self-contained”, and allows the wallet to offer a better user experience using [conforming manifest classification](/docs/conforming-manifest-types) and preview.
 
 This comes up in the “delegated fee payment” use case, where a dApp might pay to submit a transaction containing the user’s subintent, without interacting with it.
 
@@ -31,7 +31,7 @@ To be specific, a subintent is “self-contained” if it: \* Starts with a `ASS
 
 ## Structure
 
-For full details, see the [transaction structure](transaction-structure.md) article, but to summarize, a subintent contains an intent core, which includes: \* An intent header, capturing its validity constraints (e.g. min/max epoch and optionally a min/max proposer timestamp). The subintent can only be included in a transaction (and so can only be committed) during its validity window. \* An optional message \* Its [transaction manifest](/docs/transaction-manifest), including its instructions; blobs; and zero or more child subintent hashes
+For full details, see the [transaction structure](transaction-structure.md) article, but to summarize, a subintent contains an intent core, which includes: \* An intent header, capturing its validity constraints (e.g. min/max epoch and optionally a min/max proposer timestamp). The subintent can only be included in a transaction (and so can only be committed) during its validity window. \* An optional message \* Its [transaction manifest](/docs/manifest), including its instructions; blobs; and zero or more child subintent hashes
 
 ## Construction and Serialization
 

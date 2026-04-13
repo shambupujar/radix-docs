@@ -31,4 +31,4 @@ Their [pricing plans are available here](https://nownodes.io/pricing) and includ
 
 ### Run your own
 
-[Running a node](/v1/docs/run-infrastructure) is relatively straightforward, and gives you control of your infrastructure, although will require keeping the node updated regularly along with the network’s protocol updates.
+[Running a node](/docs/node) is relatively straightforward, and gives you control of your infrastructure, although will require keeping the node updated regularly along with the network’s protocol updates.

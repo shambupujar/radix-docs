@@ -5,13 +5,13 @@ slug: /transaction-overview
 
 # Transaction Overview
 
-This section gives an overview of the structure, design and motivation of the Radix transaction model. If you are an integrator looking to build and submit transactions, we encourage you to read the [Transactions for Integrators](../../essentials/concepts/transactions.md).
+This section gives an overview of the structure, design and motivation of the Radix transaction model. If you are an integrator looking to build and submit transactions, we encourage you to read the [Transactions for Integrators](/docs/transactions-on-radix).
 
 ## User Transactions
 
-User Transactions are also known as “[Notarized](/docs/notary) Transactions”. At a high level, a user transaction contains: \* A [transaction intent](transaction-intents.md), and related signatures, including the signature of a notary. \* Zero or more [subintents](subintents.md), each with their related signatures.
+User Transactions are also known as “[Notarized](/docs/transaction-notary) Transactions”. At a high level, a user transaction contains: \* A [transaction intent](transaction-intents.md), and related signatures, including the signature of a notary. \* Zero or more [subintents](subintents.md), each with their related signatures.
 
-Together, the transaction intents and subintents are known as the **intents** of a transaction. Each intent contains an intent header, a message, and a [manifest](/docs/transaction-manifest) which details a human-readable set of commands that will be executed.
+Together, the transaction intents and subintents are known as the **intents** of a transaction. Each intent contains an intent header, a message, and a [manifest](/docs/manifest) which details a human-readable set of commands that will be executed.
 
 ## Structure
 
@@ -34,7 +34,7 @@ Each ledger transaction has an associated `LedgerTransactionHash`, built as a ha
 
 ## Serialization and Preparation
 
-Transactions have a canonical serialization in bytes, using [ManifestSbor](/docs/manifest-sbor), according to the [AnyTransaction](https://github.com/radixdlt/radixdlt-scrypto/blob/main/radix-transactions/src/model/any_transaction.rs) serialization.
+Transactions have a canonical serialization in bytes, using [ManifestSbor](/docs/manifest-sbor-specs), according to the [AnyTransaction](https://github.com/radixdlt/radixdlt-scrypto/blob/main/radix-transactions/src/model/any_transaction.rs) serialization.
 
 In the Rust library, you can encounter a transaction in a few forms: \* Under creation, in a transaction builder, e.g. `TransactionBuilder::new_v2()` \* Its detailed model, e.g. `DetailedNotarizedTransactionV2` created from the builder \* Its normal model, e.g. `NotarizedTransactionV2` \* Its raw bytes, e.g. `RawUserTransaction` - a wrapper around the canonical serialization of the transaction \* Its prepared form, e.g. `PreparedUserTransaction` or `PreparedNotarizedTransactionV2` \* Its validated form, e.g. `ValidatedUserTransaction` or `ValidatedNotarizedTransactionV2` \* Its executable form, e.g. `ExecutableTransaction`
 

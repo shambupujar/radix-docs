@@ -19,7 +19,7 @@ Blueprints and components do not exist on the radix network in isolation. They a
 
 As the Radix ecosystem continues to mature there will be more and more blueprints available to use. These blueprints are created by many different teams and individuals and some are intended for external use, with the possibility of [royalties](../scrypto/using-royalties.md) given to the blueprint owner. You may work on some of these yourself.
 
-[Using external blueprints](https://docs.radixdlt.com/docs/cross-blueprint-calls#calling-a-specific-blueprint-or-global-component-of-your-package) is a little different to using your own. We need to import the blueprint into our own using the `extern_blueprint!` macro. This macro describes the external blueprint with its address, name, function and method signatures.
+[Using external blueprints](/docs/learning-to-use-external-blueprints#calling-a-specific-blueprint-or-global-component-of-your-package) is a little different to using your own. We need to import the blueprint into our own using the `extern_blueprint!` macro. This macro describes the external blueprint with its address, name, function and method signatures.
 
 ``` rust
 mod candy_store {
@@ -94,7 +94,7 @@ This is a good demonstration of component instantiation producing owned componen
 
 We use it here, so the same version of the blueprint can also be used in this and the next section.
 
-Having multiple instantiation functions can serve several other purposes as well. Allowing for a standard default component to be created, while also allowing for a more complex or customized component versions, potentially using input arguments to decide on metadata or [more complex access rules](https://docs.radixdlt.com/docs/en/reusable-blueprints-pattern#multiple-instantiation-functions).
+Having multiple instantiation functions can serve several other purposes as well. Allowing for a standard default component to be created, while also allowing for a more complex or customized component versions, potentially using input arguments to decide on metadata or [more complex access rules](/docs/reusable-blueprints-pattern#multiple-instantiation-functions).
 
 ## Using the Candy Store with an External Gumball Machine
 

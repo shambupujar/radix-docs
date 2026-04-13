@@ -9,7 +9,7 @@ Each transaction has a single transaction intent. Its **transaction id** is the 
 
 ## Structure
 
-For full details, see the [transaction structure](transaction-structure.md) article, but to summarize, a transaction intent contains: \* A transaction header, defining the notary and tip. \* Its intent core, including its: \* An intent header, capturing when it’s valid for \* An optional message \* Its [transaction manifest](/docs/transaction-manifest) \* Zero or more [subintents](subintents.md)
+For full details, see the [transaction structure](transaction-structure.md) article, but to summarize, a transaction intent contains: \* A transaction header, defining the notary and tip. \* Its intent core, including its: \* An intent header, capturing when it’s valid for \* An optional message \* Its [transaction manifest](/docs/manifest) \* Zero or more [subintents](subintents.md)
 
 ## Behaviour
 

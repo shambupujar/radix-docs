@@ -19,4 +19,4 @@ The CLI does not support Windows at the moment.
 
 Before you begin, please read the [Node Setup Introduction](../node-setup/index.md), if you haven’t done so yet.
 
-**Next:**<a href="/v1/docs/node-setup-guided-installing-cli"><strong>Installing the babylonnode CLI</strong></a>
+**Next:**<a href="/docs/node-setup-guided-installing-cli"><strong>Installing the babylonnode CLI</strong></a>

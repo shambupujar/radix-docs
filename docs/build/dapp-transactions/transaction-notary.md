@@ -9,7 +9,7 @@ The concept of notarization was introduced at Babylon as a means to support seam
 
 ## How is it used?
 
-In the [transaction structure](/docs/transaciton-structure): \* The transaction header defines a `notary_public_key`, and optionally whether the `notary_is_signatory`, which is an optimization so that the notary counts as a transaction intent signatory. \* This key must “notarize” the signed transaction intent to confirm the signatures are correct, by adding its own notary signature to the signed transaction intent. This creates the “notarized transaction” which can be submitted to the network as a user transaction.
+In the [transaction structure](/docs/transaction-structure): \* The transaction header defines a `notary_public_key`, and optionally whether the `notary_is_signatory`, which is an optimization so that the notary counts as a transaction intent signatory. \* This key must “notarize” the signed transaction intent to confirm the signatures are correct, by adding its own notary signature to the signed transaction intent. This creates the “notarized transaction” which can be submitted to the network as a user transaction.
 
 ## Who is the notary?
 

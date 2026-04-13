@@ -27,9 +27,9 @@ The `/system` endpoint can be used to query aspects of the node and network such
 
 To register a validator node, you need a Radix full node installed, running, and syncing with the network. If you haven’t yet set one, then please run through one of these guides:
 
-[Installing and Running a Node as a Docker Instance](/docs/docker-compose-mode)
+[Installing and Running a Node as a Docker Instance](/docs/node-setup-docker)
 
-[Installing and Running a Node using SystemD](/docs/systemd-mode)
+[Installing and Running a Node using SystemD](/docs/node-setup-systemd)
 
 ### Register the node as a validator
 

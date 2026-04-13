@@ -17,7 +17,7 @@ With the right access, components on the Radix ledger can contact and call metho
 
 ## External Components
 
-There are [many methods to use external components in Scrypto](https://docs.radixdlt.com/docs/cross-blueprint-calls#calling-a-specific-blueprint-or-global-component-of-your-package). Here we show you one of the simpler of these ways. There are two main steps:
+There are [many methods to use external components in Scrypto](/docs/learning-to-use-external-blueprints#calling-a-specific-blueprint-or-global-component-of-your-package). Here we show you one of the simpler of these ways. There are two main steps:
 
 First, we use the `extern_blueprint!` macro to import the external blueprint into our own. This process is the same as in the previous section, but this time we won’t instantiate the external component in our package.
 

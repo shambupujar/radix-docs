@@ -132,16 +132,16 @@ On the next pages we'll guide you through the process of setting up a Radix node
 In this mode, you’ll use our Python CLI tool (\`babylonnode\`) for a straightforward, guided installation of a Radix node on an Ubuntu host. We recommend this method for most people. This process works best on a fresh, dedicated machine (e.g. cloud instance).  
 `babylonnode` is a versatile tool that can not only assist in setting up a node and related tools, but also helps to manage it afterwards.
 
-<a href="/v1/docs/node-setup-guided"><strong>Proceed to Guided Mode docs</strong></a>
+<a href="/docs/node-setup"><strong>Proceed to Guided Mode docs</strong></a>
 
 #### Manual (Advanced) Setup with Docker
 
 This section will guide you through a manual (i.e. without using the `babylonnode` CLI tool) setup where the node and related tools (e.g. nginx) are running inside Docker containers on a host machine.
 
-<a href="/v1/docs/node-setup-docker" target="_blank"><strong>Proceed to Manual Setup with Docker docs</strong></a>
+<a href="/docs/node-setup-docker" target="_blank"><strong>Proceed to Manual Setup with Docker docs</strong></a>
 
 #### Manual (Advanced) Setup with systemd
 
 This section will guide you through a manual (i.e. without using the `babylonnode` CLI tool) setup where the node and related tools (e.g. nginx) are running directly on a host machine. The processes will be managed by systemd. This method is suitable for those who want the most hands-on approach, and may be a useful reference for those figuring out installation on different operating systems.
 
-<a href="/v1/docs/node-setup-systemd"><strong>Proceed to Manual Setup with systemd docs</strong></a>
+<a href="/docs/node-setup-systemd"><strong>Proceed to Manual Setup with systemd docs</strong></a>

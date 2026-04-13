@@ -2195,7 +2195,7 @@ Methods callable on [Native Blueprints](../native-blueprints/index.md) are list
 
 ## Arguments
 
-In the Radix transaction manifest, all arguments are strongly typed Manifest SBOR Values in <a href="/v1/docs/manifest-value-syntax">Manifest Value Syntax</a>.
+In the Radix transaction manifest, all arguments are strongly typed Manifest SBOR Values in <a href="/docs/manifest-value-syntax">Manifest Value Syntax</a>.
 
 When making method/function calls, the Manifest SBOR value is converted by the transaction processor into a Scrypto SBOR value, which is then used to make the engine call. As part of this engine call, the resultant Scrypto value is validated by the Radix Engine against the Component’s interface’s schema at runtime.
 
