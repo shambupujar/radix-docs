@@ -41,8 +41,7 @@ const config = {
       // Replace seed node variables
       const seedNodes = {
         MAINNET_SEED_NODES: [
-          'radix://node_rdx1qf2x63qx4jdaxj83kkw2yytehvvmu6r2xll5gcp6c9rancmrfsgfw0vnc65@babylon-mainnet-eu-west-1-node1.radixdlt.com',
-          'radix://node_rdx1qgxn3eeldj33kd98ha6wkjgk4k77z6xm0dv7mwnrkefknjcqsvhuu4gc609@babylon-mainnet-ap-south-1-node0.radixdlt.com',
+          'radix://node_rdx1qv28t8ws8wm3c7une39v7syqhll72jaksacpppsfhkksaetfztex6a8t7kr@198.244.164.236',
         ],
         STOKENET_SEED_NODES: [
           'radix://node_tdx_2_1qv89yg0la2jt429vqp8sxtpg95hj637gards67gpgqy2vuvwe4s5ss0va2y@babylon-stokenet-ap-south-1-node0.radixdlt.com',
