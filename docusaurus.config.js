@@ -41,8 +41,14 @@ const config = {
       // Replace seed node variables
       const seedNodes = {
         MAINNET_SEED_NODES: [
-          'radix://node_rdx1qv28t8ws8wm3c7une39v7syqhll72jaksacpppsfhkksaetfztex6a8t7kr@198.244.164.236',
-        ],
+          'radix://node_rdx1q0754knqhyskavhmr9kkz8d0h8wtxq3eqj4znnp77djfjsvdz5jmsdadn7q@seed.radix.defiplaza.net',
+          'radix://node_rdx1q0qw4yglcmq04qnx3arc6ff72ynkh3skxz65uxzvknpuwytfm998zqju7kj@seed.radix.astrolescent.com',
+          'radix://node_rdx1qtelftawmx9p5zqa2ukgj4q7aw75dl4s448u6ydqq0q2a92e4p5ugxmgjll@seed.acmenodes.com',
+          'radix://node_rdx1qdt9fptdgz7n7j5qtuj500y6v30tg0w5jq49rap26ymhryl5xspakr2yxup@seed.radup.io',
+          'radix://node_rdx1qv2wfk0p6dj57qw8c43xx8tl34qjn5kd2ayty7p5qhy9j36j9r6k236nrsx@seed.radstakes.com',
+          'radix://node_rdx1q0muzc5vk6y3nym8r2943remtgpv8zf8xnpqf6mx2taxlkgnehxvv4c77f9@planet.radstakes.com',
+          'radix://node_rdx1qv28t8ws8wm3c7une39v7syqhll72jaksacpppsfhkksaetfztex6a8t7kr@seed.trellisarch.tech',
+        ],  
         STOKENET_SEED_NODES: [
           'radix://node_tdx_2_1qv89yg0la2jt429vqp8sxtpg95hj637gards67gpgqy2vuvwe4s5ss0va2y@babylon-stokenet-ap-south-1-node0.radixdlt.com',
           'radix://node_tdx_2_1qvtd9ffdhxyg7meqggr2ezsdfgjre5aqs6jwk5amdhjg86xhurgn5c79t9t@babylon-stokenet-ap-southeast-2-node0.radixdlt.com',
