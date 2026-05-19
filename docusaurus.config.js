@@ -48,6 +48,7 @@ const config = {
           'radix://node_rdx1qv2wfk0p6dj57qw8c43xx8tl34qjn5kd2ayty7p5qhy9j36j9r6k236nrsx@seed.radstakes.com',
           'radix://node_rdx1q0muzc5vk6y3nym8r2943remtgpv8zf8xnpqf6mx2taxlkgnehxvv4c77f9@planet.radstakes.com',
           'radix://node_rdx1qv28t8ws8wm3c7une39v7syqhll72jaksacpppsfhkksaetfztex6a8t7kr@seed.trellisarch.tech',
+          'radix://node_rdx1qwsg60y9h6c0t0n93z70053jseygtd8n6ueg3tr7wn8krxv60fexc55h06j@seednode.stakesafe.net',
         ],  
         STOKENET_SEED_NODES: [
           'radix://node_tdx_2_1qv89yg0la2jt429vqp8sxtpg95hj637gards67gpgqy2vuvwe4s5ss0va2y@babylon-stokenet-ap-south-1-node0.radixdlt.com',
