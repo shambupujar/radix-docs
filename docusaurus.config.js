@@ -51,10 +51,9 @@ const config = {
           'radix://node_rdx1qwsg60y9h6c0t0n93z70053jseygtd8n6ueg3tr7wn8krxv60fexc55h06j@seednode.stakesafe.net',
         ],  
         STOKENET_SEED_NODES: [
-          'radix://node_tdx_2_1qv89yg0la2jt429vqp8sxtpg95hj637gards67gpgqy2vuvwe4s5ss0va2y@babylon-stokenet-ap-south-1-node0.radixdlt.com',
-          'radix://node_tdx_2_1qvtd9ffdhxyg7meqggr2ezsdfgjre5aqs6jwk5amdhjg86xhurgn5c79t9t@babylon-stokenet-ap-southeast-2-node0.radixdlt.com',
-          'radix://node_tdx_2_1qwfh2nn0zx8cut5fqfz6n7pau2f7vdyl89mypldnn4fwlhaeg2tvunp8s8h@babylon-stokenet-eu-west-1-node0.radixdlt.com',
-          'radix://node_tdx_2_1qwz237kqdpct5l3yjhmna66uxja2ymrf3x6hh528ng3gtvnwndtn5rsrad4@babylon-stokenet-us-east-1-node1.radixdlt.com',
+          'radix://node_tdx_2_1qwz237kqdpct5l3yjhmna66uxja2ymrf3x6hh528ng3gtvnwndtn5rsrad4@node1-stokenet.radix.community',
+          'radix://node_tdx_2_1qv89yg0la2jt429vqp8sxtpg95hj637gards67gpgqy2vuvwe4s5ss0va2y@node2-stokenet.radix.community',
+          'radix://node_tdx_2_1qv2g5srsnhgrna9ejfw4lvhyd7h3ryjfy8rqxyuzqgxaz50cflulx9euut8@node3-stokenet.radix.community',
         ],
       };
       content = content.replace(/\{\{MAINNET_SEED_NODES\}\}/g, seedNodes.MAINNET_SEED_NODES.join('\n'));
