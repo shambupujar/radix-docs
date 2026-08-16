@@ -265,6 +265,10 @@
     "categories/wallets-updates.md": "updates/wallets-updates/index.md"
   },
   "images": {
+    "radix-logo-banner.png": "radix-logo-banner.png",
+    "original(1).png": "original-1-.png",
+    "happy-path(1).png": "happy-path-1-.png",
+    "bad-path(1).png": "bad-path-1-.png",
     "complex-authorization.png": "complex-authorization.png",
     "Screenshot 2024-11-05 at 11.37.37.png": "Screenshot-2024-11-05-at-11.37.37.png",
     "image(24).png": "image-24-.png",

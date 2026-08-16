@@ -51,7 +51,7 @@ A Validator that reaches the top 100 (by the amount of delegated stake) is inclu
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/validator_registration_flow.png" type="figure" />
+src="/img/validator_registration_flow.png" type="figure" />
 
 
 <p>
@@ -72,7 +72,7 @@ A complete overview of the network including different kinds of nodes has been p
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/network_diagram.png" type="figure" />
+src="/img/network_diagram.png" type="figure" />
 
 
 Radix Network overview

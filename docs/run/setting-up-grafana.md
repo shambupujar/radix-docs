@@ -283,7 +283,7 @@ Grafana will display a page asking for your username and password.
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/log-into-grafana.png" type="figure" width="554" height="556" alt="null" />
+src="/img/log-into-grafana.png" type="figure" width="554" height="556" alt="null" />
 
 
 <em>the Grafana welcome screen</em>
@@ -300,7 +300,7 @@ Since this is the first time you’ve run the monitor, enter `admin` for the use
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/grafana-change-password.png" type="figure" alt="null" />
+src="/img/grafana-change-password.png" type="figure" alt="null" />
 
 
 <em>pick a new password</em>
@@ -317,7 +317,7 @@ You will now see a blank page with a somewhat discouraging `Not Found` message a
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/opening-grafana-screen.png" type="figure" alt="null" />
+src="/img/opening-grafana-screen.png" type="figure" alt="null" />
 
 
 <em>opening window</em>
@@ -334,7 +334,7 @@ Navigate to Dashboards \> Radix Node Dashboard:
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/select-dashboard.png" type="figure" width="554"
+src="/img/select-dashboard.png" type="figure" width="554"
 height="425" alt="null" />
 
 
@@ -352,7 +352,7 @@ Grafana will now the example dashboard:
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/radix-node-validator-dashboard.png" type="figure" alt="null" />
+src="/img/radix-node-validator-dashboard.png" type="figure" alt="null" />
 
 
 <em>The Grafana Dashboard</em>

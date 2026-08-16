@@ -118,7 +118,7 @@ The following is a sequence diagram describing this process:
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/image(5).png" type="figure" width="956"
+src="/img/image-5-.png" type="figure" width="956"
 height="1740" />
 
 
@@ -176,7 +176,7 @@ The following is a sequence diagram describing the entire process:
 
 
 <img
-src="https://cdn.document360.io/50e78792-5410-4ac9-aa43-4612b4d33953/Images/Documentation/image(7).png" type="figure" width="956"
+src="/img/image-7-.png" type="figure" width="956"
 height="1229" />
 
 
